@@ -1,0 +1,61 @@
+import type { NextPage } from "next"
+import sanityClient from "@sanity/client"
+import groq from "groq"
+
+import type * as Schema from "../generated/schema"
+import { usePreviewSubscription, PortableText } from "../lib/sanity"
+import styles from "../styles/Home.module.scss"
+
+import { getClient } from "../lib/sanity.server"
+
+const client = sanityClient({
+  dataset: process.env.SANITY_PROJECT_ID || "production",
+  projectId: process.env.SANITY_DATASET || "",
+  useCdn: true
+})
+
+const query = groq`
+  *[_type == "post"][0]{
+    _id, title, body, publishedAt,
+    "author": author->name,
+    categories[]->{_id, title}
+  }
+`
+
+const Home: NextPage<Props> = ({ data }) => {
+  const post = client.fetch<QueryResult>(query)
+  return (
+    <div className={styles.container}>
+      {config}
+      <h2>{title}</h2>
+      <p>{publishedAt}</p>
+      <p>by: {author.name}</p>
+      <p>
+        in{" "}
+        {categories.map((category: any, index: number) => (
+          <span key={category._id}>
+            {category.title}
+            {index !== post.categories.length - 1 ? (
+              <span>, </span>
+            ) : (
+              <span></span>
+            )}
+          </span>
+        ))}
+      </p>
+      <PortableText blocks={body} />
+    </div>
+  )
+}
+
+export default Home
+
+export async function getStaticProps({ params, preview = false }) {
+  return {
+    props: {
+      preview,
+      data: { post }
+    }
+  }
+}
+
