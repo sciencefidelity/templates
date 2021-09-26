@@ -47,7 +47,6 @@
     "sanity-codegen": "^0.9.5",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recommended": "^5.0.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "typescript": "4.4.3"
   }
