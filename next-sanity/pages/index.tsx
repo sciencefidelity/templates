@@ -1,20 +1,13 @@
-import { createClient, groq } from "next-sanity"
+import { createClient } from "next-sanity"
+import Layout from "../components/layout"
 import type { Post } from "../generated/schema"
 import { config } from "../lib/config"
+import { postQuery } from "../lib/queries"
 import { PortableText } from "../lib/sanity"
-import Layout from "../components/layout"
 
 const client = createClient({
   ...config
 })
-
-const indexQuery = groq`
-  *[_type == "post"][0]{
-    _id, title, body, publishedAt,
-    "author": author->name,
-    categories[]->{_id, title}
-  }
-`
 
 const Home = ({ title, publishedAt, author, categories, body }: Post) => {
   return (
@@ -54,7 +47,7 @@ const Home = ({ title, publishedAt, author, categories, body }: Post) => {
 export default Home
 
 export async function getStaticProps() {
-  const post = await client.fetch(indexQuery)
+  const post = await client.fetch(postQuery)
   const { title, publishedAt, author, categories, body }: Post = post
   return {
     props: { title, publishedAt, author, categories, body }
