@@ -11,17 +11,20 @@
   "bugs": {
     "url": "https://github.com/sciencefidelity/TODO/issues"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 0.0.0.0",
     "lint:js": "next lint",
     "lint:js:fix": "next lint --fix",
     "lint:style": "stylelint \"./**/*.scss\" --ignorePath .gitignore",
     "lint:style:fix": "stylelint \"./**/*.scss\" --ignorePath .gitignore --fix",
     "lint": "yarn lint:js && yarn lint:style",
     "fix": "yarn lint:js:fix && yarn lint:style:fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\" --ignore-path .eslintignore",
     "test": "jest",
     "cypress": "cypress open"
   },
@@ -37,6 +40,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@types/react": "17.0.24",
+    "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^27.2.2",
     "cypress": "^8.4.1",
     "eslint": "7.32.0",
