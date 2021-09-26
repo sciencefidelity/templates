@@ -1,0 +1,5 @@
+_normalize.scss
+node_modules/
+.next/
+out/
+build/

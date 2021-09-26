@@ -1,14 +1,26 @@
 {
-  "name": "next-test",
+  "name": "TODO",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENCED",
+  "author": "sciencefidelity <32623301+sciencefidelity@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sciencefidelity/TODO/web"
+  },
+  "bugs": {
+    "url": "https://github.com/sciencefidelity/TODO/issues"
+  },
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint:js": "next lint",
-    "lint:style": "stylelint \"**/*.{scss}\" --ignore-path .gitignore",
+    "lint:js:fix": "next lint --fix",
+    "lint:style": "stylelint \"./**/*.scss\"",
+    "lint:style:fix": "stylelint \"./**/*.scss\" --fix",
     "lint": "yarn lint:js && yarn lint:style",
+    "fix": "yarn lint:js:fix && yarn lint:style:fix",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "test": "jest",
     "cypress": "cypress open"
