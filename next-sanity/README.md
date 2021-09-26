@@ -39,4 +39,3 @@ Format with Prettier
 ```shell
 yarn format
 ```
-

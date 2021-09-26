@@ -10,7 +10,8 @@ import { config } from "./config"
  * Set up a helper function for generating Image URLs with only the asset reference data in your documents.
  * Read more: https://www.sanity.io/docs/image-url
  **/
-export const urlFor = (source: any) => createImageUrlBuilder(config).image(source)
+export const urlFor = (source: any) =>
+  createImageUrlBuilder(config).image(source)
 
 // Set up the live preview subscription hook
 export const usePreviewSubscription = createPreviewSubscriptionHook(config)
