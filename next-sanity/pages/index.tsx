@@ -29,7 +29,7 @@ const Home = ({ title, publishedAt, author, categories, body }: Post) => {
             day: "numeric"
           })}
         </p>
-        <p>by: {author}</p>
+        <p>by {author}</p>
         {categories && (
           <p>
             in{" "}
