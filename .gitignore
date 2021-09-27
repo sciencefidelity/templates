@@ -1,6 +1,7 @@
-# Templates that aren't ready
 *-test/
 
-# Misc
+node_modules/
+
 .DS_Store
 *.bak
+*.local
