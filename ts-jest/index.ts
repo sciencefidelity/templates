@@ -1,12 +1,3 @@
-export class Kata {
-  static spinWords(words: string): string {
-    const str = words.split(" ")
-    const arr: string[] = []
-    str.forEach(el =>
-      el.length >= 5 ? arr.push(el.split("").reverse().join("")) : arr.push(el)
-    )
-    return arr.join(" ")
-  }
+export const sum = (a: number, b: number) => {
+  return a + b
 }
-
-console.log(Kata.spinWords("Hey fellow warriors"))

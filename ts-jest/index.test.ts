@@ -1,5 +1,5 @@
-import { Kata } from "./index"
+import { sum } from "./index"
 
-test("reverse words longer than 5 letters", () => {
-  expect(Kata.spinWords("Hey fellow warriors")).toBe("Hey wollef sroirraw")
+test("adds 1 + 2 to equal 3", () => {
+  expect(sum(1, 2)).toBe(3)
 })
