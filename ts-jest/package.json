@@ -1,0 +1,34 @@
+{
+  "name": "jest-test",
+  "version": "0.1.0",
+  "description": "TODO",
+  "main": "index.js",
+  "author": "matt@sciencefidelity.co.uk",
+  "license": "UNLICENCED",
+  "private": true,
+  "env": {
+    "node": true
+  },
+  "scripts": {
+    "watch": "nodemon --config nodemon.json index.ts",
+    "lint": "eslint '**/*.{ts,js}'",
+    "format": "prettier --write '**/*.{ts,js,json,md,yml}'",
+    "fix": "(yarn format) && (yarn lint --fix)",
+    "test": "jest --watchAll --verbose",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.2.2",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
