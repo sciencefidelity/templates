@@ -6,4 +6,5 @@ I was starting to keep these template files on a computer and copying them inste
 
 ## Templates
 
-[Next.js](https://nextjs.org) with [Sanity.io](https://sanity.io).
+- [Next.js](https://nextjs.org) with [Sanity.io](https://sanity.io).
+- Minimal TypeScript template for Node/CLI with Jest testing.
