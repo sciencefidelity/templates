@@ -13,7 +13,14 @@
     "noEmit": true,
     "strict": true,
     "skipLibCheck": true,
-    "types": ["chai", "mocha", "react", "react-dom", "snowpack-env"],
+    "types": [
+      "chai",
+      "mocha",
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "snowpack-env"
+    ],
     "typeRoots": ["./types", "./node_modules/@types"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
