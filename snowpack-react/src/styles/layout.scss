@@ -1,0 +1,77 @@
+$white: hsl(0, 0%, 100%);
+$light-blue: hsl(193, 92%, 69%);
+$dark-blue: hsl(220, 13%, 18%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  background-color: $dark-blue;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $dark-blue;
+  color: $white;
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+  font-size: calc(10px + 2vmin);
+  margin: auto;
+}
+
+header,
+footer {
+  color: $light-blue;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+}
+
+header {
+  border-bottom: 1px solid $light-blue;
+}
+
+footer {
+  border-top: 1px solid $light-blue;
+}
+
+nav {
+  background-color: $light-blue;
+  color: $dark-blue;
+  display: grid;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  a {
+    color: $dark-blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 0 2rem;
+    }
+  }
+}
+
+code {
+  font-family: ui-monospace, menlo, monospace;
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  place-items: center;
+}

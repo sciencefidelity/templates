@@ -1,0 +1,53 @@
+{
+  "name": "snowpack-react",
+  "version": "0.1.0",
+  "description": "TODO",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "license": "UNLICENCED",
+  "private": true,
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "clean": "rm -rf build && yarn snowpack --reload",
+    "lint": "concurrently 'yarn:lint:*'",
+    "lint:eslint": "eslint '**/*.{ts,js,tsx,jsx}'",
+    "lint:prettier": "prettier --check '**/*.{ts,js,json,md,yml}'",
+    "lint:styles": "stylelint --ignore-path .eslintignore '**/*.scss'",
+    "fix": "concurrently 'yarn:fix:*'",
+    "fix:eslint": "eslint --fix '**/*.{ts,js}'",
+    "fix:prettier": "prettier --write '**/*.{ts,js,tsx,jsx,json,md,yml}'",
+    "fix:styles": "stylelint --fix --ignore-path .eslintignore '**/*scss'",
+    "test": "web-test-runner \"src/**/*.test.tsx\""
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.2.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@snowpack/web-test-runner-plugin": "^0.2.2",
+    "@testing-library/react": "^12.1.2",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "@types/snowpack-env": "^2.3.4",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "@web/test-runner": "^0.13.18",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1",
+    "snowpack": "^3.8.8",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-scss": "^3.21.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@snowpack/plugin-sass": "^1.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
