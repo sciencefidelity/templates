@@ -5,7 +5,7 @@ import type { RouteComponentProps } from "@reach/router"
 import { capitalize } from "@/lib/utils"
 import Layout from "@/components/Layout"
 import logo from "@/images/logo.svg"
-import "@/styles/home.scss"
+import styles from "@/styles/Home.module.scss"
 
 interface Props extends RouteComponentProps {
   title: string
@@ -19,9 +19,9 @@ const Home: FC<Props> = ({ title }) => {
   }, [count, setCount])
   return (
     <Layout>
-      <div className={title}>
+      <div className={styles[title]}>
         <h1>{capitalize(title)}</h1>
-        <img src={logo} className="app-logo" alt="logo" />
+        <img src={logo} className={styles["app-logo"]} alt="logo" />
         <p>
           Page has been open for <code>{count}</code> seconds.
         </p>

@@ -4,7 +4,7 @@ import type { RouteComponentProps } from "@reach/router"
 
 import { capitalize } from "@/lib/utils"
 import Layout from "@/components/Layout"
-import "@/styles/counter.scss"
+import styles from "@/styles/Counter.module.scss"
 
 interface Props extends RouteComponentProps {
   title: string
@@ -20,10 +20,10 @@ const Counter: FC<Props> = ({ title }) => {
   }
   return (
     <Layout>
-      <div className={title}>
+      <div className={styles[title]}>
         <h1>{capitalize(title)}</h1>
         <button onClick={countDown}>–</button>
-        <span className="count">{count}</span>
+        <span className={styles.count}>{count}</span>
         <button onClick={countUp}>+</button>
         <p>
           The button has been pushed <code>{count}</code> times.
