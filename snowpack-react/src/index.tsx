@@ -13,7 +13,7 @@ import About from "@/pages/About"
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App path="/" />
+      <App path="/" title="home" />
       <Counter path="/counter" />
       <About path="/about" title="About" />
     </Router>
