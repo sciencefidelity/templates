@@ -18,7 +18,7 @@
       "mocha",
       "react",
       "react-dom",
-      "react-router-dom",
+      "reach__router",
       "snowpack-env"
     ],
     "typeRoots": ["./types", "./node_modules/@types"],

@@ -1,16 +1,27 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "@/pages/index.jsx"
+import { Router } from "@reach/router"
+import "sanitize.css/sanitize.css"
+import "sanitize.css/assets.css"
+import "sanitize.css/reduce-motion.css"
+import "sanitize.css/typography.css"
+import "@/styles/globals.scss"
+import App from "@/pages/Home"
+import Counter from "@/pages/Counter"
+import About from "@/pages/About"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App path="/" />
+      <Counter path="/counter" />
+      <About path="/about" title="About" />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 )
 
-// Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
-// Learn more: https://www.snowpack.dev/concepts/hot-module-replacement
+// https://www.snowpack.dev/concepts/hot-module-replacement
 if (import.meta.hot) {
   import.meta.hot.accept()
 }

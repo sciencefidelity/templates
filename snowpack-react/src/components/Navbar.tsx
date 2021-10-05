@@ -1,9 +1,9 @@
 import React, { FC } from "react"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { Link } from "@reach/router"
 
 const Navbar: FC = () => {
   return (
-    <Router>
+    <div>
       <nav>
         <ul>
           <Link to="/">
@@ -17,31 +17,8 @@ const Navbar: FC = () => {
           </Link>
         </ul>
       </nav>
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/counter">
-          <Counter />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+    </div>
   )
-}
-
-function Home() {
-  return <h2>Home</h2>
-}
-
-function Counter() {
-  return <h2>Counter</h2>
-}
-
-function About() {
-  return <h2>About</h2>
 }
 
 export default Navbar
