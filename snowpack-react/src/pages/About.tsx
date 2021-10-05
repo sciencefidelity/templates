@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import PropTypes from "prop-types"
 import type { RouteComponentProps } from "@reach/router"
 
+import { capitalize } from "@/lib/utils"
 import Layout from "@/components/Layout"
 import "@/styles/about.scss"
 
@@ -12,8 +13,8 @@ interface Props extends RouteComponentProps {
 const About: FC<Props> = ({ title }) => {
   return (
     <Layout>
-      <div className="about">
-        <h1>{title}</h1>
+      <div className={title}>
+        <h1>{capitalize(title)}</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. In iaculis
