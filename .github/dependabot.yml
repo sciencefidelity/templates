@@ -6,7 +6,10 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
+    directory: "/snowpack-react"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
     directory: "/ts-jest"
     schedule:
       interval: "monthly"
-
