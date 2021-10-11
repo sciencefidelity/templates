@@ -13,3 +13,7 @@ updates:
     directory: "/ts-jest"
     schedule:
       interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/vanilla-snowpack"
+    schedule:
+      interval: "monthly"
