@@ -10,10 +10,10 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
-    directory: "/ts-jest"
+    directory: "/snowpack-vanilla"
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
-    directory: "/vanilla-snowpack"
+    directory: "/ts-jest"
     schedule:
       interval: "monthly"
