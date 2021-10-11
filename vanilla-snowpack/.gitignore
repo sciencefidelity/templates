@@ -1,0 +1,22 @@
+# system
+.DS_store
+
+# generated
+*.css
+*.css.map
+
+# backups
+*.bak
+.env
+*.env
+
+# Node
+node_modules/
+.cache/
+build/
+*.log
+
+# Vite
+dist
+dist-ssr
+*.local

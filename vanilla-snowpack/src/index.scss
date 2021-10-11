@@ -1,0 +1,44 @@
+$background: hsl(0, 0%, 100%);
+$foreground: hsl(266, 54%, 36%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',Arial, 'Noto Sans', sans-serif;
+  font-size: calc(10px + 2vmin);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#img {
+  display: block;
+  height: 16.8rem;
+  margin: 2rem auto;
+  padding: 0;
+  width: 128px;
+}
+
+p {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+#counter {
+  background-color: $foreground;
+  border-radius: 4px;
+  color: $background;
+  padding: 4px 8px;
+}
+
+a {
+  color: $foreground;
+}
