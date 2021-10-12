@@ -4,13 +4,10 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' }
+    public: { url: "/", static: true },
+    src: { url: "/dist" }
   },
-  plugins: [
-    "@snowpack/plugin-sass",
-    "@snowpack/plugin-typescript"
-  ],
+  plugins: ["@snowpack/plugin-sass", "@snowpack/plugin-typescript"],
   packageOptions: {
     /* ... */
   },
@@ -19,5 +16,5 @@ export default {
   },
   buildOptions: {
     /* ... */
-  },
-};
+  }
+}

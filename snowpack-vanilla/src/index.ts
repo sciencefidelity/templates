@@ -6,13 +6,17 @@ import "sanitize.css/typography.css"
 const counter = document.querySelector("#counter") as HTMLSpanElement
 let seconds = 0
 
-setInterval(() => {
-  seconds += 1
-  counter.textContent = seconds.toString()
-}, 1000)
-
-export const number = (): number => {
-  return 1
+export const add = (a: number, b: number): number => {
+  return a + b
 }
 
-export {}
+export const timer = (): void => {
+  setInterval(() => {
+    seconds += 1
+    if (counter) {
+      counter.textContent = seconds.toString()
+    }
+  }, 1000)
+}
+
+timer()
