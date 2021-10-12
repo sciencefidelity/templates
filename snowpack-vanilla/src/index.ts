@@ -11,4 +11,8 @@ setInterval(() => {
   counter.textContent = seconds.toString()
 }, 1000)
 
+export const number = (): number => {
+  return 1
+}
+
 export {}

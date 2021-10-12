@@ -17,17 +17,20 @@
     "fix:eslint": "eslint --fix '**/*.{ts,js}'",
     "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml}'",
     "fix:styles": "stylelint --fix --ignore-path ../.eslintignore '**/*scss'",
-    "test": "echo 'Error: no test specified' && exit 1"
+    "test": "jest --watchAll --verbose",
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
+    "@types/jest": "^27.0.2",
     "@types/snowpack-env": "^2.3.4",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "concurrently": "^6.3.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.2.5",
     "prettier": "^2.4.1",
     "serve": "^12.0.1",
     "snowpack": "^3.8.8",
@@ -36,6 +39,7 @@
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-scss": "^3.21.0",
+    "ts-jest": "^27.0.5",
     "typescript": "^4.4.3"
   },
   "dependencies": {

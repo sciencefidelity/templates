@@ -19,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "types": ["snowpack-env"]
+    "types": ["jest", "snowpack-env"]
   },
   "include": ["src", "types"],
   "exclude": ["node_modules"]
