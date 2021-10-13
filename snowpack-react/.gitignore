@@ -1,8 +1,10 @@
 .snowpack
 build
+dist
 node_modules
-.nova
 *.bak
 .DS_Store
 *.log
 .env
+*.env
+.env.*
