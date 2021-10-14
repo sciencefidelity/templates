@@ -1,0 +1,51 @@
+@use './foundation/colors' as c;
+
+header,
+footer {
+  color: c.$light-blue;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+}
+
+header {
+  border-bottom: 1px solid c.$light-blue;
+}
+
+footer {
+  border-top: 1px solid c.$light-blue;
+}
+
+nav {
+  background-color: c.$light-blue;
+  color: c.$dark-blue;
+  display: grid;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  a {
+    color: c.$dark-blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 0 2rem;
+    }
+  }
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  place-items: center;
+}

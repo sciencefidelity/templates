@@ -1,0 +1,13 @@
+.DS_store
+*.css
+*.css.map
+*.bak
+*.local
+.env
+*.env
+node_modules
+.cache
+build
+*.log
+dist
+dist-ssr
