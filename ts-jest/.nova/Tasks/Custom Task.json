@@ -1,0 +1,10 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "npm run watch"
+    }
+  },
+  "identifier" : "5E732454-F362-4EE5-93DE-A3A27B7DFAA9",
+  "openLogOnRun" : "start"
+}
