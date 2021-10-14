@@ -10,4 +10,5 @@ I was starting to keep these template files on a computer and copying them inste
 - [React](https://reactjs.org) starter project with [Snowpack](https://snowpack.dev).
 - Minimal vanilla js starter project with [Snowpack](https://snowpack.dev).
 - Minimal TypeScript template for Node/CLI with Jest testing.
+- [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev).
 - Minimal vanilla js starter project with [Vite](https://vitejs.dev).
