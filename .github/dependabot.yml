@@ -18,6 +18,10 @@ updates:
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
+    directory: "/vite-react"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
     directory: "/vite-vanilla"
     schedule:
       interval: "monthly"
