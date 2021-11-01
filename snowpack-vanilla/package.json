@@ -24,7 +24,7 @@
   "devDependencies": {
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
-    "@testing-library/dom": "^8.9.0",
+    "@testing-library/dom": "^8.10.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
