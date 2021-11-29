@@ -238,6 +238,16 @@
     dotenv "^8.2.0"
     dotenv-expand "^5.1.0"
 
+"@snowpack/plugin-sass@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-sass/-/plugin-sass-1.4.0.tgz#faccd5827e4badae3f5ba76cb8f947f15d3faa81"
+  integrity sha512-Hzz/TYt4IKcjrInv+FyujLohtJHadZCUdz5nnfh1N7MwplHFmxgLuKiT8tsiafHFAGsuR+4ZpFTqLeSyQTHAhQ==
+  dependencies:
+    execa "^5.0.0"
+    find-up "^5.0.0"
+    npm-run-path "^4.0.1"
+    sass "^1.3.0"
+
 "@snowpack/plugin-vue@^2.6.2":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@snowpack/plugin-vue/-/plugin-vue-2.6.2.tgz#b8c501094d8e84d1d76f65b71b4a8d6d9f6eaab7"
@@ -700,7 +710,7 @@ cheerio@1.0.0-rc.10:
     parse5-htmlparser2-tree-adapter "^6.0.1"
     tslib "^2.2.0"
 
-chokidar@^3.4.0:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.0:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
   integrity sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==
@@ -1104,7 +1114,7 @@ eventemitter3@^4.0.4:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
-execa@^5.1.1:
+execa@^5.0.0, execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
   integrity sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==
@@ -2544,6 +2554,13 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+
+sass@^1.3.0:
+  version "1.43.5"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.5.tgz#25a9d91dd098793ef7229d7b04dd3daae2fc4a65"
+  integrity sha512-WuNm+eAryMgQluL7Mbq9M4EruyGGMyal7Lu58FfnRMVWxgUzIvI7aSn60iNt3kn5yZBMR7G84fAGDcwqOF5JOg==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
 
 semver@^6.0.0:
   version "6.3.0"

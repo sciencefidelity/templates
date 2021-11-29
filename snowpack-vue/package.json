@@ -1,4 +1,10 @@
 {
+  "name": "snowpack-vue",
+  "version": "0.1.0",
+  "description": "TODO",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "snowpack dev",
     "build": "snowpack build",
@@ -6,6 +12,7 @@
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
+    "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-vue": "^2.6.2",
     "snowpack": "^3.3.7"
   },
