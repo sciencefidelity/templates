@@ -4,7 +4,7 @@ export default {
     public: "/",
     src: "/dist"
   },
-  plugins: ["@snowpack/plugin-vue"],
+  plugins: ["@snowpack/plugin-dotenv", "@snowpack/plugin-vue"],
   routes: [
     /* Enable an SPA Fallback in development: */
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
