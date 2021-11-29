@@ -1,6 +1,9 @@
-<script>
+<script lang="ts">
 export default {
   name: "Index",
+  props: {
+    count: Number
+  },
   data: function () {
     return {
       count: 0
