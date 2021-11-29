@@ -8,6 +8,7 @@ I was starting to keep these template files on a computer and copying them inste
 
 - [Next.js](https://nextjs.org) with [Sanity.io](https://sanity.io).
 - [React](https://reactjs.org) starter project with [Snowpack](https://snowpack.dev).
+- [Vue](https://v3.vuejs.org) starter project with [Snowpack](https://snowpack.dev).
 - Minimal vanilla TypeScript starter project with [Snowpack](https://snowpack.dev).
 - Minimal TypeScript template for Node/CLI with Jest testing.
 - [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev).
