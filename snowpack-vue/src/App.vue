@@ -1,14 +1,9 @@
 <script lang="ts">
-export default {
-  name: "Index",
-  props: {
-    count: Number
-  },
-  data: function () {
-    return {
-      count: 0
-    }
-  },
+import { Vue } from "vue-class-component"
+
+export default class App extends Vue {
+  count = 0
+
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
     return () => {
@@ -21,7 +16,9 @@ export default {
 <template>
   <header class="header">
     <img src="/logo.svg" class="header__logo" alt="logo" />
-    <p>Page has been open for <code>{{ count }}</code> seconds.</p>
+    <p>
+      Page has been open for <code>{{ count }}</code> seconds.
+    </p>
     <a
       class="App-link"
       href="https://vuejs.org"
