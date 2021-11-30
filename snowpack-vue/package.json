@@ -8,6 +8,12 @@
   "scripts": {
     "dev": "snowpack dev",
     "build": "snowpack build",
+    "lint:js": "eslint --ext .js,.ts,.vue .",
+    "lint:style": "stylelint '**/*.{vue,scss}' --ignore-path .eslintignore",
+    "lint": "yarn lint:js && yarn lint:style",
+    "fix:js": "eslint --ext --fix .js,.ts.vue .",
+    "fix:style": "stylelint --fix '**/*.{vue,scss}' --ignore-path .eslintignore",
+    "fix": "yarn fix:js && yarn fix:style",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
