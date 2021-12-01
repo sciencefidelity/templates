@@ -46,7 +46,7 @@
     "ts-jest": "^27.0.7",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4",
-    "vite": "^2.6.7"
+    "vite": "^2.6.14"
   },
   "dependencies": {
     "sanitize.css": "^13.0.0"
