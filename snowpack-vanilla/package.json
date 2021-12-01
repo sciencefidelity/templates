@@ -25,7 +25,7 @@
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@testing-library/dom": "^8.11.1",
-    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/jest-dom": "^5.15.1",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.6",
     "@types/snowpack-env": "^2.3.4",
