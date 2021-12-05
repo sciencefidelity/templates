@@ -29,31 +29,31 @@
     "cypress": "cypress open"
   },
   "dependencies": {
-    "next": "12.0.2",
+    "next": "12.0.4",
     "next-sanity": "^0.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sanitize.css": "^13.0.0",
-    "sass": "^1.43.4"
+    "sass": "^1.44.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
-    "@types/react": "17.0.33",
+    "@types/react": "17.0.37",
     "@types/react-test-renderer": "^17.0.1",
-    "babel-jest": "^27.3.1",
-    "cypress": "^8.7.0",
+    "babel-jest": "^27.4.2",
+    "cypress": "^9.1.0",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.0.2",
+    "eslint-config-next": "12.0.4",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.3.1",
-    "prettier": "^2.4.1",
+    "jest": "^27.4.3",
+    "prettier": "^2.5.0",
     "react-test-renderer": "^17.0.2",
-    "sanity-codegen": "^0.9.6",
-    "stylelint": "^14.0.1",
+    "sanity-codegen": "^0.9.8",
+    "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-sass-guidelines": "^9.0.0",
-    "typescript": "4.4.4"
+    "typescript": "4.5.2"
   }
 }
