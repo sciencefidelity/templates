@@ -1,6 +1,9 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
 
+@Options({
+
+})
 export default class App extends Vue {
   count = 0
   mounted() {
