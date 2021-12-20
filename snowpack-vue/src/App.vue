@@ -1,20 +1,13 @@
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
+import { Vue, Options } from "vue-class-component"
 
-// Define the component in class-style
-@Component
-export default class Counter extends Vue {
-  // Class properties will be component data
+export default class App extends Vue {
   count = 0
-
-  // Methods will be component methods
-  increment() {
-    this.count++
-  }
-
-  decrement() {
-    this.count--
+  mounted() {
+    const interval = setInterval(() => this.count++, 1000)
+    return () => {
+      clearInterval(interval)
+    }
   }
 }
 </script>
