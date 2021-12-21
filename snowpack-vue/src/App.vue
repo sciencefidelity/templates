@@ -1,8 +1,12 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
+import Header from "./components/Header.vue"
 
 @Options({
-
+  name: "App",
+  components: {
+    Header
+  }
 })
 export default class App extends Vue {
   count = 0
@@ -16,20 +20,15 @@ export default class App extends Vue {
 </script>
 
 <template>
-  <header class="header">
-    <img src="/logo.svg" class="header__logo" alt="logo" />
-    <p>
-      Page has been open for <code>{{ count }}</code> seconds.
-    </p>
-    <a
-      class="App-link"
-      href="https://vuejs.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Learn Vue
-    </a>
-  </header>
+  <div>
+    <Header />
+    <main class="main">
+      <img src="/logo.svg" class="main__logo" alt="logo" />
+      <p>
+        Page has been open for <code>{{ count }}</code> seconds.
+      </p>
+    </main>
+  </div>
 </template>
 
 <style lang="scss">
@@ -42,7 +41,7 @@ export default class App extends Vue {
   }
 }
 
-.header {
+.main {
   background-color: #f9f6f6;
   color: #333;
   min-height: 100vh;
