@@ -1,60 +1,31 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
+import Footer from "./components/Footer.vue"
 import Header from "./components/Header.vue"
+import Navbar from "./components/Navbar.vue"
 
-@Options({
-  name: "App",
+@Options ({
+  ame: "App",
   components: {
-    Header
+    Footer,
+    Header,
+    Navbar
   }
 })
-export default class App extends Vue {
-  count = 0
-  mounted() {
-    const interval = setInterval(() => this.count++, 1000)
-    return () => {
-      clearInterval(interval)
-    }
-  }
-}
+export default class App extends Vue {}
 </script>
 
 <template>
-  <div>
+  <div class="layout">
     <Header />
-    <main class="main">
-      <img src="/logo.svg" class="main__logo" alt="logo" />
-      <p>
-        Page has been open for <code>{{ count }}</code> seconds.
-      </p>
-    </main>
+    <nav class="nav">
+      <ul>
+        <router-link to="/"><li>Home</li></router-link>
+        <router-link to="/counter"><li>Counter</li></router-link>
+        <router-link to="/about"><li>About</li></router-link>
+      </ul>
+    </nav>
+    <router-view/>
+    <Footer />
   </div>
 </template>
-
-<style lang="scss">
-@keyframes logo-pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.06);
-  }
-}
-
-.main {
-  background-color: #f9f6f6;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  &__logo {
-    height: 36vmin;
-    pointer-events: none;
-    margin-bottom: 3rem;
-    animation: logo-pulse infinite 1.6s ease-in-out alternate;
-  }
-}
-</style>
