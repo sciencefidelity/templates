@@ -1,16 +1,49 @@
 {
-  "name": "my-vue-app",
-  "version": "0.0.0",
+  "name": "vite-vue",
+  "version": "0.1.0",
+  "description": "TODO",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "serve": "vite preview",
+    "clean": "echo \"Clean script not implemented\" && exit 1",
+    "lint:js": "eslint --ext .js,.ts,.vue .",
+    "lint:style": "stylelint '**/*.{vue,scss}' --ignore-path .eslintignore",
+    "lint": "yarn lint:js && yarn lint:style",
+    "fix:js": "eslint --ext --fix .js,.ts.vue .",
+    "fix:style": "stylelint --fix '**/*.{vue,scss}' --ignore-path .eslintignore",
+    "fix": "yarn fix:js && yarn fix:style",
+    "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-property-decorator": "^10.0.0-rc.3",
+    "vue-router": "^3.5.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
     "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "prettier": "^2.5.1",
+    "sass": "^1.45.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "typescript": "^4.5.4",
     "vite": "^2.7.2"
   }
 }
