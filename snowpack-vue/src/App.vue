@@ -5,7 +5,7 @@ import Header from "./components/Header.vue"
 import Navbar from "./components/Navbar.vue"
 
 @Options ({
-  ame: "App",
+  name: "App",
   components: {
     Footer,
     Header,
