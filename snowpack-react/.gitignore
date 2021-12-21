@@ -1,7 +1,6 @@
 .snowpack
 build
 node_modules
-.nova
 *.bak
 .DS_Store
 *.log
