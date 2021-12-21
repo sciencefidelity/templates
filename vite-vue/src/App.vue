@@ -14,7 +14,16 @@ export default class App extends Vue {}
 </script>
 
 <template>
-  <Timer />
+  <div id="app">
+    <nav class="nav">
+      <ul>
+        <router-link to="/"><li>Home</li></router-link>
+        <router-link to="/counter"><li>Counter</li></router-link>
+        <router-link to="/about"><li>About</li></router-link>
+      </ul>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">

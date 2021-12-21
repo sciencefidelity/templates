@@ -1,9 +1,9 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
 @Options({
-  name: "Counter"
+  name: "Timer"
 })
-export default class Counter extends Vue {
+export default class Timer extends Vue {
   count = 0
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
