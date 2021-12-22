@@ -33,8 +33,8 @@ const Counter: FC<Props> = ({ title }) => {
   )
 }
 
-{/* Counter.propTypes = {
+Counter.propTypes = {
   title: PropTypes.string.isRequired
-} */}
+}
 
 export default Counter

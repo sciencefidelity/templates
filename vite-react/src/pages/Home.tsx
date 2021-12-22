@@ -30,8 +30,8 @@ const Home: FC<Props> = ({ title }) => {
   )
 }
 
-{/* Home.propTypes = {
+Home.propTypes = {
   title: PropTypes.string.isRequired
-} */}
+}
 
 export default Home
