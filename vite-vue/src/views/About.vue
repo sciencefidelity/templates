@@ -1,56 +1,23 @@
-<script lang="ts">
-import { Vue, Options } from "vue-class-component"
-// import Layout from "../layouts/Layout.vue"
-@Options({
-  name: "About"
-  // components: {
-  //   Layout
-  // }
-})
-export default class About extends Vue {
-  count = 0
-  mounted() {
-    const interval = setInterval(() => this.count++, 1000)
-    return () => {
-      clearInterval(interval)
-    }
-  }
-}
-</script>
-
 <template>
-  <main class="main">
-    <img src="/logo.svg" class="main__logo" alt="logo" />
+  <div class="about">
+    <h1>About</h1>
     <p>
-      Page has been open for <code>{{ count }}</code> seconds.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed
+      augue lacus. Sit amet est placerat in egestas erat imperdiet sed. Et
+      pharetra pharetra massa massa ultricies mi. Nibh sed pulvinar proin
+      gravida. Ornare massa eget egestas purus viverra accumsan in. Euismod nisi
+      porta lorem mollis aliquam ut porttitor leo. Augue lacus viverra vitae
+      congue eu consequat. Habitant morbi tristique senectus et netus et.
+      Euismod in pellentesque massa placerat duis ultricies lacus sed. Auctor
+      neque vitae tempus quam. Elementum facilisis leo vel fringilla est
+      ullamcorper eget.
     </p>
-  </main>
+  </div>
 </template>
 
 <style lang="scss">
-@keyframes logo-pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.06);
-  }
-}
-
-.main {
-  background-color: #f9f6f6;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  &__logo {
-    height: 36vmin;
-    pointer-events: none;
-    margin-bottom: 3rem;
-    animation: logo-pulse infinite 1.6s ease-in-out alternate;
-  }
+.about {
+  margin: 5rem 2rem;
 }
 </style>

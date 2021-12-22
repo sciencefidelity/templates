@@ -17,6 +17,7 @@ export default class Home extends Vue {
 
 <template>
   <div class="home">
+    <h1>Home</h1>
     <img src="/logo.svg" class="app-logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
