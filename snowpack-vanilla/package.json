@@ -39,7 +39,7 @@
     "eslint-plugin-jest-dom": "^3.9.2",
     "eslint-plugin-testing-library": "^5.0.1",
     "jest": "^27.4.3",
-    "prettier": "^2.5.0",
+    "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "snowpack": "^3.8.8",
     "stylelint": "^14.1.0",
