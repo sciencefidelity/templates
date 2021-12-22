@@ -1,7 +1,6 @@
 version: 2
 updates:
 
-      interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/snowpack-react"
     schedule:
