@@ -1,12 +1,9 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
-import { capitalize } from "../lib/utils"
-
 @Options({
-  name: "Home"
+  name: "Timer"
 })
-export default class Home extends Vue {
-  title = "home"
+export default class Timer extends Vue {
   count = 0
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
@@ -14,18 +11,16 @@ export default class Home extends Vue {
       clearInterval(interval)
     }
   }
-  // @Prop(String) readonly title: string | undefined
 }
 </script>
 
 <template>
-  <div :class="title">
-    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
-    <img src="/logo.svg" class="app-logo" alt="logo" />
+  <main class="main">
+    <img src="/logo.svg" class="main__logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
     </p>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
@@ -38,19 +33,19 @@ export default class Home extends Vue {
   }
 }
 
-.home {
-  margin: 5rem 0;
-  text-align: center;
-  p {
-    margin: 0.4rem;
-  }
-}
-
-.app-logo {
-  height: 36vmin;
-  pointer-events: none;
-  margin: 3rem;
-  @media (prefers-reduced-motion: no-preference) {
+.main {
+  background-color: #f9f6f6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  &__logo {
+    height: 36vmin;
+    pointer-events: none;
+    margin-bottom: 3rem;
     animation: logo-pulse infinite 1.6s ease-in-out alternate;
   }
 }

@@ -1,31 +1,50 @@
 <script lang="ts">
+import { ref } from "vue"
 import { Vue, Options } from "vue-class-component"
-@Options({})
-export default class App extends Vue {}
+@Options({
+  name: "Counter"
+})
+export default class Counter extends Vue {
+  count = ref(0)
+}
 </script>
 
 <template>
-  <Layout>
-    <main class="main">
-    </main>
-  </Layout>
+  <div class="counter">
+    <h1>Counter</h1>
+    <button @click="count--">–</button>
+    <span class="count">{{ count }}</span>
+    <button @click="count++">+</button>
+    <p>
+      The button has been pushed <code>{{ count }}</code> times.
+    </p>
+  </div>
 </template>
 
 <style lang="scss">
-.main {
-  background-color: #f9f6f6;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  &__logo {
-    height: 36vmin;
-    pointer-events: none;
-    margin-bottom: 3rem;
-    animation: logo-pulse infinite 1.6s ease-in-out alternate;
+@use '../styles/foundation/colors';
+
+.counter {
+  margin: 5rem 0;
+  text-align: center;
+  p {
+    margin: 0.4rem;
   }
+}
+
+button {
+  border: 0;
+  color: var(--dark-green);
+  font-size: 3rem;
+  height: 6rem;
+  margin: 3rem 0.2rem;
+  width: 6rem;
+}
+
+.count {
+  color: var(--dark-green);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 3rem 2rem;
 }
 </style>
