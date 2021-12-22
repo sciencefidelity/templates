@@ -19,6 +19,7 @@
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
   "dependencies": {
+    "sanitize.css": "^13.0.0",
     "vue": "^3.2.25",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-property-decorator": "^10.0.0-rc.3",
