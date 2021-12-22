@@ -21,39 +21,63 @@ export default class App extends Vue {}
 
 <template>
   <div id="app">
-    <Header />
-    <Navbar />
-<!--     <layout> -->
-    <router-view />
-<!--     </layout> -->
+    <div>
+      <Header />
+      <Navbar />
+    </div>
+    <main>
+      <router-view />
+    </main>
     <Footer />
   </div>
 </template>
 
 <style lang="scss">
-* {
-  box-sizing: border-box;
-  margin: 0;
-  &::after,
-  &::before {
-    box-sizing: border-box;
+@use './styles/foundation/colors';
+
+header,
+footer {
+  color: var(--dark-green);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+}
+
+footer {
+  border-top: 1px solid var(--dark-green);
+}
+
+nav {
+  background-color: var(--dark-green);
+  color: var(--background);
+  display: grid;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  a {
+    color: var(--background);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    li {
+      padding: 0 2rem;
+    }
   }
 }
-#app {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-/*   color: #2c3e50; */
-  background-color: #f9f6f6;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  place-items: center;
 }
 </style>

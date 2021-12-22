@@ -1,11 +1,8 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
-// import Layout from "../layouts/Layout.vue"
+
 @Options({
   name: "Home"
-  // components: {
-  //   Layout
-  // }
 })
 export default class Home extends Vue {
   count = 0
@@ -19,12 +16,12 @@ export default class Home extends Vue {
 </script>
 
 <template>
-  <main class="main">
-    <img src="/logo.svg" class="logo" alt="logo" />
+  <div class="home">
+    <img src="/logo.svg" class="app-logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
     </p>
-  </main>
+  </div>
 </template>
 
 <style lang="scss">
@@ -37,10 +34,20 @@ export default class Home extends Vue {
   }
 }
 
-.logo {
+.home {
+  margin: 5rem 0;
+  text-align: center;
+  p {
+    margin: 0.4rem;
+  }
+}
+
+.app-logo {
   height: 36vmin;
   pointer-events: none;
   margin-bottom: 3rem;
-  animation: logo-pulse infinite 1.6s ease-in-out alternate;
+  @media (prefers-reduced-motion: no-preference) {
+    animation: logo-pulse infinite 1.6s ease-in-out alternate;
+  }
 }
 </style>
