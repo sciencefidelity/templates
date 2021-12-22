@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest-dom": "^3.9.2",
     "eslint-plugin-testing-library": "^5.0.1",
-    "jest": "^27.4.3",
+    "jest": "^27.4.5",
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "snowpack": "^3.8.8",
