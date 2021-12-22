@@ -2,12 +2,12 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { Vue, Options } from "vue-class-component"
-import Timer from "./components/Timer.vue"
+import Layout from "./layouts/Layout.vue"
 
 @Options({
   name: "App",
   components: {
-    Timer
+    Layout
   }
 })
 export default class App extends Vue {}
@@ -22,7 +22,9 @@ export default class App extends Vue {}
         <router-link to="/about"><li>About</li></router-link>
       </ul>
     </nav>
-    <router-view/>
+    <Layout>
+      <router-view />
+    </Layout>
   </div>
 </template>
 
@@ -37,7 +39,8 @@ export default class App extends Vue {}
   }
 }
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

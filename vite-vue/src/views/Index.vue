@@ -1,12 +1,13 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
-import Layout from "../layouts/Layout.vue"
+// import Layout from "../layouts/Layout.vue"
 @Options({
-  components: {
-    Layout
-  }
+  name: "Home"
+  // components: {
+  //   Layout
+  // }
 })
-export default class App extends Vue {
+export default class Home extends Vue {
   count = 0
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
@@ -18,14 +19,12 @@ export default class App extends Vue {
 </script>
 
 <template>
-  <Layout>
-    <main class="main">
-      <img src="/logo.svg" class="main__logo" alt="logo" />
-      <p>
-        Page has been open for <code>{{ count }}</code> seconds.
-      </p>
-    </main>
-  </Layout>
+  <main class="main">
+    <img src="/logo.svg" class="main__logo" alt="logo" />
+    <p>
+      Page has been open for <code>{{ count }}</code> seconds.
+    </p>
+  </main>
 </template>
 
 <style lang="scss">
