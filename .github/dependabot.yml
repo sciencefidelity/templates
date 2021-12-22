@@ -29,3 +29,7 @@ updates:
     directory: "/vite-vue"
     schedule:
       interval: "monthly"
+  - package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "monthly"
