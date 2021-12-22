@@ -1,5 +1,4 @@
 <script lang="ts">import { Vue, Options } from "vue-class-component"
-// import Layout from "./layouts/Layout.vue"
 import Footer from "./components/Footer.vue"
 import Header from "./components/Header.vue"
 import Navbar from "./components/Navbar.vue"
@@ -10,10 +9,11 @@ import Navbar from "./components/Navbar.vue"
     Footer,
     Header,
     Navbar
-    // Layout
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+
+}
 </script>
 
 <template>
@@ -71,7 +71,7 @@ nav {
   }
 }
 
-.parent {
+#app {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;

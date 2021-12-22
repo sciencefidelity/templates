@@ -1,6 +1,19 @@
+<script lang="ts">
+import { Vue, Options } from "vue-class-component"
+import { Functions } from "../lib/utils"
+
+@Options({
+  name: "Home"
+})
+export default class Home extends Vue {
+  title = "about"
+  // @Prop(String) title: string | undefined
+}
+</script>
+
 <template>
-  <div class="about">
-    <h1>About</h1>
+  <div :class="title">
+    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed

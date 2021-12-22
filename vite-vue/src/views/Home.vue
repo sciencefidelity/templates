@@ -1,10 +1,12 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
+import { capitalize } from "../lib/utils"
 
 @Options({
   name: "Home"
 })
 export default class Home extends Vue {
+  title = "home"
   count = 0
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
@@ -12,12 +14,13 @@ export default class Home extends Vue {
       clearInterval(interval)
     }
   }
+  // @Prop(String) readonly title: string | undefined
 }
 </script>
 
 <template>
-  <div class="home">
-    <h1>Home</h1>
+  <div :class="title">
+    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
     <img src="/logo.svg" class="app-logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
@@ -46,7 +49,7 @@ export default class Home extends Vue {
 .app-logo {
   height: 36vmin;
   pointer-events: none;
-  margin-bottom: 3rem;
+  margin: 3rem;
   @media (prefers-reduced-motion: no-preference) {
     animation: logo-pulse infinite 1.6s ease-in-out alternate;
   }
