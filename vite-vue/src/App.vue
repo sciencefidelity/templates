@@ -2,12 +2,18 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { Vue, Options } from "vue-class-component"
-import Layout from "./layouts/Layout.vue"
+// import Layout from "./layouts/Layout.vue"
+import Footer from "./components/Footer.vue"
+import Header from "./components/Header.vue"
+import Navbar from "./components/Navbar.vue"
 
 @Options({
   name: "App",
   components: {
-    Layout
+    Footer,
+    Header,
+    Navbar
+    // Layout
   }
 })
 export default class App extends Vue {}
@@ -15,16 +21,12 @@ export default class App extends Vue {}
 
 <template>
   <div id="app">
-    <nav class="nav">
-      <ul>
-        <router-link to="/"><li>Home</li></router-link>
-        <router-link to="/counter"><li>Counter</li></router-link>
-        <router-link to="/about"><li>About</li></router-link>
-      </ul>
-    </nav>
-    <Layout>
-      <router-view />
-    </Layout>
+    <Header />
+    <Navbar />
+<!--     <layout> -->
+    <router-view />
+<!--     </layout> -->
+    <Footer />
   </div>
 </template>
 
@@ -44,6 +46,14 @@ export default class App extends Vue {}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+/*   color: #2c3e50; */
+  background-color: #f9f6f6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 </style>

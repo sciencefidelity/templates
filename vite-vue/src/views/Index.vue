@@ -20,7 +20,7 @@ export default class Home extends Vue {
 
 <template>
   <main class="main">
-    <img src="/logo.svg" class="main__logo" alt="logo" />
+    <img src="/logo.svg" class="logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
     </p>
@@ -37,20 +37,10 @@ export default class Home extends Vue {
   }
 }
 
-.main {
-  background-color: #f9f6f6;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  &__logo {
-    height: 36vmin;
-    pointer-events: none;
-    margin-bottom: 3rem;
-    animation: logo-pulse infinite 1.6s ease-in-out alternate;
-  }
+.logo {
+  height: 36vmin;
+  pointer-events: none;
+  margin-bottom: 3rem;
+  animation: logo-pulse infinite 1.6s ease-in-out alternate;
 }
 </style>
