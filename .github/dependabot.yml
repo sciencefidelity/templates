@@ -1,9 +1,6 @@
 version: 2
 updates:
 
-  - package-ecosystem: "npm"
-    directory: "/next-sanity"
-    schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/snowpack-react"
@@ -11,6 +8,10 @@ updates:
       interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/snowpack-vanilla"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/snowpack-vue"
     schedule:
       interval: "monthly"
   - package-ecosystem: "npm"
@@ -23,5 +24,9 @@ updates:
       interval: "monthly"
   - package-ecosystem: "npm"
     directory: "/vite-vanilla"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/vite-vue"
     schedule:
       interval: "monthly"
