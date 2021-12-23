@@ -5,31 +5,38 @@ updates:
     directory: "/snowpack-react"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/snowpack-vanilla"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/snowpack-vue"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/ts-jest"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/vite-react"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/vite-vanilla"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
     directory: "/vite-vue"
     schedule:
       interval: "monthly"
+
   - package-ecosystem: "npm"
-  directory: "/"
-  schedule:
-    interval: "monthly"
+    directory: "/"
+    schedule:
+      interval: "monthly"
