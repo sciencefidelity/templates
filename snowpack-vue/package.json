@@ -39,6 +39,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
     "prettier": "^2.5.1",
+    "serve": "^13.0.2",
     "snowpack": "^3.3.7",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
