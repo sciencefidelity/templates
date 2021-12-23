@@ -1,19 +1,25 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
-  alias: {
-    components: "./src/components",
-    "@": "./src"
-  },
+  // alias: {
+  //   components: "./src/components",
+  //   "@": "./src"
+  // },
   mount: {
     // directory name: 'build directory'
     public: { url: "/", static: true },
-    src: "/dist"
+    src: {url: '/dist'}
   },
   plugins: [
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-sass",
     "@snowpack/plugin-svelte",
-    "@snowpack/plugin-typescript"
+    [
+      '@snowpack/plugin-typescript',
+      {
+        /* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
+        ...(process.versions.pnp ? {tsc: 'yarn pnpify tsc'} : {})
+      },
+    ]
   ],
   routes: [
     /* Enable an SPA Fallback in development: */

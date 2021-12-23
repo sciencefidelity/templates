@@ -10,6 +10,15 @@
 </script>
 
 <style lang="scss" scoped>
+  @keyframes App-logo-pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
+  }
+
   .header {
     background-color: #f9f6f6;
     color: #333;
@@ -19,27 +28,22 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    a {
+      color: rgb(255, 62, 0);
+    }
   }
 
   .logo {
     height: 36vmin;
     pointer-events: none;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem 0;
     animation: App-logo-pulse infinite 1.6s ease-in-out alternate;
-  }
-
-  @keyframes App-logo-pulse {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.06);
-    }
   }
 </style>
 
 <div class="app">
   <header class="header">
+    <h1>Home</h1>
     <img src="/logo.svg" class="logo" alt="logo" />
     <p>Page has been open for <code>{count}</code> seconds.</p>
     <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
