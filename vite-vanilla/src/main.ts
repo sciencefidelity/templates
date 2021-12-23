@@ -4,16 +4,20 @@ import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
 import "./style.scss"
 
-const app = document.querySelector<HTMLDivElement>("#app")
+const counter = document.querySelector("#counter") as HTMLSpanElement
+let seconds = 0
 
 export const add = (a: number, b: number): number => {
   return a + b
 }
 
-if (app)
-  app.innerHTML = `
-  <h1 data-testid="greeting">Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank" data-testid="link">Documentation</a>
-`
+export const timer = (): void => {
+  setInterval(() => {
+    seconds += 1
+    if (counter) {
+      counter.textContent = seconds.toString()
+    }
+  }, 1000)
+}
 
-export default app
+timer()

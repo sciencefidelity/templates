@@ -1,6 +1,7 @@
 <script lang="ts">import { Vue, Options } from "vue-class-component"
 import Footer from "./components/Footer.vue"
 import Header from "./components/Header.vue"
+// import Layout from "./layouts/Layout.vue"
 import Navbar from "./components/Navbar.vue"
 
 @Options({
@@ -8,6 +9,7 @@ import Navbar from "./components/Navbar.vue"
   components: {
     Footer,
     Header,
+    // Layout,
     Navbar
   }
 })
@@ -23,7 +25,9 @@ export default class App extends Vue {
       <Navbar />
     </div>
     <main>
-      <router-view />
+<!--       <Layout> -->
+        <router-view />
+<!--       </Layout> -->
     </main>
     <Footer />
   </div>

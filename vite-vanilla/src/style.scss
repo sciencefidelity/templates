@@ -1,8 +1,37 @@
-#app {
-  color: hsl(210, 29%, 24%);
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+$background: hsl(0, 0%, 100%);
+$foreground: hsl(266, 54%, 36%);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: calc(10px + 2vmin);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 60px;
+}
+
+#img {
+  display: block;
+  height: 16.8rem;
+  margin: 2rem auto;
+  padding: 0;
+  width: 128px;
+}
+
+p {
+  display: block;
+  margin: 1rem auto;
   text-align: center;
+}
+
+#counter {
+  background-color: $foreground;
+  border-radius: 4px;
+  color: $background;
+  padding: 4px 8px;
+}
+
+a {
+  color: $foreground;
 }
