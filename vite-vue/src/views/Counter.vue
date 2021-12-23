@@ -1,17 +1,20 @@
 <script lang="ts">
 import { ref } from "vue"
-import { Vue, Options } from "vue-class-component"
+import { Vue, Options, Prop } from "vue-property-decorator"
+// import { capitalize } from "../lib/utils"
+
 @Options({
   name: "Counter"
 })
 export default class Counter extends Vue {
+  @Prop(String) readonly title: string | undefined
   count = ref(0)
 }
 </script>
 
 <template>
-  <div class="counter">
-    <h1>Counter</h1>
+  <div :class="title">
+    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
     <button @click="count--">–</button>
     <span class="count">{{ count }}</span>
     <button @click="count++">+</button>
@@ -21,7 +24,7 @@ export default class Counter extends Vue {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/foundation/colors';
 
 .counter {

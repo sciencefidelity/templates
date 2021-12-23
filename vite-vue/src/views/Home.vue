@@ -1,20 +1,19 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
-import { capitalize } from "../lib/utils"
+import { Vue, Options, Prop } from "vue-property-decorator"
+// import { capitalize } from "../lib/utils"
 
 @Options({
   name: "Home"
 })
 export default class Home extends Vue {
-  title = "home"
   count = 0
+  @Prop(String) readonly title: string | undefined
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
     return () => {
       clearInterval(interval)
     }
   }
-  // @Prop(String) readonly title: string | undefined
 }
 </script>
 
@@ -28,7 +27,7 @@ export default class Home extends Vue {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @keyframes logo-pulse {
   from {
     transform: scale(1);

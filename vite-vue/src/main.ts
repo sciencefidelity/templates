@@ -6,9 +6,9 @@ import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
 import "@/styles/globals.scss"
-// import Layout from "@/layouts/Layout.vue"
+import Layout from "@/layouts/Layout.vue"
 
 createApp(App)
   .use(router)
-  // .component("Layout", Layout)
+  .component("Layout", Layout)
   .mount("#app")
