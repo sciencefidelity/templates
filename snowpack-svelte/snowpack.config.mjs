@@ -1,12 +1,19 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
+  alias: {
+    components: "./src/components",
+    "@": "./src"
+  },
   mount: {
     // directory name: 'build directory'
-    public: '/',
-    src: '/dist'
+    public: { url: "/", static: true },
+    src: "/dist"
   },
   plugins: [
-    "@snowpack/plugin-svelte"
+    "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-sass",
+    "@snowpack/plugin-svelte",
+    "@snowpack/plugin-typescript"
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -24,5 +31,5 @@ export default {
   },
   buildOptions: {
     /* ... */
-  },
-};
+  }
+}
