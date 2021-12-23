@@ -15,7 +15,8 @@
   "dependencies": {
     "sanitize.css": "^13.0.0",
     "svelte": "^3.44.3",
-    "svelte-check": "^2.2.11"
+    "svelte-check": "^2.2.11",
+    "svelte-routing": "^1.6.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
