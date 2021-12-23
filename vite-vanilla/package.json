@@ -1,14 +1,14 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "vite-vanilla-template",
   "version": "0.1.0",
   "description": "TODO",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "license": "MIT",
-  "author": "matt@sciencefidelity.co.uk",
   "private": true,
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite --host",
     "build": "tsc && vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --host",
     "clean": "rm -rf dist",
     "lint": "concurrently 'yarn:lint:*'",
     "lint:eslint": "eslint '**/*.{ts,js}'",

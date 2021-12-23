@@ -1,9 +1,9 @@
 {
-  "name": "snowpack-vue",
+  "name": "snowpack-vue-template",
   "version": "0.1.0",
   "description": "TODO",
-  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "license": "MIT",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "private": true,
   "scripts": {
     "dev": "snowpack dev",

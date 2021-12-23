@@ -1,9 +1,9 @@
 {
-  "name": "jest-test",
+  "name": "jest-test-template",
   "version": "0.1.0",
   "description": "TODO",
   "main": "index.ts",
-  "author": "matt@sciencefidelity.co.uk",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "license": "MIT",
   "private": true,
   "env": {

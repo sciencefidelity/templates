@@ -1,14 +1,14 @@
 {
-  "name": "vite-vue",
+  "name": "vite-vue-template",
   "version": "0.1.0",
   "description": "TODO",
   "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --host",
     "clean": "echo \"Clean script not implemented\" && exit 1",
     "lint:js": "eslint --ext .js,.ts,.vue .",
     "lint:style": "stylelint '**/*.{vue,scss}' --ignore-path .eslintignore",

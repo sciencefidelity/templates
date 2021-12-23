@@ -1,9 +1,9 @@
 {
-  "name": "my-first-snowpack",
+  "name": "snowpack-vanilla-template",
   "version": "0.1.0",
   "description": "TODO",
   "license": "MIT",
-  "author": "matt@sciencefidelity.co.uk",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
   "private": true,
   "scripts": {
     "dev": "snowpack dev",
