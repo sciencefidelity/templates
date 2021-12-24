@@ -24,7 +24,6 @@
   .home {
     background-color: #f9f6f6;
     color: #333;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

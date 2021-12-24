@@ -6,7 +6,7 @@ import "sanitize.css/typography.css"
 import "./styles/base.scss"
 
 const app = new App({
-  target: document.body
+  target: document.getElementById("app")
 })
 
 export default app
