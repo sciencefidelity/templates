@@ -1,9 +1,7 @@
 @use 'sass:map';
 
 :root {
-  --light-green: hsl(153, 48%, 49%);
-  --dark-green: hsl(213, 24%, 29%);
-  --background: hsl(360, 20%, 97%);
+  --red: hsl(15, 100%, 50%);
   --grey-000: hsl(0, 0%, 100%);
   --grey-050: hsl(0, 0%, 95%);
   --grey-100: hsl(0, 0%, 90%);
@@ -52,39 +50,27 @@ $breakpoints: (
   margin: 0;
 }
 
-html {
-  background-color: var(--background);
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-body {
-  background-color: var(--background);
-  color: var(--grey-800);
-  font-size: calc(10px + 2vmin);
-  margin: auto;
-}
 
 a {
-  color: rgb(255, 62, 0);
+  color: var(--red);
 }
 
 header,
 footer {
-  color: var(--dark-green);
+  color: var(--red);
   padding: 2rem 0;
   text-align: center;
   width: 100vw;
 }
 
 footer {
-  border-top: 1px solid var(--dark-green);
+  border-top: 1px solid var(--red);
 }
 
 nav {
-  background-color: var(--dark-green);
-  color: var(--background);
+  background-color: var(--red);
+  color: var(--grey-000);
   display: grid;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -92,7 +78,7 @@ nav {
   text-align: center;
   width: 100%;
   a {
-    color: var(--background);
+    color: var(--grey-000);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
