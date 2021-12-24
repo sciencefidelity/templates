@@ -1,5 +1,11 @@
 <script lang="ts">
   import {onMount} from "svelte"
+  import { Router, Route } from "svelte-routing";
+
+  import Home from "./pages/Home.svelte"
+  // import Footer from "./components/Footer.svelte"
+  // import Header from "./components/Header.svelte"
+  // import Navbar from "./components/Navbar.svelte"
   let count = 0
   onMount(() => {
     const interval = setInterval(() => count++, 1000)
@@ -9,45 +15,26 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @keyframes App-logo-pulse {
-    from {
-      transform: scale(1);
-    }
-    to {
-      transform: scale(1.06);
-    }
-  }
-
-  .header {
-    background-color: #f9f6f6;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    a {
-      color: rgb(255, 62, 0);
-    }
-  }
-
-  .logo {
-    height: 36vmin;
-    pointer-events: none;
-    margin: 2rem 0 3rem 0;
-    animation: App-logo-pulse infinite 1.6s ease-in-out alternate;
+<style lang="scss">
+  .app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    place-items: center;
   }
 </style>
 
+
 <div class="app">
-  <header class="header">
-    <h1>Home</h1>
-    <img src="/logo.svg" class="logo" alt="logo" />
-    <p>Page has been open for <code>{count}</code> seconds.</p>
-    <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-      Learn Svelte
-    </a>
-  </header>
+  <Router>
+  <div>
+<!--     <Header /> -->
+<!--     <Navbar /> -->
+  </div>
+  <main>
+    <Route path="/home" component="{Home}" />
+    <Home />
+  </main>
+<!--   <Footer /> -->
+  </Router>
 </div>

@@ -3,10 +3,11 @@ import "sanitize.css/sanitize.css"
 import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
-import "./styles/index.scss"
+// import "./styles/globals.scss"
 
 let app = new App({
   target: document.body,
+  hydrate: true
 })
 
 export default app
