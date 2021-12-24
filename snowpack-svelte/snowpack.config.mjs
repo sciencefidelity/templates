@@ -7,19 +7,13 @@ export default {
   mount: {
     // directory name: 'build directory'
     public: { url: "/", static: true },
-    src: {url: '/dist'}
+    src: { url: "/dist" }
   },
   plugins: [
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-sass",
     "@snowpack/plugin-svelte",
-    [
-      '@snowpack/plugin-typescript',
-      {
-        /* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
-        ...(process.versions.pnp ? {tsc: 'yarn pnpify tsc'} : {})
-      },
-    ]
+    "@snowpack/plugin-typescript"
   ],
   routes: [
     /* Enable an SPA Fallback in development: */

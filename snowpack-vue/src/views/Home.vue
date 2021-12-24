@@ -1,6 +1,6 @@
 <script lang="ts">
 import { Vue, Options } from "vue-class-component"
-import { capitalize } from "../lib/utils"
+// import { capitalize } from "../lib/utils"
 
 @Options({
   name: "Home"
