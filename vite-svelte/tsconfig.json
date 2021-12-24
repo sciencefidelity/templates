@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
     "target": "esnext",
     "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "resolveJsonModule": true,
@@ -11,7 +12,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "checkJs": true
+    "checkJs": true,
+    "types": ["node"],
+    "paths": { "@/*": ["./src"] }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
 }
