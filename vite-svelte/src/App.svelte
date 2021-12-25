@@ -1,13 +1,23 @@
-<script>
+<script lang="ts">
+  import { Router, Route } from "svelte-routing"
+  import About from "./routes/About.svelte"
+  import Counter from "./routes/Counter.svelte"
   import Footer from "./lib/Footer.svelte"
   import Header from "./lib/Header.svelte"
   import Home from "./routes/Home.svelte"
   import Navbar from "./lib/Navbar.svelte"
 </script>
 
-<Header />
-<Navbar />
-<main>
-  <Home />
-</main>
-<Footer />
+<Router>
+  <div>
+    <Header />
+    <Navbar />
+  </div>
+  <main>
+    <Route path="/"><Home /></Route>
+    <Route path="about" component="{About}" />
+    <Route path="counter" component="{Counter}" />
+  </main>
+  <Footer />
+</Router>
+

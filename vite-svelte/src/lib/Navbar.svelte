@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { link } from "svelte-routing"
+</script>
+
 <style lang="scss">
   nav {
     background-color: var(--red);
@@ -29,8 +33,8 @@
 
 <nav class="nav">
   <ul>
-    <a href="/"><li>Home</li></a>
-    <a href="/counter"><li>Counter</li></a>
-    <a href="/about"><li>About</li></a>
+    <a href="/" use:link><li>Home</li></a>
+    <a href="/counter" use:link><li>Counter</li></a>
+    <a href="/about" use:link><li>About</li></a>
   </ul>
 </nav>
