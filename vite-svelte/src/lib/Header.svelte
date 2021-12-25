@@ -1,4 +1,4 @@
-<style lang="scss" scoped>
+<style lang="scss">
   header {
     color: var(--red);
     padding: 2rem 0;

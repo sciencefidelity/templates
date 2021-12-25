@@ -11,7 +11,7 @@
   })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @keyframes logo-pulse {
     from {
       transform: scale(1);
@@ -24,10 +24,9 @@
   .home {
     margin: 5rem 0;
     text-align: center;
-  }
-
-  .home p {
-    margin: 0.4rem;
+    p {
+      margin: 0.4rem;
+    }
   }
 
   .logo {
