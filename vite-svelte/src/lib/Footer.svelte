@@ -5,7 +5,6 @@ const year = new Date().getFullYear()
 <style lang="scss" scoped>
   footer {
     border-top: 1px solid var(--red);
-    color: var(--red);
     padding: 2rem 0;
     text-align: center;
     width: 100vw;

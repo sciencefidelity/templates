@@ -1,7 +1,6 @@
 <style lang="scss" scoped>
   nav {
     background-color: var(--red);
-    color: var(--grey-000);
     display: grid;
     font-weight: 600;
     padding: 1rem 2rem;

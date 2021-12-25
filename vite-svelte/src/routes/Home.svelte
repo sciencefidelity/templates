@@ -12,7 +12,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @keyframes App-logo-pulse {
+  @keyframes logo-pulse {
     from {
       transform: scale(1);
     }
@@ -22,18 +22,24 @@
   }
 
   .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    margin: 5rem 0;
+    text-align: center;
+  }
+
+  .home p {
+    margin: 0.4rem;
   }
 
   .logo {
     height: 36vmin;
     pointer-events: none;
-    margin: 2rem 0 3rem 0;
-    animation: App-logo-pulse infinite 1.6s ease-in-out alternate;
+    margin: 3rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-pulse infinite 1.6s ease-in-out alternate;
+    }
   }
 </style>
 
