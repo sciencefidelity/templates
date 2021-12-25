@@ -1,4 +1,5 @@
 <script lang="ts">
+  import logo from "../assets/logo.svg"
   import {onMount} from "svelte"
 
   let count = 0
@@ -10,8 +11,8 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @keyframes App-logo-pulse {
+<style lang="scss">
+  @keyframes logo-pulse {
     from {
       transform: scale(1);
     }
@@ -21,30 +22,29 @@
   }
 
   .home {
-    background-color: #f9f6f6;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    a {
-      color: rgb(255, 62, 0);
+    margin: 5rem 0;
+    text-align: center;
+    p {
+      margin: 0.4rem;
     }
   }
 
   .logo {
     height: 36vmin;
     pointer-events: none;
-    margin: 2rem 0 3rem 0;
-    animation: App-logo-pulse infinite 1.6s ease-in-out alternate;
+    margin: 3rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-pulse infinite 1.6s ease-in-out alternate;
+    }
   }
 </style>
 
 <div class="home">
   <h1>Home</h1>
-  <img src="/logo.svg" class="logo" alt="logo" />
+  <img src="{logo}" class="logo" alt="logo" />
   <p>Page has been open for <code>{count}</code> seconds.</p>
   <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
     Learn Svelte
