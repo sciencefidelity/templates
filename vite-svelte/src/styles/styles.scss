@@ -2,6 +2,7 @@
 
 :root {
   --red: hsl(15, 100%, 50%);
+  --background: hsl(360, 20%, 97%);
   --grey-000: hsl(0, 0%, 100%);
   --grey-050: hsl(0, 0%, 95%);
   --grey-100: hsl(0, 0%, 90%);
@@ -40,7 +41,6 @@ $breakpoints: (
   }
 }
 
-
 * + * {
   margin-top: 1rem;
 }
@@ -50,47 +50,26 @@ $breakpoints: (
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+body {
+  color: var(--grey-800);
+  font-size: calc(10px + 2vmin);
+  margin: auto;
+}
+
+#app {
+  background-color: var(--background);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  place-items: center;
+}
 
 a {
   color: var(--red);
-}
-
-header,
-footer {
-  color: var(--red);
-  padding: 2rem 0;
-  text-align: center;
-  width: 100vw;
-}
-
-footer {
-  border-top: 1px solid var(--red);
-}
-
-nav {
-  background-color: var(--red);
-  color: var(--grey-000);
-  display: grid;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  a {
-    color: var(--grey-000);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      padding: 0 2rem;
-    }
-  }
 }

@@ -22,8 +22,6 @@
   }
 
   .home {
-    background-color: #f9f6f6;
-    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
