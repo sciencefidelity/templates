@@ -2,7 +2,7 @@
 const year = new Date().getFullYear()
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   footer {
     border-top: 1px solid var(--red);
     padding: 2rem 0;

@@ -11,7 +11,7 @@
   })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @keyframes logo-pulse {
     from {
       transform: scale(1);
@@ -33,10 +33,7 @@
     height: 36vmin;
     pointer-events: none;
     margin: 3rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .logo {
+    @media (prefers-reduced-motion: no-preference) {
       animation: logo-pulse infinite 1.6s ease-in-out alternate;
     }
   }
