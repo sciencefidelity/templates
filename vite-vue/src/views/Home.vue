@@ -26,6 +26,7 @@ export default class Home extends Vue {
   </div>
 </template>
 
+<!-- prettier-ignore -->
 <style lang="scss" scoped>
 @keyframes logo-pulse {
   from {

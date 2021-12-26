@@ -23,6 +23,7 @@ export default class Counter extends Vue {
   </div>
 </template>
 
+<!-- prettier-ignore -->
 <style lang="scss" scoped>
 @use '../styles/foundation/colors';
 

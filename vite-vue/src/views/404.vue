@@ -19,6 +19,7 @@ export default class NotFound extends Vue {}
   </div>
 </template>
 
+<!-- prettier-ignore -->
 <style lang="scss" scoped>
 .four-oh-four {
   margin: 5rem 2rem;
