@@ -1,6 +1,5 @@
 <script lang="ts">
 import { Vue, Options, Prop } from "vue-property-decorator"
-// import { capitalize } from "../lib/utils"
 
 @Options({
   name: "Home"

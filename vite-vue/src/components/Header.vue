@@ -1,10 +1,10 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
+import { Vue, Options } from "vue-property-decorator"
 
 @Options({
   name: "Header"
 })
-export default class Header extends Vue {}
+export default class Footer extends Vue {}
 </script>
 
 <template>

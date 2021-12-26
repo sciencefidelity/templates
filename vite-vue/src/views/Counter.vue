@@ -1,7 +1,6 @@
 <script lang="ts">
 import { ref } from "vue"
 import { Vue, Options, Prop } from "vue-property-decorator"
-// import { capitalize } from "../lib/utils"
 
 @Options({
   name: "Counter"

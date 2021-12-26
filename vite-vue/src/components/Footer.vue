@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
+import { Vue, Options } from "vue-property-decorator"
 
 @Options({
   name: "Footer"
