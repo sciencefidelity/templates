@@ -1,34 +1,32 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
-// import { capitalize } from "../lib/utils"
+import { Vue, Options, Prop } from "vue-property-decorator"
 
 @Options({
   name: "Home"
 })
 export default class Home extends Vue {
-  title = "home"
   count = 0
+  @Prop(String) readonly title: string | undefined
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
     return () => {
       clearInterval(interval)
     }
   }
-  // @Prop(String) readonly title: string | undefined
 }
 </script>
 
 <template>
   <div :class="title">
     <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
-    <img src="/logo.svg" class="app-logo" alt="logo" />
+    <img src="/logo.svg" class="logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
     </p>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @keyframes logo-pulse {
   from {
     transform: scale(1);
@@ -46,7 +44,7 @@ export default class Home extends Vue {
   }
 }
 
-.app-logo {
+.logo {
   height: 36vmin;
   pointer-events: none;
   margin: 3rem;

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
+import { Vue, Options } from "vue-property-decorator"
 
 @Options({
   name: "Navbar"
@@ -10,13 +10,13 @@ export default class Navbar extends Vue {}
 <template>
   <nav class="nav">
     <ul>
-      <router-link :to="{ name: 'home', params: { title: 'home' } }"
+      <router-link :to="{ name: 'home' }"
         ><li>Home</li></router-link
       >
-      <router-link :to="{ name: 'counter', params: { title: 'counter' } }"
+      <router-link :to="{ name: 'counter' }"
         ><li>Counter</li></router-link
       >
-      <router-link :to="{ name: 'about', params: { title: 'about' } }"
+      <router-link :to="{ name: 'about' }"
         ><li>About</li></router-link
       >
     </ul>

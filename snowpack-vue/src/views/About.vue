@@ -1,13 +1,11 @@
 <script lang="ts">
-import { Vue, Options } from "vue-class-component"
-import { Functions } from "../lib/utils"
+import { Vue, Options, Prop } from "vue-property-decorator"
 
 @Options({
   name: "Home"
 })
 export default class Home extends Vue {
-  title = "about"
-  // @Prop(String) title: string | undefined
+  @Prop(String) readonly title: string | undefined
 }
 </script>
 
@@ -29,7 +27,7 @@ export default class Home extends Vue {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .about {
   margin: 5rem 2rem;
 }
