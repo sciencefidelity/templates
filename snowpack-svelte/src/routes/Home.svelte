@@ -11,7 +11,7 @@
   })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @keyframes logo-pulse {
     from {
       transform: scale(1);
