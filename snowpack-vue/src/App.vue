@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar.vue"
   components: {
     Footer,
     Header,
-    // Layout,
     Navbar
   }
 })
