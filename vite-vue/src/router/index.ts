@@ -20,6 +20,14 @@ const router = createRouter({
       name: "counter",
       component: () => import("@/views/Counter.vue"),
       props: { title: "counter" }
+    },
+    {
+      path: "/404",
+      component: () => import("@/views/404.vue")
+    },
+    {
+      path: "/:catchAll(.*)",
+      redirect: "/404"
     }
   ]
 })
