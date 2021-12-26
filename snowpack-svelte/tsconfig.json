@@ -1,22 +1,20 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
+    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "baseUrl": "./",
-    "paths": {
-      "*": [".snowpack/types/*"]
-    },
-    "noEmit": true,
     "strict": true,
-    "types": ["snowpack-env"],
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "useDefineForClassFields": true,
-    "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
-  },
-  "include": ["src/**/*", "src/node_modules"],
-  "exclude": ["node_modules/*", "public/*"]
+    "moduleResolution": "node",
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": ".",
+      "checkJs": true,
+      "types": ["snowpack-env"],
+      "paths": { "@/*": ["./src"] }
+    },
+    "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
 }

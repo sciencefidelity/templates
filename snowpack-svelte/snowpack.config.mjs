@@ -6,8 +6,8 @@ export default {
   },
   mount: {
     // directory name: 'build directory'
-    public: { url: "/", static: true },
-    src: { url: "/dist" }
+    public: "/",
+    src: "/dist"
   },
   plugins: [
     "@snowpack/plugin-dotenv",
@@ -24,7 +24,7 @@ export default {
     // "bundle": true,
   },
   packageOptions: {
-    /* ... */
+      knownEntrypoints: ["svelte/store"],
   },
   devOptions: {
     open: "none"
