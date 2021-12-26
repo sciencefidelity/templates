@@ -8,7 +8,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "types": ["node"],
-    "paths": { "@/*": "./src" },
+    "paths": { "@/*": ["./src"] },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
