@@ -6,6 +6,7 @@
   import Header from "@/lib/Header.svelte"
   import Home from "@/routes/Home.svelte"
   import Navbar from "@/lib/Navbar.svelte"
+  import NotFound from "@/routes/404.svelte"
 </script>
 
 <Router>
@@ -17,6 +18,7 @@
     <Route path="/"><Home /></Route>
     <Route path="about" component="{About}" />
     <Route path="counter" component="{Counter}" />
+    <Route component="{NotFound}" />
   </main>
   <Footer />
 </Router>
