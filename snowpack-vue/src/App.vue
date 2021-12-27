@@ -32,7 +32,7 @@ export default class App extends Vue {}
 #app {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
   place-items: center;
+  height: 100vh;
 }
 </style>

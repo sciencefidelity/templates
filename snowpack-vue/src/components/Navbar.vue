@@ -26,14 +26,14 @@ export default class Navbar extends Vue {}
 <!-- prettier-ignore -->
 <style lang="scss">
 nav {
-  background-color: var(--dark-green);
-  color: var(--background);
   display: grid;
-  font-weight: 600;
-  padding: 1rem 2rem;
   place-items: center;
-  text-align: center;
   width: 100%;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  color: var(--background);
+  text-align: center;
+  background-color: var(--dark-green);
   a {
     color: var(--background);
     text-decoration: none;
@@ -43,9 +43,9 @@ nav {
   }
   ul {
     display: flex;
-    list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
     li {
       padding: 0 2rem;
     }

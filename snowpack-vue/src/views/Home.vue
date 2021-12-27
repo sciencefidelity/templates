@@ -47,8 +47,8 @@ export default class Home extends Vue {
 
 .logo {
   height: 36vmin;
-  pointer-events: none;
   margin: 3rem;
+  pointer-events: none;
   @media (prefers-reduced-motion: no-preference) {
     animation: logo-pulse infinite 1.6s ease-in-out alternate;
   }
