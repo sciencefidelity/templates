@@ -12,8 +12,8 @@
     "serve": "vite preview --host",
     "lint:prettier": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
     "lint:style": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
-    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
-    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,svelte}'"
+    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,svelte}'",
+    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore"
   },
   "dependencies": {
     "sanitize.css": "^13.0.0"

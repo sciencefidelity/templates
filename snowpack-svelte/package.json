@@ -10,7 +10,9 @@
     "build": "snowpack build",
     "serve": "serve build -l 8080",
     "clean": "rm -rf build && yarn snowpack --reload",
+    "lint:prettier": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
     "lint:style": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
+    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,svelte}'",
     "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
@@ -27,6 +29,7 @@
     "@tsconfig/svelte": "^3.0.0",
     "@types/snowpack-env": "^2.3.4",
     "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.1",
     "serve": "^13.0.2",
     "snowpack": "^3.3.7",
     "stylelint": "^14.2.0",

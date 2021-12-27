@@ -1,6 +1,10 @@
 <script lang="ts">
-const year = new Date().getFullYear()
+  const year = new Date().getFullYear()
 </script>
+
+<footer>
+  <p>&copy; {year}</p>
+</footer>
 
 <style lang="scss">
   footer {
@@ -11,7 +15,3 @@ const year = new Date().getFullYear()
     border-top: 1px solid var(--dark-green);
   }
 </style>
-
-<footer>
-  <p>&copy; { year }</p>
-</footer>

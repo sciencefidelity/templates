@@ -9,12 +9,12 @@
     "isolatedModules": true,
     "sourceMap": true,
     "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "baseUrl": ".",
-      "checkJs": true,
-      "types": ["snowpack-env"],
-      "paths": { "@/*": ["./src"] }
-    },
-    "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "types": ["snowpack-env"],
+    "paths": { "@/*": ["./src"] }
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
 }

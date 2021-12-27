@@ -16,10 +16,9 @@
   </div>
   <main>
     <Route path="/"><Home /></Route>
-    <Route path="about" component="{About}" />
-    <Route path="counter" component="{Counter}" />
-    <Route component="{NotFound}" />
+    <Route path="about" component={About} />
+    <Route path="counter" component={Counter} />
+    <Route component={NotFound} />
   </main>
   <Footer />
 </Router>
-
