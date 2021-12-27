@@ -9,6 +9,12 @@ export default class Footer extends Vue {
 }
 </script>
 
+<template>
+  <footer>
+    <p>&copy; {{ year }}</p>
+  </footer>
+</template>
+
 <!-- prettier-ignore -->
 <style lang="scss">
 header {
@@ -19,9 +25,3 @@ header {
   width: 100vw;
 }
 </style>
-
-<template>
-  <footer>
-    <p>&copy; {{ year }}</p>
-  </footer>
-</template>

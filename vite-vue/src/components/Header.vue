@@ -4,8 +4,16 @@ import { Vue, Options } from "vue-property-decorator"
 @Options({
   name: "Header"
 })
-export default class Footer extends Vue {}
+export default class Header extends Vue {}
 </script>
+
+<template>
+  <header class="header">
+    <p>
+      <strong>Create-Vue-Vite-App</strong>
+    </p>
+  </header>
+</template>
 
 <!-- prettier-ignore -->
 <style lang="scss">
@@ -16,11 +24,3 @@ header {
   width: 100vw;
 }
 </style>
-
-<template>
-  <header class="header">
-    <p>
-      <strong>Create-Vue-Vite-App</strong>
-    </p>
-  </header>
-</template>

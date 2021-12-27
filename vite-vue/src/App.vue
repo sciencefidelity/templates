@@ -1,4 +1,4 @@
-<script lang="ts">import { Vue, Options } from "vue-class-component"
+<script lang="ts">import { Vue, Options } from "vue-property-decorator"
 import Footer from "./components/Footer.vue"
 import Header from "./components/Header.vue"
 import Navbar from "./components/Navbar.vue"
@@ -8,13 +8,10 @@ import Navbar from "./components/Navbar.vue"
   components: {
     Footer,
     Header,
-    // Layout,
     Navbar
   }
 })
-export default class App extends Vue {
-
-}
+export default class App extends Vue {}
 </script>
 
 <template>
