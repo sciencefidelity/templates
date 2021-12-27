@@ -9,29 +9,29 @@
 </script>
 
 <style lang="scss">
-.counter {
-  margin: 5rem 0;
-  text-align: center;
-  p {
-    margin: 0.4rem;
+  .counter {
+    margin: 5rem 0;
+    text-align: center;
+    p {
+      margin: 0.4rem;
+    }
   }
-}
 
-button {
-  border: 0;
-  color: var(--dark-green);
-  font-size: 3rem;
-  height: 6rem;
-  margin: 3rem 0.2rem;
-  width: 6rem;
-}
+  button {
+    width: 6rem;
+    height: 6rem;
+    margin: 3rem 0.2rem;
+    font-size: 3rem;
+    color: var(--dark-green);
+    border: 0;
+  }
 
-.count {
-  color: var(--dark-green);
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 3rem 2rem;
-}
+  .count {
+    margin: 3rem 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-green);
+  }
 </style>
 
 <div class="counter">

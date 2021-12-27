@@ -10,6 +10,8 @@
     "build": "snowpack build",
     "serve": "serve build -l 8080",
     "clean": "rm -rf build && yarn snowpack --reload",
+    "lint:style": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
+    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
   "dependencies": {
@@ -27,6 +29,15 @@
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "snowpack": "^3.3.7",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-processor-arbitrary-tags": "^0.1.0",
+    "stylelint-scss": "^4.1.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
     "svelte-preprocess": "^4.10.1",
     "typescript": "^4.5.4"
   }
