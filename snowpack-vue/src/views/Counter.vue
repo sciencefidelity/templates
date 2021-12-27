@@ -6,14 +6,17 @@ import { Vue, Options, Prop } from "vue-property-decorator"
   name: "Counter"
 })
 export default class Counter extends Vue {
-  @Prop(String) readonly title: string | undefined
+  capitalize(word: string) {
+    word[0].toUpperCase() + word.slice(1, word.length)
+  }
   count = ref(0)
+  @Prop(String) readonly title: string | undefined
 }
 </script>
 
 <template>
   <div :class="title">
-    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
+    <h1>{{ capitalize(title) }}</h1>
     <button @click="count--">–</button>
     <span class="count">{{ count }}</span>
     <button @click="count++">+</button>

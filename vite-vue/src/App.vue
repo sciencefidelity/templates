@@ -1,4 +1,5 @@
-<script lang="ts">import { Vue, Options } from "vue-property-decorator"
+<script lang="ts">
+import { Vue, Options } from "vue-property-decorator"
 import Footer from "./components/Footer.vue"
 import Header from "./components/Header.vue"
 import Navbar from "./components/Navbar.vue"

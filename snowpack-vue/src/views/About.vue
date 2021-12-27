@@ -5,13 +5,16 @@ import { Vue, Options, Prop } from "vue-property-decorator"
   name: "Home"
 })
 export default class Home extends Vue {
+  capitalize(word: string) {
+    word[0].toUpperCase() + word.slice(1, word.length)
+  }
   @Prop(String) readonly title: string | undefined
 }
 </script>
 
 <template>
   <div :class="title">
-    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
+    <h1>{{ Capitalize(title) }}</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed

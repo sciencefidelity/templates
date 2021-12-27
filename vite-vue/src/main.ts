@@ -7,6 +7,4 @@ import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
 import "@/styles/globals.scss"
 
-createApp(App)
-  .use(router)
-  .mount("#app")
+createApp(App).use(router).mount("#app")

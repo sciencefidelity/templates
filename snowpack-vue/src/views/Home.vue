@@ -6,6 +6,9 @@ import { Vue, Options, Prop } from "vue-property-decorator"
 })
 export default class Home extends Vue {
   count = 0
+  capitalize(word: string) {
+    word[0].toUpperCase() + word.slice(1, word.length)
+  }
   @Prop(String) readonly title: string | undefined
   mounted() {
     const interval = setInterval(() => this.count++, 1000)
@@ -18,7 +21,7 @@ export default class Home extends Vue {
 
 <template>
   <div :class="title">
-    <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
+    <h1>{{ capitalize(title) }}</h1>
     <img src="/logo.svg" class="logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
