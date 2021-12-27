@@ -27,6 +27,7 @@ export default class Home extends Vue {
   </div>
 </template>
 
+<!-- prettier-ignore -->
 <style lang="scss" scoped>
 .about {
   margin: 5rem 2rem;

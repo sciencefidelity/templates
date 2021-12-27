@@ -14,3 +14,14 @@ export default class Footer extends Vue {
     <p>&copy; {{ year }}</p>
   </footer>
 </template>
+
+<!-- prettier-ignore -->
+<style lang="scss">
+footer {
+  border-top: 1px solid var(--dark-green);
+  color: var(--dark-green);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+}
+</style>

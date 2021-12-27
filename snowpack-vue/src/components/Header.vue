@@ -4,7 +4,7 @@ import { Vue, Options } from "vue-property-decorator"
 @Options({
   name: "Header"
 })
-export default class Footer extends Vue {}
+export default class Header extends Vue {}
 </script>
 
 <template>
@@ -14,3 +14,13 @@ export default class Footer extends Vue {}
     </p>
   </header>
 </template>
+
+<!-- prettier-ignore -->
+<style lang="scss">
+header {
+  color: var(--dark-green);
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw;
+}
+</style>
