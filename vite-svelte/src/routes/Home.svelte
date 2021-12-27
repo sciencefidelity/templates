@@ -1,6 +1,6 @@
 <script lang="ts">
   import logo from "@/assets/logo.svg"
-  import {onMount} from "svelte"
+  import { onMount } from "svelte"
 
   let count = 0
   onMount(() => {
@@ -10,6 +10,20 @@
     }
   })
 </script>
+
+<div class="home">
+  <h1>Home</h1>
+  <img src={logo} class="logo" alt="logo" />
+  <p>Page has been open for <code>{count}</code> seconds.</p>
+  <a
+    class="App-link"
+    href="https://svelte.dev"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Learn Svelte
+  </a>
+</div>
 
 <style lang="scss">
   @keyframes logo-pulse {
@@ -38,12 +52,3 @@
     }
   }
 </style>
-
-<div class="home">
-  <h1>Home</h1>
-  <img src="{logo}" class="logo" alt="logo" />
-  <p>Page has been open for <code>{count}</code> seconds.</p>
-  <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-    Learn Svelte
-  </a>
-</div>

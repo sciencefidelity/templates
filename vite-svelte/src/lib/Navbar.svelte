@@ -2,6 +2,14 @@
   import { link } from "svelte-routing"
 </script>
 
+<nav class="nav">
+  <ul>
+    <a href="/" use:link><li>Home</li></a>
+    <a href="/counter" use:link><li>Counter</li></a>
+    <a href="/about" use:link><li>About</li></a>
+  </ul>
+</nav>
+
 <style lang="scss">
   nav {
     display: grid;
@@ -30,11 +38,3 @@
     }
   }
 </style>
-
-<nav class="nav">
-  <ul>
-    <a href="/" use:link><li>Home</li></a>
-    <a href="/counter" use:link><li>Counter</li></a>
-    <a href="/about" use:link><li>About</li></a>
-  </ul>
-</nav>

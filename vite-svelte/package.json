@@ -10,8 +10,10 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview --host",
+    "lint:prettier": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
     "lint:style": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
-    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore"
+    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
+    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,svelte}'"
   },
   "dependencies": {
     "sanitize.css": "^13.0.0"
@@ -20,6 +22,7 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
     "eslint": "^8.5.0",
     "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.1",
     "sass": "^1.45.1",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",

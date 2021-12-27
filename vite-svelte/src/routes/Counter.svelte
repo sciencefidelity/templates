@@ -8,6 +8,16 @@
   }
 </script>
 
+<div class="counter">
+  <h1>Counter</h1>
+  <button on:click={decrement}>–</button>
+  <span class="count">{count}</span>
+  <button on:click={increment}>+</button>
+  <p>
+    The button has been pushed <code>{count}</code> times.
+  </p>
+</div>
+
 <style lang="scss">
   .counter {
     margin: 5rem 0;
@@ -33,13 +43,3 @@
     color: var(--dark-green);
   }
 </style>
-
-<div class="counter">
-  <h1>Counter</h1>
-  <button on:click={decrement}>–</button>
-  <span class="count">{count}</span>
-  <button on:click={increment}>+</button>
-  <p>
-    The button has been pushed <code>{count}</code> times.
-  </p>
-</div>

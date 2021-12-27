@@ -1,3 +1,9 @@
+<header class="header">
+  <p>
+    <strong>Create-Svelte-Vite-App</strong>
+  </p>
+</header>
+
 <style lang="scss">
   header {
     color: var(--red);
@@ -6,9 +12,3 @@
     width: 100vw;
   }
 </style>
-
-<header class="header">
-  <p>
-    <strong>Create-Svelte-Vite-App</strong>
-  </p>
-</header>
