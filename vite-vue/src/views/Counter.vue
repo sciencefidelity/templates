@@ -25,8 +25,6 @@ export default class Counter extends Vue {
 
 <!-- prettier-ignore -->
 <style lang="scss" scoped>
-@use '../styles/foundation/colors';
-
 .counter {
   margin: 5rem 0;
   text-align: center;
@@ -36,18 +34,18 @@ export default class Counter extends Vue {
 }
 
 button {
-  border: 0;
-  color: var(--dark-green);
-  font-size: 3rem;
+  width: 6rem;
   height: 6rem;
   margin: 3rem 0.2rem;
-  width: 6rem;
+  font-size: 3rem;
+  color: var(--dark-green);
+  border: 0;
 }
 
 .count {
-  color: var(--dark-green);
+  margin: 3rem 2rem;
   font-size: 3rem;
   font-weight: bold;
-  margin: 3rem 2rem;
+  color: var(--dark-green);
 }
 </style>

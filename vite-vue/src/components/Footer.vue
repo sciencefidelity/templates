@@ -17,11 +17,11 @@ export default class Footer extends Vue {
 
 <!-- prettier-ignore -->
 <style lang="scss">
-header {
-  border-top: 1px solid var(--dark-green);
-  color: var(--dark-green);
-  padding: 2rem 0;
-  text-align: center;
+footer {
   width: 100vw;
+  padding: 2rem 0;
+  color: var(--dark-green);
+  text-align: center;
+  border-top: 1px solid var(--dark-green);
 }
 </style>

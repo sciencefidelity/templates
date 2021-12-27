@@ -18,9 +18,9 @@ export default class Header extends Vue {}
 <!-- prettier-ignore -->
 <style lang="scss">
 header {
-  color: var(--dark-green);
-  padding: 2rem 0;
-  text-align: center;
   width: 100vw;
+  padding: 2rem 0;
+  color: var(--dark-green);
+  text-align: center;
 }
 </style>
