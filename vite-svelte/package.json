@@ -9,7 +9,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview --host"
+    "serve": "vite preview --host",
+    "lint:style": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
+    "fix:style": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore"
   },
   "dependencies": {
     "sanitize.css": "^13.0.0"
@@ -19,6 +21,15 @@
     "eslint": "^8.5.0",
     "prettier": "^2.5.1",
     "sass": "^1.45.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-processor-arbitrary-tags": "^0.1.0",
+    "stylelint-scss": "^4.1.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.10.1",
     "svelte-routing": "^1.6.0",

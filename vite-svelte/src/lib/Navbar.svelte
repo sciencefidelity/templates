@@ -4,16 +4,16 @@
 
 <style lang="scss">
   nav {
-    background-color: var(--red);
-    color: var(--grey-000);
     display: grid;
-    font-weight: 600;
-    padding: 1rem 2rem;
     place-items: center;
-    text-align: center;
     width: 100%;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    color: var(--background);
+    text-align: center;
+    background-color: var(--dark-green);
     a {
-      color: var(--grey-000);
+      color: var(--background);
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -21,9 +21,9 @@
     }
     ul {
       display: flex;
-      list-style: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
+      list-style: none;
       li {
         padding: 0 2rem;
       }

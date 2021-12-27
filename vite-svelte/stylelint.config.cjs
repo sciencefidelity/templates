@@ -6,6 +6,7 @@ module.exports = {
     "stylelint-config-recess-order"
   ],
   plugins: ["stylelint-scss", "stylelint-selector-bem-pattern"],
+  processors: ["stylelint-processor-arbitrary-tags"],
   // add your custom config here
   // https://stylelint.io/user-guide/configuration
   rules: {
@@ -18,6 +19,7 @@ module.exports = {
     "at-rule-no-unknown": null,
     "color-no-hex": true,
     "max-nesting-depth": 4,
+    "no-empty-first-line": null,
     "rule-empty-line-before": ["always", { except: ["inside-block"] }],
     "selector-max-id": 1,
     "value-keyword-case": ["lower", { ignoreProperties: ["/^\\$/"] }],
