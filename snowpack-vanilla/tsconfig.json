@@ -19,8 +19,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "paths": { "@/*": ["./src"] },
     "types": ["jest", "node", "snowpack-env", "testing-library__jest-dom"]
   },
-  "include": ["src", "types", "./jest.config.ts", "./jest-setup.ts"],
+  "include": ["./src", "types", "./jest.config.ts", "./jest-setup.ts"],
   "exclude": ["node_modules"]
 }

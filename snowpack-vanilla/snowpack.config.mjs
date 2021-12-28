@@ -3,6 +3,10 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
+  alias: {
+    components: "./src/components",
+    "@": "./src"
+  },
   mount: {
     public: { url: "/", static: true },
     src: { url: "/dist" }

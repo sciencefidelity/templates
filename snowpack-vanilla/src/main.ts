@@ -2,6 +2,7 @@ import "sanitize.css/sanitize.css"
 import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
+import "./style.css"
 
 const counter = document.querySelector("#counter") as HTMLSpanElement
 let seconds = 0

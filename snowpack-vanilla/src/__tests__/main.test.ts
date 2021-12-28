@@ -1,5 +1,5 @@
 import { screen } from "@testing-library/dom"
-import { add } from "../index"
+import { add } from "../main"
 
 document.body.innerHTML = `
   <img id="img" src="logo.svg" />
