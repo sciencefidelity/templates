@@ -17,7 +17,7 @@
     "fix": "concurrently 'yarn:fix:*'",
     "fix:eslint": "eslint --fix '**/*.{ts,js}'",
     "fix:prettier": "prettier --write '**/*.{ts,js,tsx,jsx,json,md,yml}'",
-    "fix:styles": "stylelint --fix --ignore-path .eslintignore '**/*scss'",
+    "fix:styles": "stylelint --fix --ignore-path .eslintignore '**/*.scss'",
     "test": "web-test-runner 'src/**/*.test.tsx'"
   },
   "dependencies": {
@@ -37,12 +37,12 @@
     "@testing-library/react": "^12.1.2",
     "@types/chai": "^4.3.0",
     "@types/mocha": "^9.0.0",
-    "@types/reach__router": "^1.3.9",
-    "@types/react": "^17.0.37",
+    "@types/reach__router": "^1.3.10",
+    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/snowpack-env": "^2.3.4",
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "@web/test-runner": "^0.13.23",
     "chai": "^4.3.4",
     "concurrently": "^6.5.1",
@@ -54,7 +54,7 @@
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",
-    "stylelint-config-sass-guidelines": "^9.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-scss": "^4.1.0",
     "typescript": "^4.5.4"
   }
