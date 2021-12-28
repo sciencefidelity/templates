@@ -1,24 +1,22 @@
-@use './foundation/colors' as c;
-
 header,
 footer {
-  color: c.$light-blue;
+  color: var(--light-blue);
   padding: 2rem 0;
   text-align: center;
   width: 100vw;
 }
 
 header {
-  border-bottom: 1px solid c.$light-blue;
+  border-bottom: 1px solid var(--light-blue);
 }
 
 footer {
-  border-top: 1px solid c.$light-blue;
+  border-top: 1px solid var(--light-blue);
 }
 
 nav {
-  background-color: c.$light-blue;
-  color: c.$dark-blue;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
   display: grid;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -26,7 +24,7 @@ nav {
   text-align: center;
   width: 100%;
   a {
-    color: c.$dark-blue;
+    color: var(--dark-blue);
     text-decoration: none;
     &:hover {
       text-decoration: underline;
