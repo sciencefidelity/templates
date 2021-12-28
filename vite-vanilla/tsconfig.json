@@ -19,6 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "paths": { "@/*": ["./src"] },
     "types": ["jest", "node", "testing-library__jest-dom", "vite/client"]
   },
   "include": ["./src", "types", "./jest.config.ts", "./jest-setup.ts"],
