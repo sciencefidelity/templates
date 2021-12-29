@@ -1,15 +1,13 @@
-module.exports = {
-  extends: [
+{
+  "extends": [
     "stylelint-config-prettier",
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
     "stylelint-config-recess-order"
   ],
-  plugins: ["stylelint-scss", "stylelint-selector-bem-pattern"],
-  processors: ["stylelint-processor-arbitrary-tags"],
-  // add your custom config here
-  // https://stylelint.io/user-guide/configuration
-  rules: {
+  "plugins": ["stylelint-scss", "stylelint-selector-bem-pattern"],
+  "processors": ["stylelint-processor-arbitrary-tags"],
+  "rules": {
     "at-rule-empty-line-before": [
       "always",
       {
@@ -20,19 +18,19 @@ module.exports = {
     "color-no-hex": true,
     "max-nesting-depth": 4,
     "no-empty-first-line": null,
-    "rule-empty-line-before": ["always", { except: ["inside-block"] }],
+    "rule-empty-line-before": ["always", { "except": ["inside-block"] }],
     "selector-max-id": 1,
-    "value-keyword-case": ["lower", { ignoreProperties: ["/^\\$/"] }],
+    "value-keyword-case": ["lower", { "ignoreProperties": ["/^\\$/"] }],
     "order/properties-alphabetical-order": null,
     "selector-class-pattern": null,
     "scss/at-rule-no-unknown": true,
     "plugin/selector-bem-pattern": {
-      componentName: "[A-Z]+",
-      componentSelectors: {
-        initial: "^\\.{componentName}(?:-[a-z]+)?$",
-        combined: "^\\.combined-{componentName}-[a-z]+$"
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
       },
-      utilitySelectors: "^\\.util-[a-z]+$"
+      "utilitySelectors": "^\\.util-[a-z]+$"
     }
   }
 }
