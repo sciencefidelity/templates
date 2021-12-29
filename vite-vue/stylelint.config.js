@@ -3,10 +3,10 @@ module.exports = {
     "stylelint-config-prettier",
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
-    "stylelint-config-recess-order"
+    "stylelint-config-recess-order",
+    "stylelint-config-recommended-vue/scss"
   ],
   plugins: ["stylelint-scss", "stylelint-selector-bem-pattern"],
-  processors: ["stylelint-processor-arbitrary-tags"],
   // add your custom config here
   // https://stylelint.io/user-guide/configuration
   rules: {

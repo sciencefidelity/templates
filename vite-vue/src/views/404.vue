@@ -15,7 +15,7 @@ export default class NotFound extends Vue {}
       <br />
       oh the sadness!
     </p>
-    <router-link :to="{ name: 'home' }">Home</router-link>
+    <router-link :to="{ name: 'home' }"> Home </router-link>
   </div>
 </template>
 
