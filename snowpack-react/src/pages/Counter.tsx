@@ -23,7 +23,7 @@ const Counter: FC<Props> = ({ title }) => {
       <div className={styles[title]}>
         <h1>{capitalize(title)}</h1>
         <button onClick={countDown}>–</button>
-        <span className={styles.count}>{count}</span>
+        <div className={styles.count}>{count}</div>
         <button onClick={countUp}>+</button>
         <p>
           The button has been pushed <code>{count}</code> times.

@@ -17,7 +17,9 @@ button {
 
 .count {
   color: var(--light-blue);
+  display: inline-block;
   font-size: 3rem;
   font-weight: bold;
-  margin: 3rem 2rem;
+  width: 10rem;
+  text-overflow: clip;
 }
