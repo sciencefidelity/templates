@@ -2,9 +2,9 @@ import React, { FC } from "react"
 import PropTypes from "prop-types"
 import type { RouteComponentProps } from "@reach/router"
 
-import { capitalize } from "../lib/utils"
-import Layout from "../components/Layout"
-import styles from "../styles/About.module.scss"
+import { capitalize } from "@/lib/utils"
+import Layout from "@/components/Layout"
+import styles from "@/styles/About.module.scss"
 
 interface Props extends RouteComponentProps {
   title: string

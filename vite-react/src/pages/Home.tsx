@@ -2,10 +2,10 @@ import React, { FC, useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import type { RouteComponentProps } from "@reach/router"
 
-import Layout from "../components/Layout"
-import { capitalize } from "../lib/utils"
-import logo from "../images/logo.svg"
-import styles from "../styles/Home.module.scss"
+import Layout from "@/components/Layout"
+import { capitalize } from "@/lib/utils"
+import logo from "@/images/logo.svg"
+import styles from "@/styles/Home.module.scss"
 
 interface Props extends RouteComponentProps {
   title: string

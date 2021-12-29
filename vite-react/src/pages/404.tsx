@@ -1,9 +1,9 @@
 import React, { FC } from "react"
 import type { RouteComponentProps } from "@reach/router"
 
-import styles from "../styles/404.module.scss"
+import styles from "@/styles/404.module.scss"
 
-import Layout from "../components/Layout"
+import Layout from "@/components/Layout"
 
 const NotFound: FC<RouteComponentProps> = () => {
   return (
