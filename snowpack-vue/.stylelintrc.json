@@ -3,15 +3,15 @@
     "stylelint-config-prettier",
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
-    "stylelint-config-recess-order"
+    "stylelint-config-recess-order",
+    "stylelint-config-recommended-vue/scss"
   ],
   "plugins": ["stylelint-scss", "stylelint-selector-bem-pattern"],
-  "processors": ["stylelint-processor-arbitrary-tags"],
   "rules": {
     "at-rule-empty-line-before": [
       "always",
       {
-        except: ["blockless-after-blockless", "inside-block"]
+        "except": ["blockless-after-blockless", "inside-block"]
       }
     ],
     "at-rule-no-unknown": null,
