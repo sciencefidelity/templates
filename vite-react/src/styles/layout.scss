@@ -1,9 +1,9 @@
 header,
 footer {
-  color: var(--light-blue);
-  padding: 2rem 0;
-  text-align: center;
   width: 100vw;
+  padding: 2rem 0;
+  color: var(--light-blue);
+  text-align: center;
 }
 
 header {
@@ -15,14 +15,14 @@ footer {
 }
 
 nav {
-  background-color: var(--light-blue);
-  color: var(--dark-blue);
   display: grid;
-  font-weight: 600;
-  padding: 1rem 2rem;
   place-items: center;
-  text-align: center;
   width: 100%;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+  text-align: center;
+  background-color: var(--light-blue);
   a {
     color: var(--dark-blue);
     text-decoration: none;
@@ -32,9 +32,9 @@ nav {
   }
   ul {
     display: flex;
-    list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
     li {
       padding: 0 2rem;
     }
@@ -44,6 +44,6 @@ nav {
 .parent {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
   place-items: center;
+  height: 100vh;
 }
