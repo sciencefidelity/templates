@@ -16,6 +16,8 @@
     ],
     "at-rule-no-unknown": null,
     "color-no-hex": true,
+    "color-function-notation": "legacy",
+    "hue-degree-notation": "number",
     "max-nesting-depth": 4,
     "no-empty-first-line": null,
     "rule-empty-line-before": ["always", { "except": ["inside-block"] }],
