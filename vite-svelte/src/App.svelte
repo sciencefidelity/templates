@@ -9,16 +9,18 @@
   import NotFound from "@/routes/404.svelte"
 </script>
 
-<Router>
-  <div>
-    <Header />
-    <Navbar />
-  </div>
-  <main>
-    <Route path="/"><Home /></Route>
-    <Route path="about" component={About} />
-    <Route path="counter" component={Counter} />
-    <Route component={NotFound} />
-  </main>
-  <Footer />
-</Router>
+<div id="app">
+  <Router>
+    <div>
+      <Header />
+      <Navbar />
+    </div>
+    <main>
+      <Route path="/"><Home /></Route>
+      <Route path="about" component={About} />
+      <Route path="counter" component={Counter} />
+      <Route component={NotFound} />
+    </main>
+    <Footer />
+  </Router>
+</div>
