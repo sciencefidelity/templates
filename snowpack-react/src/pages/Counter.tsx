@@ -1,10 +1,9 @@
 import React, { FC, useState } from "react"
 import PropTypes from "prop-types"
 import type { RouteComponentProps } from "@reach/router"
-
 import { capitalize } from "@/lib/utils"
-import Layout from "@/components/Layout"
-import styles from "@/styles/Counter.module.scss"
+import Layout from "components/Layout"
+import styles from "styles/Counter.module.scss"
 
 interface Props extends RouteComponentProps {
   title: string
