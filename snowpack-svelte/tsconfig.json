@@ -14,7 +14,12 @@
     "baseUrl": ".",
     "checkJs": true,
     "types": ["snowpack-env"],
-    "paths": { "@/*": ["./src"] }
+    "paths": {
+      "@/*": ["./*"],
+      "lib": ["./src/lib"],
+      "routes": ["./src/routes"],
+      "styles": ["./src/styles"]
+    }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
 }

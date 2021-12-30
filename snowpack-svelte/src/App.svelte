@@ -1,12 +1,12 @@
 <script lang="ts">
   import { Router, Route } from "svelte-routing"
-  import About from "@/routes/About.svelte"
-  import Counter from "@/routes/Counter.svelte"
-  import Footer from "@/lib/Footer.svelte"
-  import Header from "@/lib/Header.svelte"
-  import Home from "@/routes/Home.svelte"
-  import Navbar from "@/lib/Navbar.svelte"
-  import NotFound from "@/routes/404.svelte"
+  import About from "routes/About.svelte"
+  import Counter from "routes/Counter.svelte"
+  import Footer from "lib/Footer.svelte"
+  import Header from "lib/Header.svelte"
+  import Home from "routes/Home.svelte"
+  import Navbar from "lib/Navbar.svelte"
+  import NotFound from "routes/404.svelte"
 </script>
 
 <div id="app">

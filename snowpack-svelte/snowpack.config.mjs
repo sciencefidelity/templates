@@ -1,13 +1,15 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
-  alias: {
-    components: "./src/components",
-    "@": "./src"
-  },
   mount: {
     // directory name: 'build directory'
-    public: "/",
-    src: "/dist"
+    public: { url: "/", static: true },
+    src: { url: "/dist" }
+  },
+  alias: {
+    "@": "./src",
+    lib: "./src/lib",
+    routes: "./src/routes",
+    styles: "./src/styles"
   },
   plugins: [
     "@snowpack/plugin-dotenv",
@@ -17,14 +19,14 @@ export default {
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    { match: "routes", src: ".*", dest: "/index.html" },
   ],
   optimize: {
     /* Example: Bundle your final build: */
     // "bundle": true,
   },
   packageOptions: {
-      knownEntrypoints: ["svelte/store"],
+    knownEntrypoints: ["svelte/store"],
   },
   devOptions: {
     open: "none"
