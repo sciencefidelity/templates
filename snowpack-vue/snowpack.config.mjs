@@ -1,21 +1,24 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    public: "/",
-    src: "/dist"
+    // directory name: 'build directory'
+    public: { url: "/", static: true },
+    src: { url: "/dist" }
   },
   alias: {
+    "@": "./src",
     components: "./src/components",
-    "@": "./src"
+    styles: "./src/styles"
   },
   plugins: [
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-sass",
+    "@snowpack/plugin-typescript",
     "@snowpack/plugin-vue"
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    { match: "routes", src: ".*", dest: "/index.html" }
   ],
   optimize: {
     /* Example: Bundle your final build: */

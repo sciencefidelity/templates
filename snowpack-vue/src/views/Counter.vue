@@ -46,7 +46,8 @@ button {
 }
 
 .count {
-  margin: 3rem 2rem;
+  display: inline-block;
+  width: 10rem;
   font-size: 3rem;
   font-weight: bold;
   color: var(--dark-green);

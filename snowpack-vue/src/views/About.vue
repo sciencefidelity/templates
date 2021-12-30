@@ -2,9 +2,9 @@
 import { Vue, Options, Prop } from "vue-property-decorator"
 
 @Options({
-  name: "Home"
+  name: "About"
 })
-export default class Home extends Vue {
+export default class About extends Vue {
   capitalize(word: string) {
     word[0].toUpperCase() + word.slice(1, word.length)
   }
@@ -14,7 +14,7 @@ export default class Home extends Vue {
 
 <template>
   <div :class="title">
-    <h1>{{ Capitalize(title) }}</h1>
+    <h1>{{ capitalize(title) }}</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed

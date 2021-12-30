@@ -10,16 +10,16 @@ const router = createRouter({
       props: { title: "home" }
     },
     {
-      path: "/about",
-      name: "about",
-      component: () => import("@/views/About.vue"),
-      props: { title: "about" }
-    },
-    {
       path: "/counter",
       name: "counter",
       component: () => import("@/views/Counter.vue"),
       props: { title: "counter" }
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import("@/views/About.vue"),
+      props: { title: "about" }
     },
     {
       path: "/404",

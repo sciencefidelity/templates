@@ -22,7 +22,7 @@ export default class Home extends Vue {
 <template>
   <div :class="title">
     <h1>{{ capitalize(title) }}</h1>
-    <img src="/logo.svg" class="logo" alt="logo" />
+    <img src="@/assets/logo.svg" class="logo" alt="logo" />
     <p>
       Page has been open for <code>{{ count }}</code> seconds.
     </p>

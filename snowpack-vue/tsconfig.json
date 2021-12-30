@@ -5,11 +5,12 @@
     "strict": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "isolatedModules": true,
     "noEmit": true,
     "types": ["node"],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "components": ["./src/components"],
+      "styles": ["./src/styles"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
