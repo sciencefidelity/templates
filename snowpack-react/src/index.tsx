@@ -11,7 +11,6 @@ import Counter from "@/pages/Counter"
 import Home from "@/pages/Home"
 import NotFound from "@/pages/404"
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>

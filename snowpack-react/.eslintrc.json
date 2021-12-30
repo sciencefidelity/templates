@@ -6,6 +6,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -16,8 +17,14 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "indent": ["error", 2],
+    "jsx-quotes": ["error", "prefer-double"],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
