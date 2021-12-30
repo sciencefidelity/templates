@@ -13,10 +13,10 @@ body {
 
 #img {
   display: block;
-  height: 16.8rem;
-  margin: 2rem auto;
-  padding: 0;
   width: 128px;
+  height: 16.8rem;
+  padding: 0;
+  margin: 2rem auto;
 }
 
 p {
@@ -26,10 +26,10 @@ p {
 }
 
 #counter {
+  padding: 4px 8px;
+  color: $background;
   background-color: $foreground;
   border-radius: 4px;
-  color: $background;
-  padding: 4px 8px;
 }
 
 a {
