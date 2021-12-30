@@ -6,10 +6,10 @@ import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
 import "styles/globals.scss"
-import About from "@/pages/About"
-import Counter from "@/pages/Counter"
-import Home from "@/pages/Home"
-import NotFound from "@/pages/404"
+import About from "pages/About"
+import Counter from "pages/Counter"
+import Home from "pages/Home"
+import NotFound from "pages/404"
 
 ReactDOM.render(
   <React.StrictMode>

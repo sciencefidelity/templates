@@ -8,6 +8,7 @@ export default {
   alias: {
     "@": "./src",
     components: "./src/components",
+    pages: "./src/pages",
     styles: "./src/styles"
   },
   plugins: [
