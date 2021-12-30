@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [svelte({ preprocess: preprocess() })],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src")
+      "@": resolve(__dirname, "./src"),
+      "lib": resolve(__dirname, "./src/components"),
+      "routes": resolve(__dirname, "./src/routes"),
+      "styles": resolve(__dirname, "./src/styles")
     }
   }
 })
