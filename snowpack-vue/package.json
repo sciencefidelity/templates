@@ -2,8 +2,8 @@
   "name": "snowpack-vue-template",
   "version": "0.1.0",
   "description": "TODO",
-  "license": "MIT",
   "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "snowpack dev",
@@ -14,15 +14,15 @@
     "lint:js": "eslint --ext .js,.ts,.vue .",
     "lint:prettier": "prettier --check '**/*.{ts,js,json,md,yml,vue}'",
     "lint:styles": "stylelint '**/*.{vue,scss}' --ignore-path .eslintignore",
-    "fix": "yarn fix:js && yarn fix:style ",
-    "fix:js": "eslint --ext --fix .js,.ts.vue .",
+    "fix": "concurrently 'yarn:fix:*'",
+    "fix:js": "eslint --ext .js,.ts.vue --fix .",
     "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,vue}'",
     "fix:styles": "stylelint --fix '**/*.{vue,scss}' --ignore-path .eslintignore",
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
   "dependencies": {
     "sanitize.css": "^13.0.0",
-    "vue": "^2.6.14",
+    "vue": "^3.2.26",
     "vue-class-component": "^8.0.0-rc.1",
     "vue-property-decorator": "^10.0.0-rc.3",
     "vue-router": "^4.0.12"

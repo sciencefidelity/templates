@@ -10,7 +10,7 @@ export default class Header extends Vue {}
 <template>
   <header class="header">
     <p>
-      <strong>Create-Vue-Vite-App</strong>
+      <strong>Create-Vue-Snowpack-App</strong>
     </p>
   </header>
 </template>
