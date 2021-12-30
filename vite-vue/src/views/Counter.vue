@@ -15,7 +15,7 @@ export default class Counter extends Vue {
   <div :class="title">
     <h1>{{ title[0].toUpperCase() + title.slice(1, title.length) }}</h1>
     <button @click="count--">–</button>
-    <span class="count">{{ count }}</span>
+    <div class="count">{{ count }}</div>
     <button @click="count++">+</button>
     <p>
       The button has been pushed <code>{{ count }}</code> times.
@@ -43,7 +43,8 @@ button {
 }
 
 .count {
-  margin: 3rem 2rem;
+  display: inline-block;
+  width: 10rem;
   font-size: 3rem;
   font-weight: bold;
   color: var(--dark-green);
