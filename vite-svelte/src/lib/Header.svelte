@@ -6,9 +6,9 @@
 
 <style lang="scss">
   header {
-    color: var(--red);
-    padding: 2rem 0;
-    text-align: center;
     width: 100vw;
+    padding: 2rem 0;
+    color: var(--red);
+    text-align: center;
   }
 </style>

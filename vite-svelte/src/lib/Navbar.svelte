@@ -19,7 +19,7 @@
     font-weight: 600;
     color: var(--background);
     text-align: center;
-    background-color: var(--dark-green);
+    background-color: var(--red);
     a {
       color: var(--background);
       text-decoration: none;
