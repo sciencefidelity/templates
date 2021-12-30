@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { Link } from "@reach/router";
+import { Link } from "@reach/router"
 import type { RouteComponentProps } from "@reach/router"
 
 import styles from "@/styles/404.module.scss"

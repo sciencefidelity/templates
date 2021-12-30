@@ -11,7 +11,7 @@
 <div class="counter">
   <h1>Counter</h1>
   <button on:click={decrement}>–</button>
-  <span class="count">{count}</span>
+  <div class="count">{count}</div>
   <button on:click={increment}>+</button>
   <p>
     The button has been pushed <code>{count}</code> times.
@@ -37,7 +37,8 @@
   }
 
   .count {
-    margin: 3rem 2rem;
+    display: inline-block;
+    width: 10rem;
     font-size: 3rem;
     font-weight: bold;
     color: var(--dark-green);

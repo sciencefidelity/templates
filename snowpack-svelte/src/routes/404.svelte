@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { link } from "svelte-routing"
+</script>
+
 <div class="four-oh-four">
   <h1>404 Not Found</h1>
   <p>
@@ -5,6 +9,7 @@
     <br />
     oh the sadness!
   </p>
+  <a href="/" use:link>Home</a>
 </div>
 
 <style lang="scss">
