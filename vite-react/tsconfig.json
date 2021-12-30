@@ -9,7 +9,10 @@
     "checkJs": false,
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "components": ["./src/components"],
+      "pages": ["./src/pages"],
+      "styles": ["./src/styles"]
     },
     "strict": true,
     "noEmit": true,
