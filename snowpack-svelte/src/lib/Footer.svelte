@@ -10,8 +10,8 @@
   footer {
     width: 100vw;
     padding: 2rem 0;
-    color: var(--dark-green);
+    color: var(--grey-800);
     text-align: center;
-    border-top: 1px solid var(--dark-green);
+    border-top: 1px solid var(--red);
   }
 </style>

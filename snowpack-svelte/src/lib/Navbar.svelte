@@ -17,9 +17,9 @@
     width: 100%;
     padding: 1rem 2rem;
     font-weight: 600;
-    color: var(--background);
+    color: var(--grey-000);
     text-align: center;
-    background-color: var(--dark-green);
+    background-color: var(--red);
     a {
       color: var(--background);
       text-decoration: none;

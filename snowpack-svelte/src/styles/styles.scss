@@ -62,14 +62,6 @@ body {
   color: var(--grey-800);
 }
 
-#app {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  place-items: center;
-  height: 100vh;
-  background-color: var(--background);
-}
-
 a {
   color: var(--red);
 }
