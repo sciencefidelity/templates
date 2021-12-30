@@ -8,7 +8,8 @@ export default {
   alias: {
     "@": "./src",
     components: "./src/components",
-    styles: "./src/styles"
+    styles: "./src/styles",
+    views: "./src/views"
   },
   plugins: [
     "@snowpack/plugin-dotenv",
