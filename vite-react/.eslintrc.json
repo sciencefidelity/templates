@@ -6,9 +6,10 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
     "plugin:jest-dom/recommended",
-    "plugin:testing-library/dom",
-    "prettier"
+    "plugin:testing-library/dom"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,8 +19,14 @@
   "plugins": ["@typescript-eslint", "jest-dom", "testing-library"],
   "rules": {
     "indent": ["error", 2],
+    "jsx-quotes": ["error", "prefer-double"],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "double"],
     "semi": ["error", "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
