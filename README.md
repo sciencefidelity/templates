@@ -7,9 +7,17 @@ I was starting to keep these template files on a computer and copying them inste
 ## Templates
 
 - Minimal TypeScript template for Node/CLI with Jest testing.
-- Minimal vanilla TypeScript starter project with [Snowpack](https://snowpack.dev).
-- Minimal vanilla TypeScript starter project with [Vite](https://vitejs.dev).
-- [React](https://reactjs.org) starter project with [Snowpack](https://snowpack.dev).
-- [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev).
-- [Vue](https://v3.vuejs.org) starter project with [Snowpack](https://snowpack.dev).
-- [Vue](https://v3.vuejs.org) starter project with [Vite](https://vitejs.dev).
+- Minimal vanilla TypeScript starter project with [Snowpack](https://snowpack.dev)
+- Minimal vanilla TypeScript starter project with [Vite](https://vitejs.dev)
+- [React](https://reactjs.org) starter project with [Snowpack](https://snowpack.dev)
+- [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev)
+- [Svelte](https://svelte.dev) starter project with [Snowpack](https://snowpack.dev)
+- [Svelte](https://svelte.dev) starter project with [Vite](https://vitejs.dev)
+- [Vue](https://v3.vuejs.org) starter project with [Snowpack](https://snowpack.dev)
+- [Vue](https://v3.vuejs.org) starter project with [Vite](https://vitejs.dev)
+
+## Known Issues
+
+- Title props in vue-router not working in Snowpack project
+
+
