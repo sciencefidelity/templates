@@ -27,11 +27,6 @@ updates:
       interval: "monthly"
 
   - package-ecosystem: "npm"
-    directory: "/snowpack-vue"
-    schedule:
-      interval: "monthly"
-
-  - package-ecosystem: "npm"
     directory: "/ts-jest"
     schedule:
       interval: "monthly"
