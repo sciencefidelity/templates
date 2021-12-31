@@ -1,8 +1,9 @@
 package.json
 package-lock.json
 yarn.lock
-dist
 build
+build
+.svelte-kit
 node_modules
 .nova
 .vscode
