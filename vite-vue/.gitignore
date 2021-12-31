@@ -4,4 +4,6 @@ dist
 dist-ssr
 *.local
 .env
+.env.*
+!.env.template
 *.log

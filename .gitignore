@@ -6,3 +6,6 @@ node_modules
 *.css.map
 dist
 build
+.env
+.env.*
+!.env.template

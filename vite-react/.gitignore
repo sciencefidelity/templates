@@ -5,6 +5,8 @@
 *.local
 .env
 *.env
+.env.*
+!.env.template
 node_modules
 .cache
 build

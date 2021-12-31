@@ -5,5 +5,7 @@ dist
 *.log
 *.local
 .env
-*.env
+*.env.
+env.*
+!.env.template
 .DS_Store
