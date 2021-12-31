@@ -1,6 +1,6 @@
 <script lang="ts">
-  import logo from "@/assets/logo.svg"
   import { onMount } from "svelte"
+  import logo from "@/assets/logo.svg"
 
   let count = 0
   onMount(() => {
