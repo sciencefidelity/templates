@@ -5,18 +5,19 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ["eslint:recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  plugins: ["svelte3", "@typescript-eslint"],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "svelte3", "prettier"],
   parserOptions: {
+    sourceType: "module",
     ecmaVersion: 2020
   },
-  overrides: [
-    {
-      files: ["*.svelte"],
-      processor: "svelte3/svelte3"
-    }
-  ],
+  ignorePatterns: ["*.cjs"],
+  overrides: [{ files: ["*.svelte"], processor: "svelte3/svelte3" }],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],

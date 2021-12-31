@@ -5,6 +5,7 @@ dist
 build
 node_modules
 .nova
+.vscode
 *.scss
 *.css
 *.css.map
