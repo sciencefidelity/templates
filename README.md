@@ -13,11 +13,12 @@ I was starting to keep these template files on a computer and copying them inste
 - [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev)
 - [Svelte](https://svelte.dev) starter project with [Snowpack](https://snowpack.dev)
 - [Svelte](https://svelte.dev) starter project with [Vite](https://vitejs.dev)
+- [SvelteKit](https://kit.svelte.dev) starter project
 - [Vue](https://v3.vuejs.org) starter project with [Snowpack](https://snowpack.dev)
 - [Vue](https://v3.vuejs.org) starter project with [Vite](https://vitejs.dev)
 
 ## Known Issues
 
 - Title props in vue-router not working in Snowpack project
-
+- Vite React tempalate won't build
 
