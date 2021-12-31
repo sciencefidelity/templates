@@ -12,11 +12,11 @@
     "clean": "rm -rf build && yarn snowpack --reload",
     "lint": "concurrently 'yarn:lint:*'",
     "lint:js": "eslint '**/*.{ts,js}'",
-    "lint:prettier": "prettier --check '**/*.{ts,js,json,md,yml}'",
+    "lint:format": "prettier --check '**/*.{ts,js,json,md,yml}'",
     "lint:styles": "stylelint --ignore-path .eslintignore '**/*.scss'",
     "fix": "concurrently 'yarn:fix:*'",
     "fix:js": "eslint --fix '**/*.{ts,js}'",
-    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml}'",
+    "fix:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
     "fix:styles": "stylelint --fix --ignore-path .eslintignore '**/*.scss'",
     "test": "jest --watchAll --verbose",
     "coverage": "jest --coverage"

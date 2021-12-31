@@ -12,11 +12,11 @@
     "clean": "rm -rf build && yarn snowpack --reload",
     "lint": "concurrently 'yarn:lint:*'",
     "lint:js": "eslint --ext .js,.ts,.vue .",
-    "lint:prettier": "prettier --check '**/*.{ts,js,json,md,yml,vue}'",
+    "lint:format": "prettier --check '**/*.{ts,js,json,md,yml,vue}'",
     "lint:styles": "stylelint '**/*.{vue,scss}' --ignore-path .eslintignore",
     "fix": "concurrently 'yarn:fix:*'",
     "fix:js": "eslint --ext .js,.ts.vue --fix .",
-    "fix:prettier": "prettier --write '**/*.{ts,js,json,md,yml,vue}'",
+    "fix:format": "prettier --write '**/*.{ts,js,json,md,yml,vue}'",
     "fix:styles": "stylelint --fix '**/*.{vue,scss}' --ignore-path .eslintignore",
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },

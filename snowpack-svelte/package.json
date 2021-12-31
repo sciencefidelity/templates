@@ -14,11 +14,11 @@
     "svelte-check": "svelte-check",
     "lint": "concurrently 'yarn:lint:*'",
     "lint:js": "eslint --ext .js,.ts,.svelte .",
-    "lint:prettier": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
+    "lint:format": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
     "lint:styles": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
     "fix": "concurrently 'yarn:fix:*'",
     "fix:js": "eslint --ext .js,.ts,.svelte --fix .",
-    "fix:prettier": "prettier --write --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
+    "fix:format": "prettier --write --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
     "fix:styles": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
