@@ -3,57 +3,60 @@
 </script>
 
 <script lang="ts">
-  import Counter from "$lib/Counter.svelte"
+  import { onMount } from "svelte"
+  import logo from "../assets/logo.svg"
+
+  let count = 0
+  onMount(() => {
+    const interval = setInterval(() => count++, 1000)
+    return () => {
+      clearInterval(interval)
+    }
+  })
 </script>
 
 <svelte:head>
   <title>Home</title>
 </svelte:head>
 
-<section>
-  <h1>
-    <div class="welcome">
-      <picture>
-        <source srcset="svelte-welcome.webp" type="image/webp" />
-        <img src="svelte-welcome.png" alt="Welcome" />
-      </picture>
-    </div>
-
-    to your new<br />SvelteKit app
-  </h1>
-
-  <h2>
-    try editing <strong>src/routes/index.svelte</strong>
-  </h2>
-
-  <Counter />
+<section class="home">
+  <h1>Home</h1>
+  <img src={logo} class="logo" alt="logo" />
+  <p>Page has been open for <code>{count}</code> seconds.</p>
+  <a
+    class="App-link"
+    href="https://svelte.dev"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Learn Svelte
+  </a>
 </section>
 
-<style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+<style lang="scss">
+  @keyframes logo-pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
   }
 
-  h1 {
-    width: 100%;
+  .home {
+    margin: 5rem 0;
+    text-align: center;
+    p {
+      margin: 0.4rem;
+    }
   }
 
-  .welcome {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
-  }
-
-  .welcome img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: block;
+  .logo {
+    height: 36vmin;
+    margin: 3rem;
+    pointer-events: none;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: logo-pulse infinite 1.6s ease-in-out alternate;
+    }
   }
 </style>

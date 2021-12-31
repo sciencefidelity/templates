@@ -15,37 +15,26 @@
 </script>
 
 <svelte:head>
-  <title>About</title>
+  <title>Counter</title>
 </svelte:head>
 
-<div class="content">
-  <h1>About this app</h1>
-
+<div class="about">
+  <h1>About</h1>
   <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your
-    own by typing the following into your command line and following the prompts:
-  </p>
-
-  <!-- TODO lose the @next! -->
-  <pre>npm init svelte@next</pre>
-
-  <p>
-    The page you're looking at is purely static HTML, with no client-side
-    interactivity needed. Because of that, we don't need to load any JavaScript.
-    Try viewing the page's source, or opening the devtools network panel and
-    reloading.
-  </p>
-
-  <p>
-    The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and
-    form handling. Try using it with JavaScript disabled!
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed
+    augue lacus. Sit amet est placerat in egestas erat imperdiet sed. Et
+    pharetra pharetra massa massa ultricies mi. Nibh sed pulvinar proin gravida.
+    Ornare massa eget egestas purus viverra accumsan in. Euismod nisi porta
+    lorem mollis aliquam ut porttitor leo. Augue lacus viverra vitae congue eu
+    consequat. Habitant morbi tristique senectus et netus et. Euismod in
+    pellentesque massa placerat duis ultricies lacus sed. Auctor neque vitae
+    tempus quam. Elementum facilisis leo vel fringilla est ullamcorper eget.
   </p>
 </div>
 
-<style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
+<style lang="scss">
+  .about {
+    margin: 5rem 2rem;
   }
 </style>
