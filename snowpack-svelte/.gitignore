@@ -1,5 +1,10 @@
-.snowpack
-build
+.DS_Store
 node_modules
+build
+.snowpack
+package
+.env
 .env.*
 !.env.template
+.vercel
+.output

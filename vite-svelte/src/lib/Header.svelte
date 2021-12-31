@@ -4,6 +4,7 @@
   </p>
 </header>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   header {
     width: 100vw;

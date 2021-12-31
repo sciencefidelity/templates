@@ -25,6 +25,7 @@
   </Router>
 </div>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   #app {
     display: grid;

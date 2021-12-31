@@ -33,6 +33,7 @@
   </a>
 </section>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   @keyframes logo-pulse {
     from {

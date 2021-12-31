@@ -12,6 +12,7 @@
   <a href="/" use:link>Home</a>
 </div>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   .four-oh-four {
     margin: 5rem 2rem;

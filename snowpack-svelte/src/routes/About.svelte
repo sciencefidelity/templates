@@ -13,6 +13,7 @@
   </p>
 </div>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   .about {
     margin: 5rem 2rem;

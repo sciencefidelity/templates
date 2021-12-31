@@ -16,6 +16,7 @@
   </ul>
 </nav>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   .nav {
     display: grid;

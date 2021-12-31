@@ -38,6 +38,7 @@
   </p>
 </div>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   .counter {
     margin: 5rem 0;

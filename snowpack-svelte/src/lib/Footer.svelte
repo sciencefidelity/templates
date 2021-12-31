@@ -6,6 +6,7 @@
   <p>&copy; {year}</p>
 </footer>
 
+<!-- prettier-ignore -->
 <style lang="scss">
   footer {
     width: 100vw;
