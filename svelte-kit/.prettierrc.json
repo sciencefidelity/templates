@@ -4,7 +4,11 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": false,
-  "trailingComma": "none",
   "bracketSpacing": true,
-  "arrowParens": "avoid"
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "plugins": ["prettier-plugin-svelte"],
+  "svelteSortOrder": "options-styles-scripts-markup",
+  "svelteStrictMode": false,
+  "svelteIndentScriptAndStyle": true
 }

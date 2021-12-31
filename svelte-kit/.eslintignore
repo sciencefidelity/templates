@@ -1,6 +1,9 @@
-node_modules
-build
 .svelte-kit
-package
+build
+functions
+node_modules
+static
+generated
+pnpm-lock.yaml
 .nova
 .vscode
