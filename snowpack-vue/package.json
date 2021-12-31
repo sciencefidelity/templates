@@ -22,10 +22,10 @@
   },
   "dependencies": {
     "sanitize.css": "^13.0.0",
-    "vue": "^3.2.26",
-    "vue-class-component": "^8.0.0-rc.1",
-    "vue-property-decorator": "^10.0.0-rc.3",
-    "vue-router": "^4.0.12"
+    "vue": "next",
+    "vue-class-component": "next",
+    "vue-property-decorator": "next",
+    "vue-router": "next"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.2.0",
