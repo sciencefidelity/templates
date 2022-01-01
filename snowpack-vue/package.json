@@ -32,7 +32,7 @@
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@snowpack/plugin-vue": "^2.6.2",
-    "@types/node": "^17.0.5",
+    "@types/node": "^17.0.6",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "concurrently": "^6.5.1",
