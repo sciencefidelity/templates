@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "astro": "^0.22.9",
+    "sanitize.css": "^13.0.0",
     "sass": "^1.47.0"
   }
 }
