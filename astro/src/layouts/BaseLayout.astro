@@ -7,12 +7,15 @@ import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
 import "sanitize.css/typography.css"
 import "../styles/global.scss"
+import { capitalize } from "../lib/utils.ts"
+
+const {title} = Astro.props
 ---
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-<!--   <title>{title}</title> -->
+  <title>{capitalize(title)}</title>
 
   <link rel="icon" type="image/x-icon" href="/favicon.svg" />
   <link rel="stylesheet" href={Astro.resolve('../styles/global.scss')}>

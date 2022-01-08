@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-
-const title = "counter"
+import { capitalize } from "../lib/utils.ts"
+const title = "about"
 ---
-<BaseLayout title="Counter">
-  <div class="about">
-    <h1>About</h1>
+<BaseLayout title={title}>
+  <div class={title}>
+    <h1>{capitalize(title)}</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. In iaculis nunc sed
