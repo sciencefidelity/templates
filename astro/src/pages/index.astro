@@ -16,16 +16,57 @@ const count = 0
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
-<section class="home">
-  <h1>Home</h1>
-  <img src={logo} class="logo" alt="logo" />
-  <p>Page has been open for <code>{count}</code> seconds.</p>
-  <a
-    class="App-link"
-    href="https://astro.build"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Learn Astro
-  </a>
-</section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{title}</title>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+  <link rel="stylesheet" href={Astro.resolve('../styles/global.scss')}>
+
+</head>
+<body>
+  <section class="home">
+    <h1>Home</h1>
+    <img src={logo} class="logo" alt="logo" />
+    <p>Page has been open for <code>{count}</code> seconds.</p>
+    <a
+      class="App-link"
+      href="https://astro.build"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Learn Astro
+    </a>
+  </section>
+</body>
+
+<!-- prettier-ignore -->
+<style lang="scss">
+  @keyframes logo-pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.06);
+    }
+  }
+
+  .home {
+    margin: 5rem 0;
+    text-align: center;
+    p {
+      margin: 0.4rem;
+    }
+  }
+
+  .logo {
+    height: 36vmin;
+    margin: 3rem;
+    pointer-events: none;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: logo-pulse infinite 1.6s ease-in-out alternate;
+    }
+  }
+</style>
