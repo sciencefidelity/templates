@@ -1,12 +1,19 @@
-<div class="counter">
-  <h1>Counter</h1>
-  <button on:click={decrement}>–</button>
-  <div class="count">{count}</div>
-  <button on:click={increment}>+</button>
-  <p>
-    The button has been pushed <code>{count}</code> times.
-  </p>
-</div>
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+
+const title = "counter"
+---
+<BaseLayout title="Counter">
+  <div class="counter">
+    <h1>{title}</h1>
+    <button on:click={decrement}>–</button>
+    <div class="count">{count}</div>
+    <button on:click={increment}>+</button>
+    <p>
+      The button has been pushed <code>{count}</code> times.
+    </p>
+  </div>
+</BaseLayout>
 
 <!-- prettier-ignore -->
 <style lang="scss">
