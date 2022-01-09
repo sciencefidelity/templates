@@ -2,17 +2,53 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { capitalize } from "../lib/utils.ts"
 const title = "counter"
+let count = 0
 ---
 <BaseLayout title="Counter">
   <div class="counter">
     <h1>{capitalize(title)}</h1>
-    <button on:click={decrement}>–</button>
-    <div class="count">{count}</div>
-    <button on:click={increment}>+</button>
+    <button id="decrease">–</button>
+    <div class="count-buttons">{count}</div>
+    <button id="increase">+</button>
     <p>
-      The button has been pushed <code>{count}</code> times.
+      The button has been pushed <code class="count-display">{count}</code> times.
     </p>
   </div>
+  <script>
+    const drawCounter = () => {
+      document.querySelector(".count-buttons").textContent = store.counter
+      document.querySelector(".count-display").textContent = store.counter
+    }
+    const bindEvents = () => {
+      document.querySelector("#increase").addEventListener('click', () => {
+        increase()
+        drawCounter()
+      })
+      document.getElementById('decrease').addEventListener('click', () => {
+        decrease()
+        drawCounter()
+      })
+    }
+
+    const store = {
+      counter: 0
+    }
+
+    const increase = () => {
+      store.counter++
+    }
+
+    const decrease = () => {
+      store.counter--
+    }
+
+    const init = () => {
+      bindEvents()
+      drawCounter()
+    }
+
+    init()
+  </script>
 </BaseLayout>
 
 <!-- prettier-ignore -->
@@ -30,15 +66,15 @@ const title = "counter"
     height: 6rem;
     margin: 3rem 0.2rem;
     font-size: 3rem;
-    color: var(--dark-green);
+    color: var(--background);
     border: 0;
   }
 
-  .count {
+  .count-buttons {
     display: inline-block;
     width: 10rem;
     font-size: 3rem;
     font-weight: bold;
-    color: var(--dark-green);
+    color: var(--foreground);
   }
 </style>
