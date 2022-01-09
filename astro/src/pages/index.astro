@@ -33,7 +33,7 @@ let seconds = 0
     const counter = document.querySelector("#counter")
     let seconds = 0
 
-    function timer() {
+    const timer = () => {
       setInterval(() => {
         seconds += 1
         counter.textContent = seconds.toString()
