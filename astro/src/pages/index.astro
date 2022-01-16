@@ -29,18 +29,7 @@ let seconds = 0
       Learn Astro
     </a>
   </section>
-  <script>
-    const counter = document.querySelector("#counter")
-    let seconds = 0
-
-    const timer = () => {
-      setInterval(() => {
-        seconds += 1
-        counter.textContent = seconds.toString()
-      }, 1000)
-    }
-    timer()
-  </script>
+  <script src={Astro.resolve("./index.ts")}></script>
 </BaseLayout>
 
 <style lang="scss">

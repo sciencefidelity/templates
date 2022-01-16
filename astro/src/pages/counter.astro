@@ -14,41 +14,7 @@ let count = 0
       The button has been pushed <code class="count-display">{count}</code> times.
     </p>
   </div>
-  <script>
-    const drawCounter = () => {
-      document.querySelector(".count-buttons").textContent = store.counter
-      document.querySelector(".count-display").textContent = store.counter
-    }
-    const bindEvents = () => {
-      document.querySelector("#increase").addEventListener('click', () => {
-        increase()
-        drawCounter()
-      })
-      document.getElementById('decrease').addEventListener('click', () => {
-        decrease()
-        drawCounter()
-      })
-    }
-
-    const store = {
-      counter: 0
-    }
-
-    const increase = () => {
-      store.counter++
-    }
-
-    const decrease = () => {
-      store.counter--
-    }
-
-    const init = () => {
-      bindEvents()
-      drawCounter()
-    }
-
-    init()
-  </script>
+  <script src={Astro.resolve("./counter.ts")}></script>
 </BaseLayout>
 
 <!-- prettier-ignore -->
