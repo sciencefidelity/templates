@@ -43,7 +43,7 @@
     "eslint-plugin-testing-library": "^5.0.1",
     "jest": "^27.4.7",
     "postcss": "^8.4.6",
-    "postcss-scss": "^4.0.2",
+    "postcss-scss": "^4.0.3",
     "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "snowpack": "^3.8.8",
