@@ -50,7 +50,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-testing-library": "^5.0.5",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.4.5",
+    "jest": "^27.4.7",
     "jest-watch-typeahead": "^1.0.0",
     "postcss": "^8.4.6",
     "postcss-scss": "^4.0.3",
