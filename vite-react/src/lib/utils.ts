@@ -1,2 +1,6 @@
-export const capitalize = (word: string): string =>
-  word[0].toUpperCase() + word.slice(1, word.length)
+export const capitalize = (str: string): string => {
+  return str
+    .split(/[\s-]/g)
+    .map(e => e.replace(e[0], e[0].toUpperCase()))
+    .join(" ")
+}

@@ -11,6 +11,8 @@
     "paths": {
       "@/*": ["./*"],
       "components": ["./src/components"],
+      "lib": ["./src/lib"],
+      "images": ["./src/images"],
       "pages": ["./src/pages"],
       "styles": ["./src/styles"]
     },
