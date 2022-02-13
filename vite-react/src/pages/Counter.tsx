@@ -20,12 +20,12 @@ const Counter: FC<Props> = ({ title }) => {
   return (
     <Layout>
       <div className={styles[title]}>
-        <h1 data-testid="title">{capitalize(title)}</h1>
+        <h1>{capitalize(title)}</h1>
         <button onClick={countDown}>–</button>
         <div className={styles.count}>{count}</div>
         <button onClick={countUp}>+</button>
         <p>
-          The button has been pushed <code>{count}</code> times.
+          The button has been pushed <code data-testid="count">{count}</code> times.
         </p>
       </div>
     </Layout>
