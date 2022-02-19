@@ -1,6 +1,6 @@
-# Vite React Template
+# Vite React Barebones Template
 
-A full featured template for developing React apps with Vite. Includes config for Eslint, Prettier and Stylelint, and Jest with Testing Library.
+A barebones React template for those times when you want to experiment with react and don't want to waste time deleting boilerplate or adding dependencies. Includes a very opinionated config for Eslint, Prettier and Stylelint, and Jest with Testing Library.
 
 ### Commands
 
