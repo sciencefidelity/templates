@@ -1,5 +1,7 @@
 node_modules
 .DS_Store
+*.log
+logs
 *.bak
 *.local
 *.css
