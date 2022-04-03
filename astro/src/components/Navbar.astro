@@ -6,7 +6,6 @@
   </ul>
 </nav>
 
-<!-- prettier-ignore -->
 <style lang="scss">
   nav {
     display: grid;
@@ -16,12 +15,13 @@
     font-weight: 600;
     color: var(--foreground);
     text-align: center;
-    background-color: var(--orange);
+    // background-color: var(--orange);
+    border-bottom: 4px solid var(--accent);
     a {
       color: var(--foreground);
       text-decoration: none;
       &:hover {
-        text-decoration: underline;
+        color: var(--accent);
       }
     }
     ul {

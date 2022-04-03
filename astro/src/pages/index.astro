@@ -1,25 +1,14 @@
 ---
-// Component Imports
-import BaseLayout from "../layouts/BaseLayout.astro"
-import { capitalize } from "../lib/utils.ts"
-import logo from "/assets/logo.svg"
-// You can import components from any supported Framework here!
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
+import BaseLayout from "layouts/BaseLayout.astro"
+import { capitalize } from "lib/utils.ts"
+import logo from "/assets/images/logo.svg"
 const title = "home"
-let seconds = 0
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 <BaseLayout title={title}>
   <section class={title}>
     <h1>{capitalize(title)}</h1>
     <img src={logo} class="logo" alt="logo" />
-    <p>Page has been open for <code id="counter">{seconds}</code> seconds.</p>
+    <p>Page has been open for <code id="counter"></code> seconds.</p>
     <a
       class="App-link"
       href="https://astro.build"
@@ -29,7 +18,7 @@ let seconds = 0
       Learn Astro
     </a>
   </section>
-  <script src={Astro.resolve("./index.ts")}></script>
+  <script src="/scripts/timer.ts" lang="ts" is:inline></script>
 </BaseLayout>
 
 <style lang="scss">

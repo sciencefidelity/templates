@@ -1,7 +1,14 @@
 :root {
   --foreground: hsl(210, 20%, 98%);
-  --background: hsl(215, 28%, 17%);
-  --orange: hsl(22, 100%, 50%);
+  // --background: hsl(251, 29%, 11%);
+  // --background: hsl(256, 28%, 19%);
+  --background: linear-gradient(
+    hsl(256, 28%, 19%),
+    hsl(256, 28%, 19%) 6rem,
+    hsl(251, 29%, 11%)
+  );
+  --dark: hsl(256, 28%, 19%);
+  --accent: hsl(22, 100%, 60%);
   --grey-000: hsl(0, 0%, 100%);
   --grey-050: hsl(0, 0%, 95%);
   --grey-100: hsl(0, 0%, 90%);

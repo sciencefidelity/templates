@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
-import { capitalize } from "../lib/utils.ts"
+import BaseLayout from "layouts/BaseLayout.astro"
+import { capitalize } from "lib/utils.ts"
 const title = "counter"
 let count = 0
 ---
@@ -14,7 +14,7 @@ let count = 0
       The button has been pushed <code class="count-display">{count}</code> times.
     </p>
   </div>
-  <script src={Astro.resolve("./counter.ts")}></script>
+  <script src="/scripts/counter.ts" lang="ts" is:inline></script>
 </BaseLayout>
 
 <!-- prettier-ignore -->
@@ -32,7 +32,7 @@ let count = 0
     height: 6rem;
     margin: 3rem 0.2rem;
     font-size: 3rem;
-    color: var(--background);
+    color: var(--dark);
     border: 0;
   }
 

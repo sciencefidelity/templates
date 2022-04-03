@@ -11,7 +11,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: var(--background);
+  background-image: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -24,5 +24,5 @@ body {
 }
 
 a {
-  color: var(--orange);
+  color: var(--accent);
 }

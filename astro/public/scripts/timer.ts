@@ -1,4 +1,4 @@
-const counter = document.querySelector("#counter") as HTMLElement
+const counter = document.querySelector("#counter")
 let seconds = 0
 
 const timer = () => {
@@ -8,3 +8,7 @@ const timer = () => {
   }, 1000)
 }
 timer()
+
+counter.textContent = seconds.toString()
+
+console.log(seconds)
