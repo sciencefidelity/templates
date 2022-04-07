@@ -33,6 +33,7 @@
         "combined": "^\\.combined-{componentName}-[a-z]+$"
       },
       "utilitySelectors": "^\\.util-[a-z]+$"
-    }
+    },
+    "function-no-unknown": [true, { "ignoreFunctions": ["map.get"] }]
   }
 }
