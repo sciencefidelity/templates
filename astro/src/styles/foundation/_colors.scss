@@ -1,12 +1,8 @@
 :root {
   --foreground: hsl(210, 20%, 98%);
-  // --background: hsl(251, 29%, 11%);
-  // --background: hsl(256, 28%, 19%);
-  --background:
-    linear-gradient(hsl(256, 28%, 19%),
-    hsl(256, 28%, 19%) 6rem,
-    hsl(251, 29%, 11%));
-  --dark: hsl(256, 28%, 19%);
+  --top: hsl(256, 27%, 19%);
+  --bottom: hsl(251, 29%, 11%);
+  --background: linear-gradient(180deg, var(--top), var(--top) 6rem, var(--bottom));
   --accent: hsl(22, 100%, 60%);
   --grey-000: hsl(0, 0%, 100%);
   --grey-050: hsl(0, 0%, 95%);
