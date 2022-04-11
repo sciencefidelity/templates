@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,6 +10,11 @@ export default defineConfig({
     },
     rollupOptions: {
       external: /^lit/
+    }
+  },
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src")
     }
   }
 })
