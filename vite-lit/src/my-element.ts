@@ -56,17 +56,19 @@ export class MyCounter extends LitElement {
         <button @click=${this._decrement} part="button">-</button>
         <div class="count-buttons">${this.count}</div>
         <button @click=${this._increment} part="button">+</button>
-        <slot></slot>
+        <slot />
       <div>
     `
   }
 
   private _decrement() {
     this.count--
+    document.querySelector(".count-display").innerText = this.count
   }
 
   private _increment() {
     this.count++
+    document.querySelector(".count-display").innerText = this.count
   }
 }
 
