@@ -42,6 +42,11 @@ body {
   font-size: calc(10px + 2vmin);
   color: var(--foreground);
   background-color: var(--background);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--background);
 }
 
 a {
