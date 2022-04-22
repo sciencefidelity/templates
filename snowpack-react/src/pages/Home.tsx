@@ -13,7 +13,7 @@ interface Props extends RouteComponentProps {
 const Home: FC<Props> = ({ title }) => {
   const [count, setCount] = useState(0)
   useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000)
+    const timer = setTimeout(() => setCount(prev => prev + 1), 1000)
     return () => clearTimeout(timer)
   }, [count, setCount])
   return (

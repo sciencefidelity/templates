@@ -12,10 +12,10 @@ interface Props extends RouteComponentProps {
 const Counter: FC<Props> = ({ title }) => {
   const [count, setCount] = useState(0)
   const countDown = () => {
-    setCount(count - 1)
+    setCount(prev => prev - 1)
   }
   const countUp = () => {
-    setCount(count + 1)
+    setCount(prev => prev + 1)
   }
   return (
     <Layout>
