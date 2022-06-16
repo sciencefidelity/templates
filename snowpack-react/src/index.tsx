@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import { createRoot } from "react-dom/client"
 import { Router } from "@reach/router"
 import "sanitize.css/sanitize.css"
 import "sanitize.css/assets.css"
@@ -11,7 +11,11 @@ import Counter from "pages/Counter"
 import Home from "pages/Home"
 import NotFound from "pages/404"
 
-ReactDOM.render(
+const container = document.getElementById("root")
+// eslint-disable-next-line
+const root = createRoot(container!)
+
+root.render(
   <React.StrictMode>
     <Router>
       <Home path="/" title="home" />
@@ -19,8 +23,7 @@ ReactDOM.render(
       <About path="/about" title="about" />
       <NotFound default />
     </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 )
 
 // https://www.snowpack.dev/concepts/hot-module-replacement
