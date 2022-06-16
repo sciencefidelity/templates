@@ -7,7 +7,7 @@ import "sanitize.css/typography.css"
 import "styles/globals.scss"
 import Index from "pages/Index"
 
-const container = document.getElementById("root")
+const container = document.getElementById("app")
 // eslint-disable-next-line
 const root = createRoot(container!)
 

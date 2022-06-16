@@ -11,7 +11,7 @@ import Counter from "pages/Counter"
 import Home from "pages/Home"
 import NotFound from "pages/404"
 
-const container = document.getElementById("root")
+const container = document.getElementById("app")
 // eslint-disable-next-line
 const root = createRoot(container!)
 
