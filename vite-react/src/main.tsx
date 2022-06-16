@@ -1,6 +1,6 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
-import { Router } from "@reach/router"
+import { Route, Switch } from "wouter"
 import "sanitize.css/sanitize.css"
 import "sanitize.css/assets.css"
 import "sanitize.css/reduce-motion.css"
@@ -17,12 +17,12 @@ const root = createRoot(container!)
 
 root.render(
   <React.StrictMode>
-    <Router>
-      <Home path="/" title="home" />
-      <Counter path="/counter" title="counter" />
-      <About path="/about" title="about" />
-      <NotFound default />
-    </Router>
+    <Switch>
+      <Route path="/"><Home title="home"/></Route>
+      <Route path="/counter"><Counter title="counter" /></Route>
+      <Route path="/about"><About title="about" /></Route>
+      <Route><NotFound /></Route>
+    </Switch>
   </React.StrictMode>
 )
 

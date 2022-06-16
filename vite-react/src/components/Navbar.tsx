@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { Link } from "@reach/router"
+import { Link } from "wouter"
 
 const Navbar: FC = () => {
   return (
@@ -7,13 +7,19 @@ const Navbar: FC = () => {
       <nav>
         <ul>
           <Link to="/">
-            <li>Home</li>
+            <a>
+              <li>Home</li>
+            </a>
           </Link>
           <Link to="/counter">
-            <li>Counter</li>
+            <a>
+              <li>Counter</li>
+            </a>
           </Link>
           <Link to="/about">
-            <li>About</li>
+            <a>
+              <li>About</li>
+            </a>
           </Link>
         </ul>
       </nav>
