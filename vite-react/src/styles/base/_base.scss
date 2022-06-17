@@ -18,9 +18,9 @@ body {
   margin: auto;
   font-family: var(--font-sans-serif);
   font-size: calc(10px + 2vmin);
+  line-height: 1.25;
   color: var(--grey-050);
   background-color: var(--dark-blue);
-  line-height: 1.25;
 }
 
 a {
@@ -29,6 +29,6 @@ a {
 
 h1 {
   font-size: 4rem;
-  line-height: 1.5;
   font-weight: 700;
+  line-height: 1.5;
 }
