@@ -1,17 +1,14 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import { Route, Switch } from "wouter"
-import "sanitize.css/sanitize.css"
-import "sanitize.css/assets.css"
-import "sanitize.css/reduce-motion.css"
-import "sanitize.css/typography.css"
-import "styles/globals.scss"
+import "modern-normalize"
+import "styles/global.scss"
 import About from "pages/About"
 import Counter from "pages/Counter"
 import Home from "pages/Home"
 import NotFound from "pages/404"
 
-const container = document.getElementById("app")
+const container = document.getElementById("root")
 // eslint-disable-next-line
 const root = createRoot(container!)
 
