@@ -7,15 +7,16 @@ I was starting to keep these template files on a computer and copying them inste
 ## Templates
 
 - Minimal TypeScript template for Node/CLI with Jest testing.
-- Minimal vanilla TypeScript starter project with [Snowpack](https://snowpack.dev)
-- Minimal vanilla TypeScript starter project with [Vite](https://vitejs.dev)
-- [React](https://reactjs.org) starter project with [Snowpack](https://snowpack.dev)
-- [React](https://reactjs.org) starter project with [Vite](https://vitejs.dev)
-- [Svelte](https://svelte.dev) starter project with [Snowpack](https://snowpack.dev)
-- [Svelte](https://svelte.dev) starter project with [Vite](https://vitejs.dev)
-- [SvelteKit](https://kit.svelte.dev) starter project
-- [Vue](https://v3.vuejs.org) starter project with [Snowpack](https://snowpack.dev)
-- [Vue](https://v3.vuejs.org) starter project with [Vite](https://vitejs.dev)
+- Minimal vanilla TypeScript starter with [Snowpack](https://snowpack.dev)
+- Minimal vanilla TypeScript starter with [Vite](https://vitejs.dev)
+- Minimal [React](https://reactjs.org) starter with [Vite](https://vitejs.dev)
+- [React](https://reactjs.org) starter with [Snowpack](https://snowpack.dev)
+- [React](https://reactjs.org) starter with [Vite](https://vitejs.dev)
+- [Svelte](https://svelte.dev) starter with [Snowpack](https://snowpack.dev)
+- [Svelte](https://svelte.dev) starter with [Vite](https://vitejs.dev)
+- [SvelteKit](https://kit.svelte.dev) starter
+- [Vue](https://v3.vuejs.org) starter with [Snowpack](https://snowpack.dev)
+- [Vue](https://v3.vuejs.org) starter with [Vite](https://vitejs.dev)
 
 ## Known Issues
 
