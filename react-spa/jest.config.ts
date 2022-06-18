@@ -15,7 +15,7 @@ const config: Config.InitialOptions = {
     "^lib/(.*)$": "<rootDir>/src/lib/$1",
     "^images/(.*)$": "<rootDir>/src/images/$1",
     "^pages/(.*)$": "<rootDir>/src/pages/$1",
-    "^styles/(.*)$": "<rootDir>/src/styles/$1",
+    "^styles/(.*)$": "<rootDir>/src/styles/$1"
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"]
 }
