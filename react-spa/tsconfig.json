@@ -22,7 +22,6 @@
     "types": [
       "jest",
       "node",
-      "reach__router",
       "react",
       "react-dom",
       "testing-library__jest-dom"
