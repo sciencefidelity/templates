@@ -1,9 +1,0 @@
-.snowpack
-build
-node_modules
-*.bak
-.DS_Store
-*.log
-.env
-.env.*
-!.env.template
