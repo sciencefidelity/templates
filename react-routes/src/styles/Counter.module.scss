@@ -10,16 +10,18 @@ button {
   width: 6rem;
   height: 6rem;
   margin: 3rem 0.2rem;
-  font-size: 3rem;
+  font-size: 2rem !important;
+  font-weight: 700;
   color: var(--dark-blue);
   border: 0;
 }
 
 .count {
+  margin-bottom: 3rem;
   display: inline-block;
   width: 10rem;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--light-blue);
   text-overflow: clip;
 }
