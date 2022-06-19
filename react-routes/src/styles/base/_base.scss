@@ -40,8 +40,8 @@ nav {
     display: flex;
     padding: 0;
     margin: 0;
-    list-style: none;
     font-weight: 700;
+    list-style: none;
     li {
       padding: 0 2rem;
     }
@@ -49,16 +49,16 @@ nav {
 }
 
 h1 {
-  line-height: 1.5;
   margin-bottom: 1rem;
-  color: #ffffff;
   font-size: 3rem;
   font-weight: 700;
+  line-height: 1.5;
+  color: var(--grey-000);
 }
 
 p {
-  color: #ffffff;
   line-height: 1.25;
+  color: var(--grey-000);
 }
 
 a {

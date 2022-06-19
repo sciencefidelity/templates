@@ -20,7 +20,8 @@ export const Home: FC<Props> = ({ title }) => {
         <h1>{capitalize(title)}</h1>
         <img src={logo} className={styles["app-logo"]} alt="logo" />
         <p>
-          Page has been open for <code data-testid="count">{count}</code> seconds.
+          Page has been open for <code data-testid="count">{count}</code>{" "}
+          seconds.
         </p>
       </div>
     </Layout>

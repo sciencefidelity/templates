@@ -28,4 +28,3 @@ export const About: FC<Props> = ({ title }) => {
     </Layout>
   )
 }
-

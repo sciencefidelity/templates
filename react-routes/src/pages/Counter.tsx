@@ -23,10 +23,10 @@ export const Counter: FC<Props> = ({ title }) => {
         <div className={styles.count}>{count}</div>
         <button onClick={countUp}>+</button>
         <p>
-          The button has been pushed <code data-testid="count">{count}</code> times.
+          The button has been pushed <code data-testid="count">{count}</code>{" "}
+          times.
         </p>
       </div>
     </Layout>
   )
 }
-

@@ -12,10 +12,18 @@ import "styles/globals.scss"
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Switch>
-      <Route path="/"><Home title="home"/></Route>
-      <Route path="/counter"><Counter title="counter" /></Route>
-      <Route path="/about"><About title="about" /></Route>
-      <Route><NotFound /></Route>
+      <Route path="/">
+        <Home title="home" />
+      </Route>
+      <Route path="/counter">
+        <Counter title="counter" />
+      </Route>
+      <Route path="/about">
+        <About title="about" />
+      </Route>
+      <Route>
+        <NotFound />
+      </Route>
     </Switch>
   </React.StrictMode>
 )
