@@ -8,6 +8,7 @@ body {
   font-family: var(--font-sans-serif);
   font-size: calc(10px + 2vmin);
   color: var(--grey-850);
+  background-color: var(--dark-blue);
 }
 
 header,
@@ -35,13 +36,6 @@ nav {
   color: var(--dark-blue);
   text-align: center;
   background-color: var(--light-blue);
-  a {
-    color: var(--dark-blue);
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
   ul {
     display: flex;
     padding: 0;
@@ -50,6 +44,18 @@ nav {
     li {
       padding: 0 2rem;
     }
+  }
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
 

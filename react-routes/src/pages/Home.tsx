@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from "react"
-import { Layout } from "../components/Layout"
+import { Layout } from "components/Layout"
 import { capitalize } from "lib/utils"
 import logo from "images/logo.svg"
 import styles from "styles/Home.module.scss"

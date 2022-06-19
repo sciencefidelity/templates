@@ -1,8 +1,7 @@
 import { FC, ReactNode } from "react"
 import { Header } from "components/Header"
-import { Footer } from "./Footer"
-import { Navbar } from "./Navbar"
-import "styles/layout.scss"
+import { Footer } from "components/Footer"
+import { Navbar } from "components/Navbar"
 
 interface Props {
   children: ReactNode

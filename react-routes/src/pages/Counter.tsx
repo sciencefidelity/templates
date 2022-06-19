@@ -1,6 +1,6 @@
 import { FC, useState } from "react"
-import { capitalize } from "../lib/utils"
-import { Layout } from "../components/Layout"
+import { capitalize } from "lib/utils"
+import { Layout } from "components/Layout"
 import styles from "styles/Counter.module.scss"
 
 interface Props {

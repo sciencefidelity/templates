@@ -15,15 +15,17 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "types": ["node", "react"],
+    "baseUrl": "src/",
     "paths": {
-      "@/components": ["components/*"],
-      "@/lib": ["lib/*"],
-      "@/images": ["images/*"],
-      "@/pages": ["pages/*"],
-      "@/styles": ["styles/*"]
+      "*" : ["types/*", "*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"],
+      "@/images/*": ["images/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"]
     }
   },
-  "include": ["src"],
+  // "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
