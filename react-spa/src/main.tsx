@@ -1,15 +1,12 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
+import App from "./App"
 import "modern-normalize"
 import "styles/globals.scss"
-import Index from "pages/Index"
 
-const container = document.getElementById("app")
 // eslint-disable-next-line
-const root = createRoot(container!)
-
-root.render(
+createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Index />
+    <App />
   </React.StrictMode>
 )
