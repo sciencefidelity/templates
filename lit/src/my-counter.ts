@@ -63,12 +63,12 @@ export class MyCounter extends LitElement {
 
   private _decrement() {
     this.count--
-    document.querySelector(".count-display").innerText = this.count
+    document.querySelector(".count-display")!.innerText = this.count
   }
 
   private _increment() {
     this.count++
-    document.querySelector(".count-display").innerText = this.count
+    document.querySelector(".count-display")!.innerText = this.count
   }
 }
 
