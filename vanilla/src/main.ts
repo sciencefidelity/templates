@@ -1,8 +1,5 @@
-import "sanitize.css/sanitize.css"
-import "sanitize.css/assets.css"
-import "sanitize.css/reduce-motion.css"
-import "sanitize.css/typography.css"
-import "@/style.scss"
+import "modern-normalize"
+import "styles/globals.scss"
 
 const counter = document.querySelector("#counter") as HTMLSpanElement
 let seconds = 0

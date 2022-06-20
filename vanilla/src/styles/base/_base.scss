@@ -1,14 +1,13 @@
-$background: hsl(0, 0%, 100%);
-$foreground: hsl(266, 54%, 36%);
-
 html {
-  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+  margin: auto;
+  font-family: var(--font-sans-serif);
   font-size: calc(10px + 2vmin);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--grey-850);
 }
 
 #img {
@@ -27,11 +26,11 @@ p {
 
 #counter {
   padding: 4px 8px;
-  color: $background;
-  background-color: $foreground;
+  color: var(--grey-000);
+  background-color: var(--accent);
   border-radius: 4px;
 }
 
 a {
-  color: $foreground;
+  color: var(--accent);
 }

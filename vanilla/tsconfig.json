@@ -1,27 +1,29 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ESNext",
     "useDefineForClassFields": true,
-    "module": "esnext",
-    "lib": ["esnext", "dom"],
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
     "strict": true,
-    "allowJs": true,
-    "checkJs": false,
-    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "sourceMap": true,
     "noEmit": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "paths": { "@/*": ["./src"] },
-    "types": ["jest", "node", "testing-library__jest-dom", "vite/client"]
+    "skipLibCheck": true,
+    "baseUrl": "src/",
+    "paths": {
+      "*": ["types/*", "*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"],
+      "@/images/*": ["images/*"],
+      "@/pages/*": ["pages/*"],
+      "@/styles/*": ["styles/*"]
+    }
   },
-  "include": ["./src", "types", "./jest.config.ts", "./jest-setup.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src"]
 }
