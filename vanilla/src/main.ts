@@ -5,16 +5,16 @@ const counter = document.querySelector("#counter") as HTMLSpanElement
 let seconds = 0
 
 export const add = (a: number, b: number): number => {
-  return a + b
+	return a + b
 }
 
 export const timer = (): void => {
-  setInterval(() => {
-    seconds += 1
-    if (counter) {
-      counter.textContent = seconds.toString()
-    }
-  }, 1000)
+	setInterval(() => {
+		seconds += 1
+		if (counter) {
+			counter.textContent = seconds.toString()
+		}
+	}, 1000)
 }
 
 timer()
