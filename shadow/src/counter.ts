@@ -39,38 +39,45 @@ template.innerHTML = `
 `
 
 class MyCounter extends HTMLElement {
+	constructor() {
+		super()
 
-  constructor() {
-    super()
+		this.count = 0
+		this.attachShadow({ mode: "open" })
+		this.shadowRoot?.appendChild(template.content.cloneNode(true))
+		this.shadowRoot.querySelector(".count-buttons").innerText =
+			this.count.toString()
+		this.shadowRoot.querySelector(".count-display").innerText =
+			this.count.toString()
+	}
+	increment() {
+		this.count++
+		this.shadowRoot.querySelector(".count-buttons").innerText =
+			this.count.toString()
+		this.shadowRoot.querySelector(".count-display").innerText =
+			this.count.toString()
+	}
+	decrement() {
+		this.count--
+		this.shadowRoot.querySelector(".count-buttons").innerText =
+			this.count.toString()
+		this.shadowRoot.querySelector(".count-display").innerText =
+			this.count.toString()
+	}
 
-    this.count = 0
-    this.attachShadow({mode: "open"})
-    this.shadowRoot?.appendChild(template.content.cloneNode(true))
-    this.shadowRoot.querySelector(".count-buttons").innerText = this.count.toString()
-    this.shadowRoot.querySelector(".count-display").innerText = this.count.toString()
-  }
-  increment() {
-    this.count++
-    this.shadowRoot.querySelector(".count-buttons").innerText = this.count.toString()
-    this.shadowRoot.querySelector(".count-display").innerText = this.count.toString()
-  }
-  decrement() {
-    this.count--
-    this.shadowRoot.querySelector(".count-buttons").innerText = this.count.toString()
-    this.shadowRoot.querySelector(".count-display").innerText = this.count.toString()
-  }
+	connectedCallback() {
+		this.shadowRoot
+			.querySelector("#increment")
+			.addEventListener("click", () => this.increment())
+		this.shadowRoot
+			.querySelector("#decrement")
+			.addEventListener("click", () => this.decrement())
+	}
 
-  connectedCallback() {
-    this.shadowRoot.querySelector("#increment")
-      .addEventListener("click", () => this.increment())
-    this.shadowRoot.querySelector("#decrement")
-      .addEventListener("click", () => this.decrement())
-  }
-
-  disconnectedCallback() {
-    this.shadowRoot.querySelector("#increment").removeEventListener()
-    this.shadowRoot.querySelector("#decrement").removeEventListener()
-  }
+	disconnectedCallback() {
+		this.shadowRoot.querySelector("#increment").removeEventListener()
+		this.shadowRoot.querySelector("#decrement").removeEventListener()
+	}
 }
 
 window.customElements.define("my-counter", MyCounter)

@@ -12,12 +12,12 @@ document.body.innerHTML = `
 `
 
 it("adds 2 plus 2 and returns 4", () => {
-  expect(add(2, 2)).toEqual(4)
+	expect(add(2, 2)).toEqual(4)
 })
 
 it("starts at zero", () => {
-  const counter = screen.getByTestId("counter")
-  expect(counter).toHaveTextContent("0")
+	const counter = screen.getByTestId("counter")
+	expect(counter).toHaveTextContent("0")
 })
 
 it.todo("shows 10 after 10 seconds")
