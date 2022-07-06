@@ -1,34 +1,35 @@
-/** @type {import("@types/eslint").Linter.Config */
+/* eslint-disable */
+/** @type {import("@types/eslint").Linter.Config} */
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "prettier",
     "plugin:jest-dom/recommended",
-    "plugin:testing-library/dom"
+    "plugin:testing-library/dom",
+    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["@typescript-eslint", "jest-dom", "testing-library"],
   rules: {
-    indent: ["error", 2],
-    "jsx-quotes": ["error", "prefer-double"],
+    indent: "off",
+    "jsx-quotes": "off",
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
-    semi: ["error", "never"],
-    "react/react-in-jsx-scope": "off"
+    semi: "off",
+    "react/react-in-jsx-scope": "off",
   },
   settings: {
     react: {
-      version: "detect"
-    }
-  }
+      version: "detect",
+    },
+  },
 }
