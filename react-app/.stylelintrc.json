@@ -1,10 +1,10 @@
 {
   "plugins": ["stylelint-scss", "stylelint-selector-bem-pattern"],
   "extends": [
-    "stylelint-config-prettier",
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines",
-    "stylelint-config-recess-order"
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
   ],
   "rules": {
     "at-rule-empty-line-before": [
