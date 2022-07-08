@@ -52,5 +52,14 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--gray-000);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  padding: 0 2rem;
 }

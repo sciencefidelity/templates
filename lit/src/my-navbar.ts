@@ -2,10 +2,9 @@ import { html, css, LitElement } from "lit"
 import { customElement } from "lit/decorators.js"
 
 /**
- * An example element.
+ * A generic header element.
  *
  * @slot - This element has a slot
- * @csspart button - The button
  */
 @customElement("my-navbar")
 export class MyNavbar extends LitElement {
@@ -19,15 +18,6 @@ export class MyNavbar extends LitElement {
       background-color: var(--accent);
     }
 
-    a {
-      color: var(--gray-000);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     ul {
       display: flex;
       justify-content: center;
@@ -35,19 +25,13 @@ export class MyNavbar extends LitElement {
       margin: 0;
       list-style: none;
     }
-
-    li {
-      padding: 0 2rem;
-    }
   `
 
   render() {
     return html`
       <nav class="nav">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/counter">Counter</a></li>
-          <li><a href="/about">About</a></li>
+          <slot>
         </ul>
       </nav>
     `

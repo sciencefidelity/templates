@@ -2,7 +2,7 @@ import { html, css, LitElement } from "lit"
 import { customElement, property } from "lit/decorators.js"
 
 /**
- * An example element.
+ * A generic header element.
  *
  * @slot - This element has a slot
  * @csspart button - The button
@@ -28,7 +28,7 @@ export class MyHeader extends LitElement {
     return html`
       <header class="header">
         <p>
-          <strong>${this.title}</strong>
+          <strong><slot></strong>
         </p>
       </header>
     `

@@ -2,7 +2,7 @@ import { html, css, LitElement } from "lit"
 import { customElement, property } from "lit/decorators.js"
 
 /**
- * An example element.
+ * A generic footer with the curren year.
  *
  * @slot - This element has a slot
  * @csspart button - The button
