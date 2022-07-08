@@ -1,24 +1,27 @@
 :root {
-  --grey-000: hsl(0, 0%, 100%);
-  --grey-050: hsl(0, 0%, 95%);
-  --grey-100: hsl(0, 0%, 90%);
-  --grey-150: hsl(0, 0%, 85%);
-  --grey-200: hsl(0, 0%, 80%);
-  --grey-250: hsl(0, 0%, 75%);
-  --grey-300: hsl(0, 0%, 70%);
-  --grey-350: hsl(0, 0%, 65%);
-  --grey-400: hsl(0, 0%, 60%);
-  --grey-450: hsl(0, 0%, 55%);
-  --grey-500: hsl(0, 0%, 50%);
-  --grey-550: hsl(0, 0%, 45%);
-  --grey-600: hsl(0, 0%, 40%);
-  --grey-650: hsl(0, 0%, 35%);
-  --grey-700: hsl(0, 0%, 30%);
-  --grey-750: hsl(0, 0%, 25%);
-  --grey-800: hsl(0, 0%, 20%);
-  --grey-850: hsl(0, 0%, 15%);
-  --grey-900: hsl(0, 0%, 10%);
-  --grey-950: hsl(0, 0%, 05%);
+  --gray-000: hsl(0, 0%, 100%);
+  --gray-050: hsl(0, 0%, 95%);
+  --gray-100: hsl(0, 0%, 90%);
+  --gray-150: hsl(0, 0%, 85%);
+  --gray-200: hsl(0, 0%, 80%);
+  --gray-250: hsl(0, 0%, 75%);
+  --gray-300: hsl(0, 0%, 70%);
+  --gray-350: hsl(0, 0%, 65%);
+  --gray-400: hsl(0, 0%, 60%);
+  --gray-450: hsl(0, 0%, 55%);
+  --gray-500: hsl(0, 0%, 50%);
+  --gray-550: hsl(0, 0%, 45%);
+  --gray-600: hsl(0, 0%, 40%);
+  --gray-650: hsl(0, 0%, 35%);
+  --gray-700: hsl(0, 0%, 30%);
+  --gray-750: hsl(0, 0%, 25%);
+  --gray-800: hsl(0, 0%, 20%);
+  --gray-850: hsl(0, 0%, 15%);
+  --gray-900: hsl(0, 0%, 10%);
+  --gray-950: hsl(0, 0%, 05%);
+  --accent: hsl(228, 100%, 60%);
+  --accent-hover: hsl(240, 100%, 50%);
+  --accent-disabled: hsl(0, 0%, 34%);
 }
 
 * + * {
@@ -38,14 +41,13 @@ html {
 }
 
 body {
-  margin: auto;
-  font-size: calc(10px + 2vmin);
-  color: var(--foreground);
-  background-color: var(--background);
   display: grid;
   grid-template-rows: auto 1fr auto;
   place-items: center;
   height: 100vh;
+  margin: auto;
+  font-size: calc(10px + 2vmin);
+  color: var(--foreground);
   background-color: var(--background);
 }
 

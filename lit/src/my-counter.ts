@@ -23,9 +23,20 @@ export class MyCounter extends LitElement {
       width: 6rem;
       height: 6rem;
       margin: 3rem 0.2rem;
-      font-size: 3rem;
-      color: var(--dark);
+      font-size: 4rem;
+      padding-bottom: 0.7rem;
+      background-color: var(--accent);
+      color: var(--gray-000);
       border: 0;
+      /* border-radius: 999px; */
+    }
+
+    button:hover {
+      background-color: var(--accent-hover);
+    }
+
+    button:disabled {
+      background-color: var(--gray-400);
     }
 
     .count-buttons {
@@ -38,24 +49,32 @@ export class MyCounter extends LitElement {
   `
 
   /**
-   * The component title
+   * The component title.
    */
-  @property()
+  @property({ type: String })
   name = "Counter"
 
   /**
    * The number of times the button has been clicked.
    */
   @property({ type: Number })
-  count = 0
+  count = 3
 
   /**
    * Disable decrement button when count is zero.
    */
-  @property({ type: Number })
+  @property({ type: Boolean })
   disabled = this.count > 0 ? false : true
 
+  /**
+   * The html element displaying the count.
+   */
+  @property()
+  display = document.querySelector(".count-display") as HTMLElement
+
   render() {
+    this.display.innerText = this.count.toString()
+
     return html`
       <div class="counter">
         <h1>${this.name}</h1>
@@ -64,32 +83,29 @@ export class MyCounter extends LitElement {
           part="button"
           ?disabled=${this.disabled}
         >
-          -
+          –
         </button>
         <div class="count-buttons">${this.count}</div>
         <button @click=${this._increment} part="button">+</button>
-        <slot />
-        <div></div>
+        <slot>
       </div>
     `
   }
 
   private _decrement() {
-    const display = document.querySelector(".count-display") as HTMLElement
     this.count--
     if (this.count <= 0) {
       this.disabled = true
     }
-    display!.innerText = this.count.toString()
+    this.display!.innerText = this.count.toString()
   }
 
   private _increment() {
-    const display = document.querySelector(".count-display") as HTMLElement
     this.count++
     if (this.count > 0) {
       this.disabled = false
     }
-    display!.innerText = this.count.toString()
+    this.display!.innerText = this.count.toString()
   }
 }
 

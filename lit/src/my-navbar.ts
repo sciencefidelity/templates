@@ -14,18 +14,18 @@ export class MyNavbar extends LitElement {
       width: 100vw;
       padding: 1rem 0rem;
       font-weight: 600;
-      color: var(--grey-00);
+      color: var(--gray-000);
       text-align: center;
-      background-color: var(--grey-850);
+      background-color: var(--accent);
     }
 
     a {
-      color: var(--grey-000);
+      color: var(--gray-000);
       text-decoration: none;
     }
 
     a:hover {
-      color: var(--grey-250);
+      text-decoration: underline;
     }
 
     ul {

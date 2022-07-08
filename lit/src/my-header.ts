@@ -12,7 +12,7 @@ export class MyHeader extends LitElement {
   static styles = css`
     header {
       width: 100vw;
-      padding: 2rem 0;
+      padding: 0.3rem 0;
       color: var(--grey-850);
       text-align: center;
     }
