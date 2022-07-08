@@ -53,7 +53,7 @@ export class MyCounter extends LitElement {
    * Disable decrement button when count is zero.
    */
   @property({ type: Number })
-  disabled = true
+  disabled = this.count > 0 ? false : true
 
   render() {
     return html`
