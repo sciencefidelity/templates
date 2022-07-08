@@ -12,10 +12,10 @@ export class MyFooter extends LitElement {
   static styles = css`
     footer {
       width: 100vw;
-      padding: 2rem 0;
-      color: var(--grey-850);
+      padding: 0.7rem 0;
+      color: var(--accent);
       text-align: center;
-      border-top: 2px solid var(--grey-850);
+      border-top: 2px solid var(--accent);
     }
   `
 
@@ -28,7 +28,7 @@ export class MyFooter extends LitElement {
   render() {
     return html`
       <footer>
-        <p>&copy; ${this.year}</p>
+        <p><strong>&copy; ${this.year}</strong></p>
       </footer>
     `
   }
