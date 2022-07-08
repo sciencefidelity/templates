@@ -1,11 +1,10 @@
 import { html, css, LitElement } from "lit"
-import { customElement, property } from "lit/decorators.js"
+import { customElement } from "lit/decorators.js"
 
 /**
  * A generic header element.
  *
  * @slot - This element has a slot
- * @csspart button - The button
  */
 @customElement("my-header")
 export class MyHeader extends LitElement {
@@ -17,12 +16,6 @@ export class MyHeader extends LitElement {
       text-align: center;
     }
   `
-
-  /**
-   * The page title
-   */
-  @property()
-  title = "Create-Lit-Vite-App"
 
   render() {
     return html`
