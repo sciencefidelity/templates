@@ -1,11 +1,17 @@
+# ide
+.nova
+.vscode
+
+# npm
 package.json
 package-lock.json
 yarn.lock
 
-dist/
-node_modules/
-.nova/
+# artifacts
+dist
+build
 
+# handled by stylelint
 *.scss
 *.css
 *.css.map
