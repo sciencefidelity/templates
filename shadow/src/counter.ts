@@ -32,52 +32,66 @@ template.innerHTML = `
     <button id="decrement">–</button>
     <div class="count-buttons"></div>
     <button id="increment">+</button>
-    <p>
-      The button has been pushed <code class="count-display"></code> times.
-    </p>
+    <p>The button has been pushed <code class="count-display"></code> times.</p>
   </div>
 `
 
 class MyCounter extends HTMLElement {
-	constructor() {
-		super()
+  count = 0
+  inc = () => this.increment()
+  dec = () => this.decrement()
+  constructor() {
+    super()
 
-		this.count = 0
-		this.attachShadow({ mode: "open" })
-		this.shadowRoot?.appendChild(template.content.cloneNode(true))
-		this.shadowRoot.querySelector(".count-buttons").innerText =
-			this.count.toString()
-		this.shadowRoot.querySelector(".count-display").innerText =
-			this.count.toString()
-	}
-	increment() {
-		this.count++
-		this.shadowRoot.querySelector(".count-buttons").innerText =
-			this.count.toString()
-		this.shadowRoot.querySelector(".count-display").innerText =
-			this.count.toString()
-	}
-	decrement() {
-		this.count--
-		this.shadowRoot.querySelector(".count-buttons").innerText =
-			this.count.toString()
-		this.shadowRoot.querySelector(".count-display").innerText =
-			this.count.toString()
-	}
+    this.attachShadow({ mode: "open" })
+    this.shadowRoot?.appendChild(template.content.cloneNode(true))
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-buttons"
+    )!.innerText = this.count.toString()
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-display"
+    )!.innerText = this.count.toString()
+  }
+  increment() {
+    this.count++
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-buttons"
+    )!.innerText = this.count.toString()
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-display"
+    )!.innerText = this.count.toString()
+  }
+  decrement() {
+    this.count--
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-buttons"
+    )!.innerText = this.count.toString()
+    this.shadowRoot!.querySelector<HTMLDivElement>(
+      ".count-display"
+    )!.innerText = this.count.toString()
+  }
 
-	connectedCallback() {
-		this.shadowRoot
-			.querySelector("#increment")
-			.addEventListener("click", () => this.increment())
-		this.shadowRoot
-			.querySelector("#decrement")
-			.addEventListener("click", () => this.decrement())
-	}
+  connectedCallback() {
+    this.shadowRoot!.querySelector("#increment")!.addEventListener(
+      "click",
+      this.inc
+    )
+    this.shadowRoot!.querySelector("#decrement")!.addEventListener(
+      "click",
+      this.dec
+    )
+  }
 
-	disconnectedCallback() {
-		this.shadowRoot.querySelector("#increment").removeEventListener()
-		this.shadowRoot.querySelector("#decrement").removeEventListener()
-	}
+  disconnectedCallback() {
+    this.shadowRoot!.querySelector("#increment")!.removeEventListener(
+      "click",
+      this.inc
+    )
+    this.shadowRoot!.querySelector("#decrement")!.removeEventListener(
+      "click",
+      this.dec
+    )
+  }
 }
 
-window.customElements.define("my-counter", MyCounter)
+window.customElements.define("shadow-counter", MyCounter)

@@ -22,10 +22,10 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
-    "lit-html": "^2.2.6",
     "sanitize.css": "^13.0.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.14.1",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.1",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
