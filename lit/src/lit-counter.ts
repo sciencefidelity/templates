@@ -8,7 +8,7 @@ import { customElement, property } from "lit/decorators.js"
  * @csspart button - The button
  */
 @customElement("my-counter")
-export class MyCounter extends LitElement {
+export class LitCounter extends LitElement {
   static styles = css`
     .counter {
       margin: 5rem 0;
@@ -97,7 +97,7 @@ export class MyCounter extends LitElement {
     if (this.count <= 0) {
       this.disabled = true
     }
-    this.display!.innerText = this.count.toString()
+    this.display.innerText = this.count.toString()
   }
 
   private _increment() {
@@ -105,12 +105,12 @@ export class MyCounter extends LitElement {
     if (this.count > 0) {
       this.disabled = false
     }
-    this.display!.innerText = this.count.toString()
+    this.display.innerText = this.count.toString()
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-counter": MyCounter
+    "my-counter": LitCounter
   }
 }

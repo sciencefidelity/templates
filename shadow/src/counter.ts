@@ -1,6 +1,6 @@
 const template = document.createElement("template")
 template.innerHTML = `
-  <style lang="scss">
+  <style>
     .counter {
       margin: 5rem 0;
       text-align: center;
