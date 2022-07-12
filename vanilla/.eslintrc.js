@@ -1,40 +1,47 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
-  },
+  plugins: ["@typescript-eslint", "eslint-comments", "promise", "unicorn"],
   extends: [
-    "eslint:recommended",
+    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "plugin:unicorn/recommended",
+    "prettier",
   ],
+  env: {
+    node: true,
+    browser: true,
+    jest: true,
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 12,
-    sourceType: "module"
+    project: "./tsconfig.json",
   },
-  plugins: ["@typescript-eslint"],
   rules: {
-    indent: "off",
-    "linebreak-style": ["error", "unix"],
-    quotes: "off",
-    semi: "off",
-    "space-before-function-paren": [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always"
-      }
-    ],
-    "no-unused-vars": [
-      "warn",
-      { varsIgnorePattern: "[iI]gnored", argsIgnorePattern: "^_" }
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      { varsIgnorePattern: "[iI]gnored", argsIgnorePattern: "^_" }
-    ]
-  }
-}
+    // console is preferred in a Node project
+    "no-console": "off",
+    // https://basarat.gitbook.io/typescript/main-1/defaultisbad
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    // It's not accurate in the monorepo style
+    "import/no-extraneous-dependencies": "off",
+    // Allow most functions to rely on type inference
+    // @typescript-eslint/explicit-module-boundary-types
+    // will ensure exports are typed
+    "@typescript-eslint/explicit-function-return-type": "off",
+    // Airbnb prefers forEach
+    "unicorn/no-array-for-each": "off",
+  },
+  overrides: [
+    {
+      files: ["*.js"],
+      rules: {
+        // Allow CJS until ESM support improves
+        "@typescript-eslint/no-var-requires": "off",
+        "unicorn/prefer-module": "off",
+      },
+    },
+  ],
+};

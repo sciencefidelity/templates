@@ -1,29 +1,23 @@
 {
+  "include": ["./**/*", "./**/.*"],
+  "exclude": ["./dist/**/*"],
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
     "strict": true,
-    "sourceMap": true,
+    "outDir": ".dist",
+    "module": "NodeNext",
+    "target": "es2017",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "sourceMap": true,
     "esModuleInterop": true,
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true,
-    "baseUrl": "src/",
+    "baseUrl": "./",
     "paths": {
       "*": ["types/*", "*"],
-      "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"],
-      "@/images/*": ["images/*"],
-      "@/pages/*": ["pages/*"],
-      "@/styles/*": ["styles/*"]
+      "controllers/*": ["src/controllers/*"],
+      "middlewares/*": ["src/middlewares/*"],
+      "models/*": ["src/models/*"],
+      "routes/*": ["src/routes/*"],
+      "utils/*": ["src/utils/*"]
     }
-  },
-  "include": ["src"]
+  }
 }
