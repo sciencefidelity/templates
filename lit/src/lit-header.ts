@@ -1,5 +1,5 @@
-import { html, css, LitElement } from "lit"
-import { customElement } from "lit/decorators.js"
+import { html, css, LitElement } from "lit";
+import { customElement } from "lit/decorators.js";
 
 /**
  * A generic header element.
@@ -15,7 +15,7 @@ export class MyHeader extends LitElement {
       color: var(--grey-850);
       text-align: center;
     }
-  `
+  `;
 
   render() {
     return html`
@@ -24,12 +24,12 @@ export class MyHeader extends LitElement {
           <strong><slot></strong>
         </p>
       </header>
-    `
+    `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-header": MyHeader
+    "my-header": MyHeader;
   }
 }

@@ -1,5 +1,5 @@
-import { html, css, LitElement } from "lit"
-import { customElement, property } from "lit/decorators.js"
+import { html, css, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
 
 /**
  * An example element.
@@ -46,34 +46,34 @@ export class LitCounter extends LitElement {
       font-weight: bold;
       color: var(--foreground);
     }
-  `
+  `;
 
   /**
    * The component title.
    */
   @property({ type: String })
-  name = "Counter"
+  name = "Counter";
 
   /**
    * The number of times the button has been clicked.
    */
   @property({ type: Number })
-  count = 3
+  count = 3;
 
   /**
    * Disable decrement button when count is zero.
    */
   @property({ type: Boolean })
-  disabled = this.count > 0 ? false : true
+  disabled = this.count > 0 ? false : true;
 
   /**
    * The html element displaying the count.
    */
   @property()
-  display = document.querySelector(".count-display") as HTMLElement
+  display = document.querySelector(".count-display") as HTMLElement;
 
   render() {
-    this.display.innerText = this.count.toString()
+    this.display.innerText = this.count.toString();
 
     return html`
       <div class="counter">
@@ -89,28 +89,28 @@ export class LitCounter extends LitElement {
         <button @click=${this._increment} part="button">+</button>
         <slot>
       </div>
-    `
+    `;
   }
 
   private _decrement() {
-    this.count--
+    this.count--;
     if (this.count <= 0) {
-      this.disabled = true
+      this.disabled = true;
     }
-    this.display.innerText = this.count.toString()
+    this.display.innerText = this.count.toString();
   }
 
   private _increment() {
-    this.count++
+    this.count++;
     if (this.count > 0) {
-      this.disabled = false
+      this.disabled = false;
     }
-    this.display.innerText = this.count.toString()
+    this.display.innerText = this.count.toString();
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-counter": LitCounter
+    "my-counter": LitCounter;
   }
 }

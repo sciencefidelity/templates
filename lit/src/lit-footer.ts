@@ -1,5 +1,5 @@
-import { html, css, LitElement } from "lit"
-import { customElement, property } from "lit/decorators.js"
+import { html, css, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
 
 /**
  * A generic footer with the curren year.
@@ -17,25 +17,25 @@ export class MyFooter extends LitElement {
       text-align: center;
       border-top: 2px solid var(--accent);
     }
-  `
+  `;
 
   /**
    * The current year
    */
   @property()
-  year = new Date().getFullYear()
+  year = new Date().getFullYear();
 
   render() {
     return html`
       <footer>
         <p><strong>&copy; ${this.year}</strong></p>
       </footer>
-    `
+    `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    "my-footer": MyFooter
+    "my-footer": MyFooter;
   }
 }
