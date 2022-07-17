@@ -1,9 +1,8 @@
-import { FC } from "react"
 import { Link } from "wouter"
-import { Layout } from "components/Layout"
+import { Layout } from "components/layout"
 import styles from "styles/404.module.scss"
 
-export const NotFound: FC = () => {
+export function NotFound() {
   return (
     <Layout>
       <div className={styles["four-oh-four"]}>

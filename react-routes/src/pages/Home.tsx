@@ -1,5 +1,5 @@
-import { FC, useState, useEffect } from "react"
-import { Layout } from "components/Layout"
+import { useState, useEffect } from "react"
+import { Layout } from "components/layout"
 import { capitalize } from "lib/utils"
 import logo from "images/logo.svg"
 import styles from "styles/Home.module.scss"
@@ -8,10 +8,10 @@ interface Props {
   title: string
 }
 
-export const Home: FC<Props> = ({ title }) => {
+export function Home({ title }: Props) {
   const [count, setCount] = useState(0)
   useEffect(() => {
-    const timer = setTimeout(() => setCount(prev => prev + 1), 1000)
+    const timer = setTimeout(() => setCount((prev) => prev + 1), 1000)
     return () => clearTimeout(timer)
   }, [count, setCount])
   return (

@@ -1,6 +1,4 @@
-import { FC } from "react"
-
-export const Footer: FC = () => {
+export function Footer() {
   return (
     <footer>
       <p>&copy; {new Date().getFullYear()}</p>

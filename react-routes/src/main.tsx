@@ -1,15 +1,15 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import { Route, Switch } from "wouter"
-import { About } from "pages/About"
-import { Counter } from "pages/Counter"
-import { Home } from "pages/Home"
+import { About } from "pages/about"
+import { Counter } from "pages/counter"
+import { Home } from "pages/home"
 import { NotFound } from "pages/404"
 import "modern-normalize"
 import "styles/globals.scss"
 
-// eslint-disable-next-line
-createRoot(document.getElementById("root")!).render(
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
     <Switch>
       <Route path="/">

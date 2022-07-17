@@ -1,13 +1,13 @@
-import { FC, ReactNode } from "react"
-import { Header } from "components/Header"
-import { Footer } from "components/Footer"
-import { Navbar } from "components/Navbar"
+import { ReactNode } from "react"
+import { Header } from "components/header"
+import { Footer } from "components/footer"
+import { Navbar } from "components/navbar"
 
 interface Props {
   children: ReactNode
 }
 
-export const Layout: FC<Props> = ({ children }) => {
+export function Layout({ children }: Props) {
   return (
     <div className="parent">
       <div>

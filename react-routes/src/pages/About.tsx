@@ -1,13 +1,12 @@
-import { FC } from "react"
 import { capitalize } from "lib/utils"
-import { Layout } from "components/Layout"
+import { Layout } from "components/layout"
 import s from "styles/About.module.scss"
 
 interface Props {
   title: string
 }
 
-export const About: FC<Props> = ({ title }) => {
+export function About({ title }: Props) {
   return (
     <Layout>
       <div className={s[title]}>

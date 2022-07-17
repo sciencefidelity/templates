@@ -1,25 +1,18 @@
-import { FC } from "react"
 import { Link } from "wouter"
 
-export const Navbar: FC = () => {
+export function Navbar() {
   return (
     <div>
       <nav>
         <ul>
           <Link to="/">
-            <a>
-              <li>Home</li>
-            </a>
+            <li>Home</li>
           </Link>
           <Link to="/counter">
-            <a>
-              <li>Counter</li>
-            </a>
+            <li>Counter</li>
           </Link>
           <Link to="/about">
-            <a>
-              <li>About</li>
-            </a>
+            <li>About</li>
           </Link>
         </ul>
       </nav>

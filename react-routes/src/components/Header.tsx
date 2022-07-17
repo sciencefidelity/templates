@@ -1,6 +1,4 @@
-import { FC } from "react"
-
-export const Header: FC = () => {
+export function Header() {
   return (
     <header>
       <p>

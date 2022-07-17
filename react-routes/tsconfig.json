@@ -4,6 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
+    "composite": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -15,7 +16,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["node", "react"],
     "baseUrl": "src/",
     "paths": {
       "*": ["types/*", "*"],
@@ -26,6 +26,7 @@
       "@/styles/*": ["styles/*"]
     }
   },
-  // "include": ["src"],
+  "include": ["./**/*", "./**/.*"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
