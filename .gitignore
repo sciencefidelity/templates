@@ -4,8 +4,6 @@ node_modules
 logs
 *.bak
 *.local
-*.css
-*.css.map
 dist
 build
 .env
