@@ -1,0 +1,10 @@
+package.json
+package-lock.json
+yarn.lock
+build
+.next
+*.scss
+*.css
+*.css.map
+coverage
+*.log
