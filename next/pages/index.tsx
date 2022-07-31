@@ -1,8 +1,11 @@
 import type { NextPage } from "next"
 import Head from "next/head"
+import { useState } from "react"
 import styles from "styles/Home.module.scss"
 
 const Home: NextPage = () => {
+  const [count, countSet] = useState(0)
+
   const title = "Welcome to Next.js!"
   return (
     <div className={styles.container}>
@@ -14,6 +17,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1>{title}</h1>
+        <button onClick={() => countSet(count + 1)}>Count is: {count}</button>
       </main>
     </div>
   )
