@@ -30,6 +30,39 @@ li {
   line-height: 1.75;
 }
 
+.srOnly {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  word-wrap: normal !important;
+  border: 0;
+}
+
+.srOnly:focus {
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 15px 23px 14px;
+  clip: auto !important;
+  clip-path: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: normal;
+  color: hsl(199, 65%, 37%);
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 60%);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
