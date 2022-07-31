@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="container"
+  >
+    <div>
+      <h1>
+        Welcome to Vite.js!
+      </h1>
+      <button>
+        Count is: 
+        0
+      </button>
+    </div>
+  </main>
+</div>
+`;

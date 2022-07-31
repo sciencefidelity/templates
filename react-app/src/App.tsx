@@ -2,19 +2,13 @@ import { useState } from "react"
 
 export function App() {
   const [count, countSet] = useState(0)
-
+  const title = "Welcome to Vite.js!"
   return (
-    <div className="container">
+    <main className="container">
       <div>
+        <h1>{title}</h1>
         <button onClick={() => countSet(count + 1)}>Count is: {count}</button>
-        {count > 0 ? (
-          <p>
-            <code>The count is now: {count}</code>
-          </p>
-        ) : (
-          <p>&nbsp;</p>
-        )}
       </div>
-    </div>
+    </main>
   )
 }
