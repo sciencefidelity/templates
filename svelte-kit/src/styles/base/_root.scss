@@ -1,5 +1,3 @@
-@use 'sass:map';
-
 :root {
   --red: hsl(15, 100%, 50%);
   --background: hsl(360, 20%, 97%);
@@ -23,53 +21,8 @@
   --grey-850: hsl(0, 0%, 15%);
   --grey-900: hsl(0, 0%, 10%);
   --grey-950: hsl(0, 0%, 05%);
-}
-
-$breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-
-@mixin mq($key) {
-  $size: map.get($breakpoints, $key);
-  @media only screen and (max-width: $size) {
-    @content;
-  }
-}
-
-* + * {
-  margin-top: 1rem;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: auto;
-  font-size: calc(10px + 2vmin);
-  color: var(--grey-800);
-}
-
-#svelte {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  place-items: center;
-  height: 100vh;
-  background-color: var(--background);
-}
-
-a {
-  color: var(--red);
+  --font-sans-serif: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+    roboto, oxygen, ubuntu, cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  --font-monospace: ui-monospace, menlo, courier, monospace;
 }

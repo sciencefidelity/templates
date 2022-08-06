@@ -3,7 +3,7 @@
   import Header from "$lib/Header.svelte";
   import Navbar from "$lib/Navbar.svelte";
   import "modern-normalize";
-  import "../styles/app.scss";
+  import "../styles/globals.scss";
 </script>
 
 <div>
