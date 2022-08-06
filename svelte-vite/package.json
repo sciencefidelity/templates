@@ -24,7 +24,7 @@
     "test": "echo \"This template does not include a test runner.\" && exit 1"
   },
   "dependencies": {
-    "sanitize.css": "^13.0.0",
+    "modern-normalize": "^1.1.0",
     "svelte": "^3.48.0",
     "svelte-routing": "^1.6.0"
   },
