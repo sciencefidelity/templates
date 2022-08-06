@@ -1,18 +1,18 @@
 <script context="module" lang="ts">
-  export const prerender = true
+  export const prerender = true;
 </script>
 
 <script lang="ts">
-  import { onMount } from "svelte"
-  import logo from "../assets/logo.svg"
+  import { onMount } from "svelte";
+  import logo from "../assets/logo.svg";
 
-  let count = 0
+  let count = 0;
   onMount(() => {
-    const interval = setInterval(() => count++, 1000)
+    const interval = setInterval(() => count++, 1000);
     return () => {
-      clearInterval(interval)
-    }
-  })
+      clearInterval(interval);
+    };
+  });
 </script>
 
 <svelte:head>

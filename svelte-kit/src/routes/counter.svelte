@@ -1,27 +1,27 @@
 <script context="module">
-  import { browser, dev } from "$app/env"
+  import { browser, dev } from "$app/env";
 
   // we don't need any JS on this page, though we'll load
   // it in dev so that we get hot module replacement...
-  export const hydrate = dev
+  export const hydrate = dev;
 
   // ...but if the client-side router is already loaded
   // (i.e. we came here from elsewhere in the app), use it
-  export const router = browser
+  export const router = browser;
 
   // since there's no dynamic data here, we can prerender
   // it so that it gets served as a static asset in prod
-  export const prerender = true
+  export const prerender = true;
 </script>
 
 <script lang="ts">
-  let count = 0
+  let count = 0;
   const decrement = () => {
-    count -= 1
-  }
+    count -= 1;
+  };
   const increment = () => {
-    count += 1
-  }
+    count += 1;
+  };
 </script>
 
 <svelte:head>
