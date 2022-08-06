@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { onMount } from "svelte"
-  import logo from "@/assets/logo.svg"
+  import { onMount } from "svelte";
+  import logo from "@/assets/logo.svg";
 
-  let count = 0
+  let count = 0;
   onMount(() => {
-    const interval = setInterval(() => count++, 1000)
+    const interval = setInterval(() => count++, 1000);
     return () => {
-      clearInterval(interval)
-    }
-  })
+      clearInterval(interval);
+    };
+  });
 </script>
 
 <div class="home">
@@ -48,6 +48,7 @@
     height: 36vmin;
     margin: 3rem;
     pointer-events: none;
+    display: inline;
     @media (prefers-reduced-motion: no-preference) {
       animation: logo-pulse infinite 1.6s ease-in-out alternate;
     }
