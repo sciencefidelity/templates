@@ -1,18 +1,18 @@
 <script lang="ts">
-  let count = 0
+  let count = 0;
   const decrement = () => {
-    count -= 1
-  }
+    count -= 1;
+  };
   const increment = () => {
-    count += 1
-  }
+    count += 1;
+  };
 </script>
 
 <div class="counter">
   <h1>Counter</h1>
-  <button on:click={decrement}>–</button>
+  <button on:click={decrement} disabled={count <= 0}>–</button>
   <div class="count">{count}</div>
-  <button on:click={increment}>+</button>
+  <button on:click={increment} disabled={count >= 99}>+</button>
   <p>
     The button has been pushed <code>{count}</code> times.
   </p>

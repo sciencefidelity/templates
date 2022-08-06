@@ -10,8 +10,3 @@ yarn.lock
 # artifacts
 dist
 build
-
-# handled by stylelint
-*.scss
-*.css
-*.css.map
