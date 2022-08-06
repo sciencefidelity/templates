@@ -6,9 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview --host",
+    "serve": "vite preview",
     "clean": "rm -rf dist",
     "lint": "concurrently 'yarn:lint:*'",
     "lint:js": "eslint '**/*.{ts,js}'",
