@@ -8,6 +8,6 @@ module.exports = {
     require('postcss-math'),
     postcssNested,
     autoprefixer,
-    cssnano({ preset: 'default' })
-  ]
+    cssnano({ preset: 'default' }),
+  ],
 }

@@ -1,7 +1,5 @@
 <script>
-	import Tabs from '../stories/tabs/Tabs.svelte';
+  import Page from '../lib/page/Page.svelte'
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<Tabs />
+<Page />
