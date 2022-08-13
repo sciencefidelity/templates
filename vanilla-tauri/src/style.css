@@ -50,10 +50,10 @@ h1 {
   will-change: filter;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em hsla(237, 100%, 70%, 0.667));
 }
 .logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+  filter: drop-shadow(0 0 2em hsl(190, 79%, 67%, 0.667));
 }
 
 .card {
