@@ -1,4 +1,3 @@
-import { it } from 'vitest';
 import { render } from '@testing-library/svelte';
 import Invoice from './Invoice.svelte';
 

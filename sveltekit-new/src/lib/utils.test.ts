@@ -1,5 +1,4 @@
-import { formatCurrency } from '$lib/utils';
-import { it, expect } from 'vitest';
+import { formatCurrency } from './utils';
 
 it('adds the pound sign before the given number', () => {
 	const result1 = formatCurrency(1);
