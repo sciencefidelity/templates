@@ -1,25 +1,16 @@
 {
+  "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "moduleResolution": "node",
-    "importsNotUsedAsValues": "error",
-    "isolatedModules": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
     "resolveJsonModule": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
+    "allowJs": true,
     "checkJs": true,
-    "types": ["node"],
-    "paths": {
-      "@/*": ["./*"],
-      "lib": ["./src/lib"],
-      "routes": ["./src/routes"],
-      "styles": ["./src/styles"]
-    }
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

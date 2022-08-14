@@ -1,9 +1,8 @@
-import App from "./App.svelte";
-import "modern-normalize";
-import "styles/globals.scss";
+import './app.css'
+import App from './App.svelte'
 
 const app = new App({
-  target: document.body as HTMLBodyElement,
-});
+  target: document.getElementById('app')
+})
 
-export default app;
+export default app
