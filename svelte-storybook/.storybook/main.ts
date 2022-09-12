@@ -1,7 +1,6 @@
 import preprocess from 'svelte-preprocess'
-import { type InlineConfig, mergeConfig } from 'vite'
-import { fileURLToPath } from 'node:url'
-import { dirname, resolve } from 'node:path'
+import { type InlineConfig } from 'vite'
+import { resolve } from 'node:path'
 
 export default {
   stories: ['../src/**/*.stories.@(js|jsx|mdx|ts|tsx|svelte)'],
@@ -24,8 +23,7 @@ export default {
     }),
   },
   async viteFinal(config: InlineConfig) {
-    return mergeConfig(config, {
-      configFiles: ['../vite.config.ts'],
-    })
+    config.resolve!.alias = { $lib: resolve('./src/lib') }
+    return config
   },
 }
