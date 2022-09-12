@@ -2,7 +2,7 @@ import preprocess from 'svelte-preprocess'
 import { type InlineConfig, mergeConfig } from 'vite'
 
 export default {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)'],
+  stories: ['../src/**/*.stories.@(js|jsx|mdx|ts|tsx|svelte)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
