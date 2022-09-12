@@ -11,11 +11,11 @@ body {
 }
 
 button {
-  background-color: hsl(0, 100%, 100%);
   padding: 1rem;
+  cursor: pointer;
+  background-color: hsl(0, 100%, 100%);
   border: 1px solid hsl(0, 0%, 0%);
   border-radius: 0.2rem;
-  cursor: pointer;
 }
 
 a {
@@ -24,8 +24,8 @@ a {
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 li {
