@@ -1,6 +1,6 @@
 <script lang="ts">
   import './header.css'
-  import Button from '../button/Button.svelte'
+  import Button from '$lib/button/Button.svelte'
 
   interface User {
     name: string

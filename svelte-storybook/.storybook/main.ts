@@ -1,5 +1,7 @@
 import preprocess from 'svelte-preprocess'
 import { type InlineConfig, mergeConfig } from 'vite'
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve } from 'node:path'
 
 export default {
   stories: ['../src/**/*.stories.@(js|jsx|mdx|ts|tsx|svelte)'],

@@ -1,6 +1,6 @@
 <script lang="ts">
   import './page.css'
-  import Header from '../header/Header.svelte'
+  import Header from '$lib/header/Header.svelte'
 
   interface User {
     name: string
